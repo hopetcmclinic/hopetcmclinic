@@ -7,67 +7,73 @@ body {
     background-color: #ffffff;
 }
 
-.site-wrapper {    
+.site-wrapper {
+    display: flex;
     flex-direction: column;
     margin: 0 auto;
+    width: 1100px;
 }
 
-.header-wrapper {
+header {    
     width: 100%;
+    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
     border-bottom: 1px solid #dd3333;
 }
 
-.header-wrapper .logo {
+header .logo {
     display: flex; 
     justify-content: center; 
     align-items: center;
 }
 
-.logo-text {
+header .logo-text {
     text-align: center;
     font-weight: 600;
 }
-.logo-text p {
+
+header .logo-text p {
     margin: 2px;
     text-align: center;
     font-weight: 600;
 }
 
-/* Header styles */
-header {
-    width: 1100px;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    border-color: #dd3333;
+header .hamburger-menu {
+    cursor: pointer;
+    display: none; /* Hidden by default, will be displayed on small screens */
+    z-index: 2;
 }
 
-.book-button {
-    background-color: #A0DCC6;  /* Mint Green Color */
+header .nav-menu {
+    width: 100%;
+    background: #333;
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: -100%; /* Hidden by default */
+    transition: left 0.3s;
+}
+
+header .nav-menu ul {
+    list-style-type: none;
+}
+
+header .nav-menu a {
+    display: block;
+    padding: 15px;
     color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;  /* To create the rounded effect */
-    font-weight: bold;
-    font-size: 16px;  /* Adjust as needed */
-    cursor: pointer;  /* To change cursor to hand icon when hovering over button */
-    transition: 0.3s;  /* Smooth transition for hover effects */
-}
-.book-button:hover {
-    background-color: #3ca07b;  /* Slightly darker color for hover effect */
+    text-decoration: none;
+    transition: background 0.3s;
 }
 
-.section-title {
-    font-family: Arial, sans-serif;
-    font-style: italic;
-    font-size: 36px;
-    font-weight: 300;
-    color: rgb(102,102,102);
+header .nav-menu a:hover {
+    background: #555;
 }
+
+
 
 /* Navigation styles */
 nav {
@@ -92,23 +98,94 @@ nav a:hover {
     color: #dd971b;
 }
 
+
 main {
-    display: flex; 
-    justify-content: space-between; 
-    width: 1100px;
-    padding-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    /* padding-top: 30px; */
 }
 
-/* Footer styles */
+.main-content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
 footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px 0px 30px 0px;
+    margin: 30px 0px;
     height: 80px;
-    font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
+
+.map-iframe {
+    width: 760px;
+    height: 300px;
+    border: 0;
+}
+
+.index-sidebar {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    .site-wrapper {
+        width: auto;
+    }
+
+    header .hamburger-menu {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header nav {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+    .map-iframe {
+        width: 100%;
+        height: 200px;
+    }
+
+    .index-sidebar {
+        display: block;
+    }
+}
+
+
+.book-button {
+    background-color: #A0DCC6;  /* Mint Green Color */
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 25px;  /* To create the rounded effect */
+    font-weight: bold;
+    font-size: 16px;  /* Adjust as needed */
+    cursor: pointer;  /* To change cursor to hand icon when hovering over button */
+    transition: 0.3s;  /* Smooth transition for hover effects */
+}
+.book-button:hover {
+    background-color: #3ca07b;  /* Slightly darker color for hover effect */
+}
+
+.section-title {
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 36px;
+    font-weight: 300;
+    color: rgb(102,102,102);
+}
+
+
 
 button {
     padding: 10px 20px;
@@ -136,7 +213,9 @@ img.wrap-right {
 }
 
 
-.floating-sidebar {    
+.floating-sidebar {
+    flex-grow: 0;
+    flex-shrink: 0;
     width: 250px;
     height: 220px;
     background-color: #e74c3c;
@@ -144,6 +223,7 @@ img.wrap-right {
     box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     border-radius: 8px;
     text-align: center;
+    margin-top: 30px;
 }
 
 .floating-sidebar .title {
