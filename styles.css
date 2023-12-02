@@ -163,42 +163,12 @@ footer {
 }
 
 
-.book-button {
-    background-color: #A0DCC6;  /* Mint Green Color */
-    color: white;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 25px;  /* To create the rounded effect */
-    font-weight: bold;
-    font-size: 16px;  /* Adjust as needed */
-    cursor: pointer;  /* To change cursor to hand icon when hovering over button */
-    transition: 0.3s;  /* Smooth transition for hover effects */
-}
-.book-button:hover {
-    background-color: #3ca07b;  /* Slightly darker color for hover effect */
-}
-
 .section-title {
     font-family: Arial, sans-serif;
     font-style: italic;
     font-size: 36px;
     font-weight: 300;
     color: rgb(102,102,102);
-}
-
-
-
-button {
-    padding: 10px 20px;
-    background-color: #007BFF;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-button:hover {
-    background-color: #0056b3;
 }
 
 img.wrap-left {
