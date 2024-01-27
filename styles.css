@@ -243,6 +243,7 @@ img.wrap-right {
 }
 
 .table_text {
+    width: 100%;
     display: flex; 
     flex-direction: row; 
     gap: 10%; 
