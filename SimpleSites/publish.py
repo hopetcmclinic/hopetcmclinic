@@ -7,7 +7,9 @@ file_loader = FileSystemLoader('templates')
 env = Environment(loader=file_loader)
 
 class Page:
-    pass
+    def __init__(self):
+        self.title = ''
+
 
 def publishPage(name, title):
     template = env.get_template('main.html')
@@ -25,11 +27,11 @@ def publishPage(name, title):
 
 
 pages = [
-    ['index', 'Home'],
-    ['therapists', 'Therapists'],
-    ['treatments', 'Treatments'],
-    ['blog', 'Blog'],
-    ['contact', 'Contact']    
+    ['index', 'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster'],
+    ['therapists', 'Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic'],
+    ['treatments', 'Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic'],
+    ['blog', 'Blog - Acupuncture, Health Tips | Hope TCM Clinic'],
+    ['contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health']
 ]
 
 for page in pages:
