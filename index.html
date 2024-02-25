@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hope Traditional Chinese Medicine Clinic is a wellness clinic providing acupuncture and herbs health care services in New Westminster.">
-    <meta name="keywords" content="Acupuncture,Traditional Chinese Herbs,Cupping,Gua Sha,Moxibustion,ICBC patients,中药,针灸,艾灸,刮痧,拔罐,New Westminster,Vancouer">
-    <title>Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster</title>
+    <meta name="description" content="Welcome to Hope Traditional Chinese Medicine Clinic, nestled in the heart of New Westminster, where ancient healing meets modern wellness. Led by the seasoned acupuncturist Eva (RAc, Dr. of TCM), our clinic offers a diverse array of traditional Chinese medicine services including acupuncture, cupping, moxibustion, guasha, and herbal medicine.">
+    <title>Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster, ICBC</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
@@ -22,11 +21,13 @@
     <script src="script.js"></script>
 </head>
 <body class="flex flex-col text-slate-700" style="font-family: 'Open Sans', sans-serif;">
-    <header class="flex flex-col">
+    <header class="flex flex-col border-b border-red-500 mb-6">
         <nav class="flex justify-between items-center w-[92%] mx-auto py-3 max-w-6xl">
             <div class="flex">
                 <div>
-                    <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
+                    <a href="https://www.hopetcmclinic.ca/">
+                        <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
+                    </a>
                 </div>
                 <div class="flex flex-col justify-center items-center font-semibold">
                     <p>HOPE TRADITIONAL</p>
@@ -35,8 +36,8 @@
                 </div>
             </div>
             <div
-                class="nav-links duration-100 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex flex-col gap-8 md:flex-row md:pt-4">
+                class="nav-links duration-100 md:static absolute bg-slate-600 md:bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex flex-col gap-8 md:flex-row md:pt-4 text-white md:text-slate-700">
                     <li><a href="./index.html" class="text-amber-500">Home</a></li>
                     <li><a href="./therapists.html" class="hover:text-amber-500">Therapists</a></li>
                     <li><a href="./treatments.html" class="hover:text-amber-500">Treatments</a></li>
@@ -49,54 +50,66 @@
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
             </div>
         </nav>
-        <div class="border-b border-red-500 mb-6"></div>
     </header>
 
-    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl">
+    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl min-h-[700px]">
         <div class="flex-grow p-5 w-full">
             
             
-    <div class="flex flex-col text-center">
-        <div style="text-align: center; width:90%;">
+    <div class="flex flex-col">
+        <div class="text-center">
             <img src="./images/Inner-Chinese.jpg" style="width:100%; height:auto;" >
         </div>
 
-        <div style="width:100%">
-            <div style="text-align: center;margin: 30px 0px;">
-                <span class="italic text-4xl font-light">Rates</span>
-            </div>
-        
-            <div class="flex flex-col table_text" style="width:100%">
-                <table width="100%">
+        <div class="text-left mt-12">        
+            <p>
+                Welcome to Hope Traditional Chinese Medicine Clinic, a sanctuary of healing nestled in the heart of New Westminster.
+                Founded by the esteemed acupuncturist, <a href="therapies.html" class="font-bold">Eva Fang Yuan</a> (RAc, Dr. of TCM), our clinic is dedicated to bringing centuries-old traditions of Chinese medicine to the modern world.
+            </p>
+            <br>
+            Situated in the vibrant community of New Westminster, our clinic offers a holistic approach to wellness through a comprehensive range of services, including acupuncture, cupping, moxibustion, guasha, and traditional Chinese herbal medicine. With Eva's expertise and a team of skilled practitioners, we provide personalized treatments tailored to address your unique health needs.
+            </p>
+            <br>
+            <p>
+            At Hope Traditional Chinese Medicine Clinic, we believe in the power of holistic healing to restore balance and vitality to the mind, body, and spirit. Our mission is to empower you on your journey to optimal health and wellbeing, guiding you towards a life of harmony and wellness. Step into our clinic and embark on a path to renewed health and vitality. Welcome to Hope Traditional Chinese Medicine Clinic, where healing begins.
+            </p>
+            <br>
+            </p>
+        </div>
+
+        <div class="my-12 py-8 bg-gray-200">
+            <div class="text-center mb-8">
+                <span class="italic text-4xl font-light">Service & Fees</span>
+            </div>        
+            <div class="flex flex-col px-4 md:px-24">
+                <table class="table-auto">
                     <tbody>
                         <tr>
-                            <td width="50%">Initial Acupuncture Treatment - 90 min</td>
-                            <td>$120</td>
-                            
+                            <td class="h-8">Initial Acupuncture Treatment - 90 min</td>
+                            <td>$120</td>                            
                         </tr>
                         <tr>
-                            <td>Subsequent Acupuncture Treatment - 60 min</td>
+                            <td class="h-8">Subsequent Acupuncture Treatment - 60 min</td>
                             <td>$100</td>
                         </tr>
                         <tr>
-                            <td>Initial Herbal Treatment - 30 min</td>
+                            <td class="h-4"></td><td></td>
+                        </tr>
+                        <tr>
+                            <td class="h-8">Initial Herbal Treatment - 30 min</td>
                             <td>$50</td>
                         </tr>
                         <tr>
-                            <td>Subsequent Herbal Treatment - 20 min</td>
+                            <td class="h-8">Subsequent Herbal Treatment - 20 min</td>
                             <td>$30</td>
                         </tr>
                     </tbody>
-                </table>
-
-                <div class="mt-4">
-                    <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1/treatment/1"><strong>BOOK NOW</strong></a>
-                </div>
-            </div>            
+                </table>        
+            </div>
         </div>
         
-        <div>
-            <div style="text-align: center;margin: 30px 0px;">
+        <div class="my-12">
+            <div class="text-center mb-8">
                 <span class="italic text-4xl font-light">Frequently Asked Questions</span>
             </div>
 
@@ -162,9 +175,14 @@
             </div>
         </div>
     <div>
+
+
+    <div class="text-center my-8">
+        <a class="book-button" href="https://hopetcmclinic.janeapp.com/#/staff_member/1">Book An Appointment Online</a>
+    </div>
         </div>
         
-        <aside class="hidden">
+        <!-- <aside class="hidden">
             <div class="title">Make Your Appointment</div>
             <p>Get Started With Your Treatment</p>
             <p>Schedule A Time With</p>
@@ -172,12 +190,20 @@
             <form action="https://hopetcmclinic.janeapp.com/#/staff_member/1" method="get">
                 <button type="submit">BOOK NOW</button>
             </form>
-        </aside>
+        </aside> -->
     </main>
     
-    <footer class="flex justify-center text-center my-10 text-sm leading-5">
-        Copyright © 2024. HOPE TRADITIONAL CHINESE MEDICINE CLINIC<br/>
-        235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M 1G2 
+    <footer class="flex flex-col justify-center text-center py-8 text-sm leading-5 bg-slate-100">
+        <div>
+            <p><i aria-hidden="true" class="fas fa-map-marker-alt pr-1"></i>235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2</p>            
+            <p class="mt-1">
+                <i aria-hidden="true" class="fas fa-envelope pr-1"></i><a href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com<a>
+                <i aria-hidden="true" class="fas fa-phone-alt ml-2 pr-1"></i>(778) 251-9656
+            </p>
+        </div>
+        <p class="mt-2">
+        Copyright © 2023 - 2024. Acupuncture, Cupping, Moxibustion, Gua Sha & Hebal treatments at Hope Traditional Chinese Medicine Clinic.
+        </p>
     </footer>
 </body>
 </html>

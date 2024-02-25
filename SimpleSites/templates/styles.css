@@ -255,3 +255,21 @@ img.wrap-right {
     cursor: pointer;
     transition: background-color 0.3s;
 }
+
+.book-button {
+    display: inline-block;
+    padding: 11px 36px;
+    background-color: #ff8400;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 700;
+    transition: background-color 0.3s ease;
+}
+
+.book-button:hover {
+    background-color: #c76f10;
+}

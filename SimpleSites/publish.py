@@ -31,11 +31,12 @@ class Page:
         self.title = ''
 
 
-def publishPage(name, title):
+def publishPage(name, title, description):
     template = env.get_template('main.html')
     data = {        
         'name': name,
-        'title': title
+        'title': title,
+        'description': description
     }
     output = template.render(data)
 
@@ -47,16 +48,29 @@ def publishPage(name, title):
 
 
 pages = [
-    ['index', 'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster'],
-    ['therapists', 'Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic'],
-    ['treatments', 'Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic'],
-    ['blog', 'Blog - Acupuncture, Health Tips | Hope TCM Clinic'],
-    ['contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health']
+    [
+        'index',
+        'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster, ICBC',
+        "Welcome to Hope Traditional Chinese Medicine Clinic, nestled in the heart of New Westminster, where ancient healing meets modern wellness. Led by the seasoned acupuncturist Eva (RAc, Dr. of TCM), our clinic offers a diverse array of traditional Chinese medicine services including acupuncture, cupping, moxibustion, guasha, and herbal medicine."
+    ],
+    [
+        'therapists',
+        'Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic',
+        "Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice."
+    ],
+    [
+        'treatments', 
+        'Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic', 
+        "We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine."],
+    [
+        'blog', 'Blog - Acupuncture, Health Tips | Hope TCM Clinic', ""],
+    [
+        'contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', ""]
 ]
 
 for page in pages:
-    name, title = page
-    publishPage(name, title)
+    name, title, description = page
+    publishPage(name, title, description)
 
 
 # Generate sitemap

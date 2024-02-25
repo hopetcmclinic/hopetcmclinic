@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Hope Traditional Chinese Medicine Clinic is a wellness clinic providing acupuncture and herbs health care services in New Westminster.">
-    <meta name="keywords" content="Acupuncture,Traditional Chinese Herbs,Cupping,Gua Sha,Moxibustion,ICBC patients,中药,针灸,艾灸,刮痧,拔罐,New Westminster,Vancouer">
+    <meta name="description" content="{{description}}">
     <title>{{title}}</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -22,11 +21,13 @@
     <script src="script.js"></script>
 </head>
 <body class="flex flex-col text-slate-700" style="font-family: 'Open Sans', sans-serif;">
-    <header class="flex flex-col">
+    <header class="flex flex-col border-b border-red-500 mb-6">
         <nav class="flex justify-between items-center w-[92%] mx-auto py-3 max-w-6xl">
             <div class="flex">
                 <div>
-                    <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
+                    <a href="https://www.hopetcmclinic.ca/">
+                        <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
+                    </a>
                 </div>
                 <div class="flex flex-col justify-center items-center font-semibold">
                     <p>HOPE TRADITIONAL</p>
@@ -35,8 +36,8 @@
                 </div>
             </div>
             <div
-                class="nav-links duration-100 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex flex-col gap-8 md:flex-row md:pt-4">
+                class="nav-links duration-100 md:static absolute bg-slate-600 md:bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex flex-col gap-8 md:flex-row md:pt-4 text-white md:text-slate-700">
                     <li><a href="./index.html" {% if name == "index" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Home</a></li>
                     <li><a href="./therapists.html" {% if name == "therapists" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Therapists</a></li>
                     <li><a href="./treatments.html" {% if name == "treatments" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Treatments</a></li>
@@ -49,16 +50,15 @@
                 <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
             </div>
         </nav>
-        <div class="border-b border-red-500 mb-6"></div>
     </header>
 
-    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl">
+    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl min-h-[700px]">
         <div class="flex-grow p-5 w-full">
             {% set incMain = name + ".j2" %}
             {% include incMain %}
         </div>
         
-        <aside {% if name == "index" %}class="hidden"{% else %}class="floating-sidebar"{% endif %}>
+        <!-- <aside {% if name == "index" %}class="hidden"{% else %}class="floating-sidebar"{% endif %}>
             <div class="title">Make Your Appointment</div>
             <p>Get Started With Your Treatment</p>
             <p>Schedule A Time With</p>
@@ -66,12 +66,20 @@
             <form action="https://hopetcmclinic.janeapp.com/#/staff_member/1" method="get">
                 <button type="submit">BOOK NOW</button>
             </form>
-        </aside>
+        </aside> -->
     </main>
     
-    <footer class="flex justify-center text-center my-10 text-sm leading-5">
-        Copyright © 2024. HOPE TRADITIONAL CHINESE MEDICINE CLINIC<br/>
-        235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M 1G2 
+    <footer class="flex flex-col justify-center text-center py-8 text-sm leading-5 bg-slate-100">
+        <div>
+            <p><i aria-hidden="true" class="fas fa-map-marker-alt pr-1"></i>235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2</p>            
+            <p class="mt-1">
+                <i aria-hidden="true" class="fas fa-envelope pr-1"></i><a href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com<a>
+                <i aria-hidden="true" class="fas fa-phone-alt ml-2 pr-1"></i>(778) 251-9656
+            </p>
+        </div>
+        <p class="mt-2">
+        Copyright © 2023 - 2024. Acupuncture, Cupping, Moxibustion, Gua Sha & Hebal treatments at Hope Traditional Chinese Medicine Clinic.
+        </p>
     </footer>
 </body>
 </html>
