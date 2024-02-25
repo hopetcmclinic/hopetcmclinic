@@ -1,6 +1,26 @@
 from jinja2 import Environment, FileSystemLoader
 from lxml import etree
 from datetime import datetime
+import os
+import sys
+import urllib.request
+import subprocess
+
+def is_mac():
+    return sys.platform.startswith('darwin')
+
+# Make sure tailwindcss tool exists
+if not os.path.exists("tailwindcss"):
+    # If file doesn't exist, download it
+    print("Downloading tailwindcss ... ")
+    url = "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64" if is_mac() \
+        else "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64"    
+    urllib.request.urlretrieve(url, "tailwindcss")
+    os.chmod("tailwindcss", 0o755)
+
+# Compile and minify your CSS for production
+subprocess.run(['./tailwindcss -i ./templates/styles.css -o ../styles.css --minify'], shell=True)
+
 
 # Define the template directory and set up the environment
 file_loader = FileSystemLoader('templates')

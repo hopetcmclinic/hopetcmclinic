@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hope Traditional Chinese Medicine Clinic is a wellness clinic providing acupuncture and herbs health care services in New Westminster.">
     <meta name="keywords" content="Acupuncture,Traditional Chinese Herbs,Cupping,Gua Sha,Moxibustion,ICBC patients,中药,针灸,艾灸,刮痧,拔罐,New Westminster,Vancouer">
     <title>Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic</title>
     <link rel="stylesheet" href="styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGSXBXHVTX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -18,80 +21,65 @@
     </script>
     <script src="script.js"></script>
 </head>
-<body>
-    <div class="site-wrapper">
-        <header>
-            <div class="logo">
-                <div style="margin-right: 10px;">
-                    <img src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic" style="width: 100px;">
+<body class="flex flex-col text-slate-700" style="font-family: 'Open Sans', sans-serif;">
+    <header class="flex flex-col">
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-3 max-w-6xl">
+            <div class="flex">
+                <div>
+                    <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
                 </div>
-                <div class="logo-text">
+                <div class="flex flex-col justify-center items-center font-semibold">
                     <p>HOPE TRADITIONAL</p>
                     <p>CHINESE MEDICINE CLINIC</p>
-                    <p>向&nbsp;&nbsp;陽&nbsp;&nbsp;中&nbsp;&nbsp;醫&nbsp;&nbsp;診&nbsp;&nbsp;所</p>
+                    <p class="hidden md:block">向&nbsp;&nbsp;陽&nbsp;&nbsp;中&nbsp;&nbsp;醫&nbsp;&nbsp;診&nbsp;&nbsp;所</p>
                 </div>
             </div>
-            <div>
-                <div class="hamburger-menu">
-                    <a href="#" onclick="toggleMenu()">
-                        <svg width="30" height="30" viewBox="0 0 100 80" fill="#000">
-                            <rect width="100" height="15"></rect>
-                            <rect y="30" width="100" height="15"></rect>
-                            <rect y="60" width="100" height="15"></rect>
-                        </svg>
-                    </a>
-                </div>
-
-                <div class="nav-menu" id="navMenu">
-                    <ul>
-                        <li><a href="./index.html" >Home</a></li>
-                        <li><a href="./therapists.html"  class="current" >Therapists</a></li>
-                        <li><a href="./treatments.html" >Treatments</a></li>
-                        <li><a href="./blog.html" >Blog</a></li>
-                        <li><a href="./contact.html" >Contact</a></li>
-                        <li><a href="#"><strong>Book Appointment</strong></a></li>
-                    </ul>
-                </div>
-
-                <nav>
-                    <a href="./index.html" >Home</a>
-                    <a href="./therapists.html"  class="current" >Therapists</a>
-                    <a href="./treatments.html" >Treatments</a>
-                    <a href="./blog.html" >Blog</a>            
-                    <a href="./contact.html" >Contact</a>
-                    <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" target="_blank"><strong>Book Appointment</strong></a>
-                </nav>        
+            <div
+                class="nav-links duration-100 md:static absolute bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
+                <ul class="flex flex-col gap-8 md:flex-row md:pt-4">
+                    <li><a href="./index.html" class="hover:text-amber-500">Home</a></li>
+                    <li><a href="./therapists.html" class="text-amber-500">Therapists</a></li>
+                    <li><a href="./treatments.html" class="hover:text-amber-500">Treatments</a></li>
+                    <li><a href="./blog.html" class="hover:text-amber-500">Blog</a></li>
+                    <li><a href="./contact.html" class="hover:text-amber-500">Contact</a></li>
+                    <li><a href="https://hopetcmclinic.janeapp.com/#/staff_member/1"><strong>Book Appointment</strong></a></li>                    
+                </ul>
             </div>
-        </header>
+            <div class="flex items-center gap-6 md:hidden">                
+                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+            </div>
+        </nav>
+        <div class="border-b border-red-500 mb-6"></div>
+    </header>
 
-        <main>
-            <div class="main-content">
-                
-                
+    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl">
+        <div class="flex-grow p-5 w-full">
+            
+            
 
 
 
 <div>
-    <h3 style="color: #ad001f; margin-bottom: 50px;">(Eva) Fang Yuan - Registered Acupuncturist and Doctor of TCM</h3>
-        
-    <div class="text-block">
+    <h1 class="text-red-700 mb-12 font-bold">(Eva) Fang Yuan - Registered Acupuncturist and Doctor of TCM</h1>
+
+    <div>
         <img class="wrap-left" src="images/Eva.jpg" width="180" height="225"/>
         
         <p>
             Eva is a Doctor of Traditional Chinese Medicine currently registered with the CTCMA of British Columbia. She graduated from the renowned Tzu Chi International College of Traditional Chinese Medicine College in Vancouver.
-        </p>
+        </p><br>
 
         <p>
         Eva is interested in and is particularly good in digestive issues, emotional disturbances, and women’s health. Eva is also experienced with treating acute and chronic pain related to sports injuries and many others. She utilizes a mix of Acupuncture, FSN (Fu's Subcutaneous Needling), Traditional Chinese Herbal, Cupping, Auricular acupuncture, Moxibustion and Gua Sha (Scraping).
-        </p>
+        </p><br>
 
         <p>
         Eva advocates for the use of alternative medicines when they can reduce the use of pharmaceutical prescriptions, which sometimes have potentially undesirable side effects, and prevent unnecessary invasive surgeries. Eva is proud to offer clients a path to wellness in a natural way.
-        </p>
+        </p><br>
         
         <p>
         Being a devout believer in Taoism, Eva incorporates the Taoist philosophy of maintaining “The harmony between human and nature” into her practice. Eva loves to see her clients living a natural and balanced lifestyle.
-        </p>
+        </p><br>
         
         <p>
         When Eva is not at work, she enjoys spending time with family and friends and sharing delicious homemade treats with them.
@@ -99,28 +87,22 @@
     </div>
 </div>
 
-            </div>
-            
-            <aside class="floating-sidebar">
-                <div class="title">Make Your Appointment</div>
-                <p>Get Started With Your Treatment</p>
-                <p>Schedule A Time With</p>
-                <p>Dr. (Eva) Fang Yuan</p>
-                <!-- <div>
-                    <a class="book-button" href="https://hopetcmclinic.janeapp.com/#/staff_member/1" target="_blank">
-                        BOOK NOW
-                    </a>
-                </div> -->
-                <form action="https://hopetcmclinic.janeapp.com/#/staff_member/1" method="get" target="_blank">
-                    <button type="submit">BOOK NOW</button>
-                </form>
-            </aside>
-        </main>
+        </div>
         
-        <footer style="text-align: center;">
-            Copyright © 2024. HOPE TRADITIONAL CHINESE MEDICINE CLINIC<br/>
-            235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M 1G2 
-        </footer>
-    </div>
+        <aside class="floating-sidebar">
+            <div class="title">Make Your Appointment</div>
+            <p>Get Started With Your Treatment</p>
+            <p>Schedule A Time With</p>
+            <p>Dr. (Eva) Fang Yuan</p>
+            <form action="https://hopetcmclinic.janeapp.com/#/staff_member/1" method="get">
+                <button type="submit">BOOK NOW</button>
+            </form>
+        </aside>
+    </main>
+    
+    <footer class="flex justify-center text-center my-10 text-sm leading-5">
+        Copyright © 2024. HOPE TRADITIONAL CHINESE MEDICINE CLINIC<br/>
+        235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M 1G2 
+    </footer>
 </body>
 </html>
