@@ -22,7 +22,13 @@ class MyHandler(FileSystemEventHandler):
             subprocess.run(['python', self.filename_to_run], check=True)
         except subprocess.CalledProcessError as e:
             print(f"Error: {e}")
-            
+
+
+def run_webserver():
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
+    return subprocess.Popen(['python', '-m', 'http.server', '--directory', parent_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
 
 if __name__ == "__main__":
     directory_to_watch = os.path.dirname(os.path.realpath(__file__))
@@ -33,9 +39,13 @@ if __name__ == "__main__":
     observer.schedule(event_handler, directory_to_watch, recursive=True)
     observer.start()
 
+    http_server_process = run_webserver()
+
     try:
         while True:
             time.sleep(1)
     except KeyboardInterrupt:
         observer.stop()
+        http_server_process.terminate()
     observer.join()
+    http_server_process.join()

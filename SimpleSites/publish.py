@@ -31,12 +31,23 @@ class Page:
         self.title = ''
 
 
-def publishPage(name, title, description):
+class Article:
+    def __init__(self, name='', title='', publish_date='', image='', abstract='', page_title=''):
+        self.name = name
+        self.title = title
+        self.publish_date = publish_date
+        self.image = image
+        self.abstract = abstract
+        self.page_title = page_title
+
+
+def publishPage(name, title, description, articles):
     template = env.get_template('main.html')
     data = {        
         'name': name,
         'title': title,
-        'description': description
+        'description': description,
+        'articles': articles
     }
     output = template.render(data)
 
@@ -46,18 +57,18 @@ def publishPage(name, title, description):
         f.write(output)
 
 
-def publishBlog(name, title, description):
+def publishBlog(article: Article):
     template = env.get_template('main.html')
     data = {        
         'name': "article",
-        "article": name,
-        'title': title,
-        'description': description
+        "article": article,
+        'title': article.page_title,
+        'description': article.abstract
     }
     output = template.render(data)
 
     # Write the rendered HTML to a file
-    filename = f'../blogs/{name}.html'
+    filename = f'../blogs/{article.name}.html'
     with open(filename, 'w') as f:
         f.write(output)
 
@@ -83,22 +94,33 @@ pages = [
         'contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', ""]
 ]
 
+articles = [
+    Article(
+        name='acupuncture',
+        page_title='Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy | Hope TCM Clinic',
+        title="Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy",
+        publish_date='March 2, 2024',
+        image='acupuncture.jpeg',
+        abstract="Acupuncture, an ancient healing practice rooted in Traditional Chinese Medicine (TCM), has garnered widespread recognition and acclaim for its effectiveness in treating a myriad of health conditions. With a history spanning over 2,000 years, acupuncture remains a cornerstone of holistic healthcare, offering a safe, natural, and non-invasive approach to healing. In this article, we delve into the fascinating world of acupuncture, exploring its origins, principles, techniques, and potential benefits.."
+    ),
+    Article(
+        name='tcm',
+        page_title='Exploring the Essence of Traditional Chinese Medicine: An Introduction to Ancient Healing Wisdom | Hope TCM Clinic',
+        title="Exploring the Essence of Traditional Chinese Medicine: An Introduction to Ancient Healing Wisdom",
+        publish_date='March 2, 2024', 
+        image='tcm.jpg',
+        abstract="In the realm of holistic wellness and alternative therapies, Traditional Chinese Medicine (TCM) stands as a beacon of ancient wisdom, offering profound insights into the interconnectedness of mind, body, and spirit. With roots dating back thousands of years, TCM is a comprehensive system of healthcare that has evolved through centuries of observation, experimentation, and refinement."
+    ),    
+]
+
 # Generate root pages
 for page in pages:
     name, title, description = page
-    publishPage(name, title, description)
+    publishPage(name, title, description, articles)
 
 # Gnerate blog articles
-blogs = [
-    [
-        'acupuncture',
-        'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster, ICBC',
-        "Welcome to Hope Traditional Chinese Medicine Clinic, nestled in the heart of New Westminster, where ancient healing meets modern wellness. Led by the seasoned acupuncturist Eva (RAc, Dr. of TCM), our clinic offers a diverse array of traditional Chinese medicine services including acupuncture, cupping, moxibustion, guasha, and herbal medicine."
-    ]
-]
-for blog in blogs:
-    name, title, description = blog
-    publishBlog(name, title, description)
+for article in articles:
+    publishBlog(article)
 
 
 # Generate sitemap
@@ -128,7 +150,9 @@ urls = [
     "https://www.hopetcmclinic.ca/treatments.html",
     "https://www.hopetcmclinic.ca/faq.html",
     "https://www.hopetcmclinic.ca/blog.html",
-    "https://www.hopetcmclinic.ca/contact.html"
+    "https://www.hopetcmclinic.ca/contact.html",
+    "https://www.hopetcmclinic.ca/blogs/tcm.html",
+    "https://www.hopetcmclinic.ca/blogs/acupuncture.html",
 ]
 sitemap_content = generate_sitemap(urls)
 save_sitemap_to_file(sitemap_content, "../sitemap.xml")

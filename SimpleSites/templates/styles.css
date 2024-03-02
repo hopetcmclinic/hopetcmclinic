@@ -50,3 +50,9 @@ img.wrap-right {
 .book-button:hover {
     background-color: #c76f10;
 }
+
+.subtitle {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 10px 0;
+}
