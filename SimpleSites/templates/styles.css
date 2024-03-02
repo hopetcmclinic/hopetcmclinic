@@ -36,11 +36,11 @@ img.wrap-right {
 .book-button {
     display: inline-block;
     padding: 11px 36px;
-    background-color: #ff8400;
-    color: #fff;
+    border-radius: 30px;
+    background-color: #ffa135;
+    color: #000;
     text-decoration: none;
-    border: none;
-    border-radius: 5px;
+    border: none;    
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;

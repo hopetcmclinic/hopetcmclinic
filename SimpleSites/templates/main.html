@@ -23,7 +23,7 @@
 <body class="flex flex-col text-slate-700" style="font-family: 'Open Sans', sans-serif;">
     <header class="flex flex-col border-b border-red-500 mb-6">
         <nav class="flex justify-between items-center w-[92%] mx-auto py-3 max-w-6xl">
-            <div class="flex">
+            <div class="flex md:min-w-[341px]">
                 <div>
                     <a href="https://www.hopetcmclinic.ca/">
                         <img class="w-16 mr-2 md:w-24" src="./images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
@@ -37,11 +37,11 @@
             </div>
             <div
                 class="nav-links duration-100 md:static absolute bg-slate-600 md:bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex flex-col gap-8 md:flex-row md:pt-4 text-white md:text-slate-700">
+                <ul class="flex flex-col gap-8 md:gap-y-3 md:flex-row md:flex-wrap lg:pt-4 text-white md:text-slate-700">
                     <li><a href="./index.html" {% if name == "index" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Home</a></li>
                     <li><a href="./therapists.html" {% if name == "therapists" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Therapists</a></li>
                     <li><a href="./treatments.html" {% if name == "treatments" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Treatments</a></li>
-                    <li><a href="./blog.html" {% if name == "blog" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Blog</a></li>
+                    <li><a href="./blog.html" {% if name == "blog" or name == "article"%}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Blog</a></li>
                     <li><a href="./contact.html" {% if name == "contact" %}class="text-amber-500"{% else %}class="hover:text-amber-500"{% endif %}>Contact</a></li>
                     <li><a href="https://hopetcmclinic.janeapp.com/#/staff_member/1"><strong>Book Appointment</strong></a></li>                    
                 </ul>

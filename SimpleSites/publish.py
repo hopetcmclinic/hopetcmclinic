@@ -46,6 +46,21 @@ def publishPage(name, title, description):
         f.write(output)
 
 
+def publishBlog(name, title, description):
+    template = env.get_template('main.html')
+    data = {        
+        'name': "article",
+        "article": name,
+        'title': title,
+        'description': description
+    }
+    output = template.render(data)
+
+    # Write the rendered HTML to a file
+    filename = f'../blogs/{name}.html'
+    with open(filename, 'w') as f:
+        f.write(output)
+
 
 pages = [
     [
@@ -68,9 +83,22 @@ pages = [
         'contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', ""]
 ]
 
+# Generate root pages
 for page in pages:
     name, title, description = page
     publishPage(name, title, description)
+
+# Gnerate blog articles
+blogs = [
+    [
+        'acupuncture',
+        'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster, ICBC',
+        "Welcome to Hope Traditional Chinese Medicine Clinic, nestled in the heart of New Westminster, where ancient healing meets modern wellness. Led by the seasoned acupuncturist Eva (RAc, Dr. of TCM), our clinic offers a diverse array of traditional Chinese medicine services including acupuncture, cupping, moxibustion, guasha, and herbal medicine."
+    ]
+]
+for blog in blogs:
+    name, title, description = blog
+    publishBlog(name, title, description)
 
 
 # Generate sitemap
