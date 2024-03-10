@@ -96,6 +96,22 @@ pages = [
 
 articles = [
     Article(
+        name='cupping',
+        page_title='Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine | Hope TCM Clinic',
+        title="Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine",
+        publish_date='March 10, 2024',
+        image='cupping.jpg',
+        abstract="In the intricate tapestry of Traditional Chinese Medicine (TCM), cupping stands as a practice steeped in centuries of history and revered for its profound therapeutic benefits. Originating in ancient China and transcending cultural boundaries, cupping has emerged as a timeless healing modality that continues to captivate and intrigue both practitioners and enthusiasts worldwide..."
+    ),
+    Article(
+        name='moxibustion',
+        page_title='Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine | Hope TCM Clinic',
+        title="Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine",
+        publish_date='March 10, 2024',
+        image='moxibustion.jpg',
+        abstract="In the realm of ancient healing practices, Traditional Chinese Medicine (TCM) stands as a testament to the enduring wisdom of millennia-old traditions. Among its many modalities, moxibustion holds a significant place, offering a fascinating insight into the intricate interplay between mind, body, and energy flow..."
+    ),
+    Article(
         name='acupuncture',
         page_title='Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy | Hope TCM Clinic',
         title="Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy",
@@ -110,7 +126,7 @@ articles = [
         publish_date='March 2, 2024', 
         image='tcm.jpg',
         abstract="In the realm of holistic wellness and alternative therapies, Traditional Chinese Medicine (TCM) stands as a beacon of ancient wisdom, offering profound insights into the interconnectedness of mind, body, and spirit. With roots dating back thousands of years, TCM is a comprehensive system of healthcare that has evolved through centuries of observation, experimentation, and refinement."
-    ),    
+    ),
 ]
 
 # Generate root pages
@@ -153,6 +169,8 @@ urls = [
     "https://www.hopetcmclinic.ca/contact.html",
     "https://www.hopetcmclinic.ca/blogs/tcm.html",
     "https://www.hopetcmclinic.ca/blogs/acupuncture.html",
+    "https://www.hopetcmclinic.ca/blogs/cupping.html",
+    "https://www.hopetcmclinic.ca/blogs/moxibustion.html",
 ]
 sitemap_content = generate_sitemap(urls)
 save_sitemap_to_file(sitemap_content, "../sitemap.xml")
