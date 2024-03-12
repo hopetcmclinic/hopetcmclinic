@@ -165,7 +165,6 @@ urls = [
     "https://www.hopetcmclinic.ca/therapists.html",
     "https://www.hopetcmclinic.ca/index.html",
     "https://www.hopetcmclinic.ca/treatments.html",
-    "https://www.hopetcmclinic.ca/faq.html",
     "https://www.hopetcmclinic.ca/blog.html",
     "https://www.hopetcmclinic.ca/contact.html",
     "https://www.hopetcmclinic.ca/blogs/tcm.html",
