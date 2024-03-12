@@ -162,6 +162,7 @@ def save_sitemap_to_file(sitemap_content, file_path):
 
 urls = [
     "https://www.hopetcmclinic.ca/",
+    "https://www.hopetcmclinic.ca/therapists.html",
     "https://www.hopetcmclinic.ca/index.html",
     "https://www.hopetcmclinic.ca/treatments.html",
     "https://www.hopetcmclinic.ca/faq.html",
