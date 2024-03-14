@@ -5,6 +5,11 @@ import subprocess
 from watchdog.observers import Observer
 from watchdog.events import FileSystemEventHandler
 
+def is_mac():
+    return sys.platform.startswith('darwin')
+python = 'python3' if is_mac() else 'python'
+
+
 class MyHandler(FileSystemEventHandler):
     def __init__(self, filename_to_run):
         self.filename_to_run = filename_to_run
@@ -19,7 +24,7 @@ class MyHandler(FileSystemEventHandler):
     def run_python_file(self):
         print(f"Running {self.filename_to_run}")
         try:
-            subprocess.run(['python', self.filename_to_run], check=True)
+            subprocess.run([python, self.filename_to_run], check=True)
         except subprocess.CalledProcessError as e:
             print(f"Error: {e}")
 
@@ -27,7 +32,7 @@ class MyHandler(FileSystemEventHandler):
 def run_webserver():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
-    return subprocess.Popen(['python', '-m', 'http.server', '--directory', parent_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return subprocess.Popen([python, '-m', 'http.server', '--directory', parent_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 if __name__ == "__main__":

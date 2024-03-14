@@ -13,7 +13,7 @@ def is_mac():
 if not os.path.exists("tailwindcss"):
     # If file doesn't exist, download it
     print("Downloading tailwindcss ... ")
-    url = "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-arm64" if is_mac() \
+    url = "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-x64" if is_mac() \
         else "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64"    
     urllib.request.urlretrieve(url, "tailwindcss")
     os.chmod("tailwindcss", 0o755)
@@ -76,13 +76,13 @@ def publishBlog(article: Article):
 pages = [
     [
         'index',
-        'Hope TCM Clinic - Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster, ICBC',
-        "Welcome to Hope Traditional Chinese Medicine Clinic, nestled in the heart of New Westminster, where ancient healing meets modern wellness. Led by the seasoned acupuncturist Eva (RAc, Dr. of TCM), our clinic offers a diverse array of traditional Chinese medicine services including acupuncture, cupping, moxibustion, guasha, and herbal medicine."
+        'Registered Acupuncture and TCM in New Westminster | ICBC',
+        "Seasoned registered acupuncturists offer a diverse array of TCM services including acupuncture, cupping, moxibustion, guasha, and herbal medicine in New West."
     ],
     [
         'therapists',
         'Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic',
-        "Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice."
+        "Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice."
     ],
     [
         'treatments', 
