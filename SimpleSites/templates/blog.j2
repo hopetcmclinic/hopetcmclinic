@@ -3,14 +3,14 @@
     {% for article in articles %}
         <div class="border border-slate-300 p-5">
             <h2 class="italic text-2xl font-medium">
-                <a href="blogs/{{ article.name }}.html">{{ article.title }}</a>
+                <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">{{ article.title }}</a>
             </h2>
             <div class="text-sm text-gray-600 mt-2">
                 {{ article.publish_date }}
             </div>
             <div class="my-6">
                 <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">
-                    <img src="/images/blogs/{{ article.image }}" style="width:500px; height:auto;" >
+                    <img src="/images/blogs/{{ article.image }}" style="width:500px; height:auto;" alt="{{ article.name }}" >
                 </a>
             </div>
             <div>

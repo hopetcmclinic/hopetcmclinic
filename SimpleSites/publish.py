@@ -89,9 +89,14 @@ pages = [
         'Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic', 
         "We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine."],
     [
-        'blog', 'Blog - Acupuncture, Health Tips | Hope TCM Clinic', ""],
+        'blog', 
+        'Blog - Acupuncture, Health Tips | Hope TCM Clinic',
+        "Articles about holistic healing of Traditional Chinese Medcine and Wellness mangement"],
     [
-        'contact', 'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', ""]
+        'contact', 
+        'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', 
+        "Book an appointment with Hope TCM Clinic and take care of your wellness. 235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2"
+    ]
 ]
 
 articles = [
