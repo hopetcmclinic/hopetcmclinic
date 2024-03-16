@@ -1,3 +1,4 @@
+import json
 from jinja2 import Environment, FileSystemLoader
 from lxml import etree
 from datetime import datetime
@@ -27,8 +28,10 @@ file_loader = FileSystemLoader('templates')
 env = Environment(loader=file_loader)
 
 class Page:
-    def __init__(self):
-        self.title = ''
+    def __init__(self, name='', title='', description=''):
+        self.name = name
+        self.title = title
+        self.description = description
 
 
 class Article:
@@ -41,12 +44,14 @@ class Article:
         self.page_title = page_title
 
 
-def publishPage(name, title, description, articles):
+def publishPage(page: Page, articles):
     template = env.get_template('main.html')
+
+    name = page.name
     data = {        
-        'name': name,
-        'title': title,
-        'description': description,
+        'name': page.name,
+        'title': page.title,
+        'description': page.description,
         'articles': articles
     }
     output = template.render(data)
@@ -57,7 +62,7 @@ def publishPage(name, title, description, articles):
         f.write(output)
 
 
-def publishBlog(article: Article):
+def publishBlog(article):
     template = env.get_template('main.html')
     data = {        
         'name': "article",
@@ -73,71 +78,15 @@ def publishBlog(article: Article):
         f.write(output)
 
 
-pages = [
-    [
-        'index',
-        'Registered Acupuncture and TCM in New Westminster | ICBC',
-        "Seasoned registered acupuncturists offer a diverse array of TCM services including acupuncture, cupping, moxibustion, guasha, and herbal medicine in New West."
-    ],
-    [
-        'therapists',
-        'Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic',
-        "Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice."
-    ],
-    [
-        'treatments', 
-        'Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic', 
-        "We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine."],
-    [
-        'blog', 
-        'Blog - Acupuncture, Health Tips | Hope TCM Clinic',
-        "Articles about holistic healing of Traditional Chinese Medcine and Wellness mangement"],
-    [
-        'contact', 
-        'Contact Hope TCM Clinic in New Westminster - Pain Relief & Health', 
-        "Book an appointment with Hope TCM Clinic and take care of your wellness. 235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2"
-    ]
-]
+with open('./data/pages.json', 'r') as f:
+    pages = [Page(**p) for p in json.load(f)]
 
-articles = [
-    Article(
-        name='cupping',
-        page_title='Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine | Hope TCM Clinic',
-        title="Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine",
-        publish_date='March 10, 2024',
-        image='cupping.jpg',
-        abstract="In the intricate tapestry of Traditional Chinese Medicine (TCM), cupping stands as a practice steeped in centuries of history and revered for its profound therapeutic benefits. Originating in ancient China and transcending cultural boundaries, cupping has emerged as a timeless healing modality that continues to captivate and intrigue both practitioners and enthusiasts worldwide..."
-    ),
-    Article(
-        name='moxibustion',
-        page_title='Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine | Hope TCM Clinic',
-        title="Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine",
-        publish_date='March 10, 2024',
-        image='moxibustion.jpg',
-        abstract="In the realm of ancient healing practices, Traditional Chinese Medicine (TCM) stands as a testament to the enduring wisdom of millennia-old traditions. Among its many modalities, moxibustion holds a significant place, offering a fascinating insight into the intricate interplay between mind, body, and energy flow..."
-    ),
-    Article(
-        name='acupuncture',
-        page_title='Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy | Hope TCM Clinic',
-        title="Exploring the Healing Art of Acupuncture: A Comprehensive Guide to Traditional Therapy",
-        publish_date='March 2, 2024',
-        image='acupuncture.jpeg',
-        abstract="Acupuncture, an ancient healing practice rooted in Traditional Chinese Medicine (TCM), has garnered widespread recognition and acclaim for its effectiveness in treating a myriad of health conditions. With a history spanning over 2,000 years, acupuncture remains a cornerstone of holistic healthcare, offering a safe, natural, and non-invasive approach to healing. In this article, we delve into the fascinating world of acupuncture, exploring its origins, principles, techniques, and potential benefits.."
-    ),
-    Article(
-        name='tcm',
-        page_title='Exploring the Essence of Traditional Chinese Medicine: An Introduction to Ancient Healing Wisdom | Hope TCM Clinic',
-        title="Exploring the Essence of Traditional Chinese Medicine: An Introduction to Ancient Healing Wisdom",
-        publish_date='March 2, 2024', 
-        image='tcm.jpg',
-        abstract="In the realm of holistic wellness and alternative therapies, Traditional Chinese Medicine (TCM) stands as a beacon of ancient wisdom, offering profound insights into the interconnectedness of mind, body, and spirit. With roots dating back thousands of years, TCM is a comprehensive system of healthcare that has evolved through centuries of observation, experimentation, and refinement."
-    ),
-]
+with open('./data/articles.json', 'r') as f:
+    articles = [Article(**a) for a in json.load(f)]
 
 # Generate root pages
-for page in pages:
-    name, title, description = page
-    publishPage(name, title, description, articles)
+for page in pages:    
+    publishPage(page, articles)
 
 # Gnerate blog articles
 for article in articles:
