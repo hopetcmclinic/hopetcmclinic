@@ -54,8 +54,8 @@
 
     <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-6xl min-h-[700px]">
         <div class="flex-grow p-5 w-full">
-            {% set incMain = name + ".j2" %}
-            {% include incMain %}
+            {% set incMain = "pages/" + name + ".j2" %}
+            {% include content_template %}
         </div>
     </main>
     

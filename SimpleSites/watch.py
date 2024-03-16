@@ -17,12 +17,14 @@ class MyHandler(FileSystemEventHandler):
     def on_any_event(self, event):
         if event.is_directory:
             return
+        if event.src_path.endswith('sitemap.json'):
+            return
+        
         print(f'File {event.src_path} has been {event.event_type}')
         if event.event_type in ['created', 'modified', 'moved']:
             self.run_python_file()
 
-    def run_python_file(self):
-        print(f"Running {self.filename_to_run}")
+    def run_python_file(self):        
         try:
             subprocess.run([python, self.filename_to_run], check=True)
         except subprocess.CalledProcessError as e:

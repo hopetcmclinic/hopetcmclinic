@@ -6,26 +6,23 @@ import os
 import sys
 import urllib.request
 import subprocess
-
-def is_mac():
-    return sys.platform.startswith('darwin')
-
-# Make sure tailwindcss tool exists
-if not os.path.exists("tailwindcss"):
-    # If file doesn't exist, download it
-    print("Downloading tailwindcss ... ")
-    url = "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-x64" if is_mac() \
-        else "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64"    
-    urllib.request.urlretrieve(url, "tailwindcss")
-    os.chmod("tailwindcss", 0o755)
-
-# Compile and minify your CSS for production
-subprocess.run(['./tailwindcss -i ./templates/styles.css -o ../styles.css --minify'], shell=True)
+import hashlib
 
 
-# Define the template directory and set up the environment
-file_loader = FileSystemLoader('templates')
-env = Environment(loader=file_loader)
+def run_tailwind():
+    # Make sure tailwindcss tool exists
+    if not os.path.exists("tailwindcss"):
+        # If file doesn't exist, download it
+        print("Downloading tailwindcss ... ")
+        is_mac = sys.platform.startswith('darwin')
+        url = "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-macos-x64" if is_mac \
+            else "https://github.com/tailwindlabs/tailwindcss/releases/latest/download/tailwindcss-linux-x64"    
+        urllib.request.urlretrieve(url, "tailwindcss")
+        os.chmod("tailwindcss", 0o755)
+
+    # Compile and minify your CSS for production
+    subprocess.run(['./tailwindcss -i ./templates/styles.css -o ../styles.css --minify'], shell=True)
+
 
 class Page:
     def __init__(self, name='', title='', description=''):
@@ -44,88 +41,114 @@ class Article:
         self.page_title = page_title
 
 
-def publishPage(page: Page, articles):
-    template = env.get_template('main.html')
-
-    name = page.name
-    data = {        
-        'name': page.name,
-        'title': page.title,
-        'description': page.description,
-        'articles': articles
-    }
-    output = template.render(data)
-
-    # Write the rendered HTML to a file
-    filename = f'../{name}.html'
-    with open(filename, 'w') as f:
-        f.write(output)
+class SitemapEntry:
+    def __init__(self, filename='', hash='', lastmod=''):
+        self.filename = filename
+        self.hash = hash
+        self.lastmod = lastmod
+        self.touched = False
+    
+    @staticmethod
+    def serialize(entry):
+        return {'filename': entry.filename, 'hash': entry.hash, 'lastmod': entry.lastmod}
 
 
-def publishBlog(article):
-    template = env.get_template('main.html')
-    data = {        
-        'name': "article",
-        "article": article,
-        'title': article.page_title,
-        'description': article.abstract
-    }
-    output = template.render(data)
+class SimpleSiteCMS():
+    SITEMAP_JSON = './sitemap.json'
 
-    # Write the rendered HTML to a file
-    filename = f'../blogs/{article.name}.html'
-    with open(filename, 'w') as f:
-        f.write(output)
+    def __init__(self) -> None:        
+        file_loader = FileSystemLoader('templates')
+        self.env = Environment(loader=file_loader)
+        self.sitemap = {}
+        self.root_url = 'https://www.hopetcmclinic.ca'
+        self.output_path = '../'
 
+    def publish(self) -> None:
+        self.sitemap = {}
+        if os.path.isfile(self.SITEMAP_JSON):
+            with open(self.SITEMAP_JSON, 'r') as f:
+                self.sitemap = {item.filename: item for item in [SitemapEntry(**a) for a in json.load(f)]}
 
-with open('./data/pages.json', 'r') as f:
-    pages = [Page(**p) for p in json.load(f)]
+        with open('./data/pages.json', 'r') as f:
+            pages = [Page(**p) for p in json.load(f)]
 
-with open('./data/articles.json', 'r') as f:
-    articles = [Article(**a) for a in json.load(f)]
+        with open('./data/articles.json', 'r') as f:
+            articles = [Article(**a) for a in json.load(f)]
 
-# Generate root pages
-for page in pages:    
-    publishPage(page, articles)
+        for page in pages:
+            self.publish_page(page, articles)
 
-# Gnerate blog articles
-for article in articles:
-    publishBlog(article)
+        for article in articles:
+            self.publish_article(article)
 
+        self.generate_sitemap("../sitemap.xml")
 
-# Generate sitemap
-def generate_sitemap(urls):
-    # Define the root element
-    urlset = etree.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
-
-    # Iterate over URLs to add them to the sitemap
-    for url in urls:
-        url_element = etree.SubElement(urlset, "url")
-        loc = etree.SubElement(url_element, "loc")
-        loc.text = url
-        lastmod = etree.SubElement(url_element, "lastmod")
-        lastmod.text = datetime.now().strftime('%Y-%m-%d')
-
-    # Return the formatted XML string
-    return etree.tostring(urlset, pretty_print=True, xml_declaration=True, encoding="UTF-8")
+    def publish_page(self, page: Page, articles: list[Article]) -> None:
+        template = self.env.get_template('main.html')
+        data = {        
+            'name': page.name,
+            'title': page.title,
+            'description': page.description,
+            'content_template': f"pages/{page.name}.html",
+            'articles': articles
+        }
+        html = template.render(data)
+        self.write_html(html, f'{page.name}.html')
 
 
-def save_sitemap_to_file(sitemap_content, file_path):
-    with open(file_path, "wb") as file:
-        file.write(sitemap_content)
+    def publish_article(self, article: Article):
+        template = self.env.get_template('main.html')
+        data = {        
+            'name': "article",
+            'content_template': f"article.html",
+            "article": article,
+            'title': article.page_title,
+            'description': article.abstract
+        }
+        html = template.render(data)
+        self.write_html(html, f'blogs/{article.name}.html')
 
-urls = [
-    "https://www.hopetcmclinic.ca/",
-    "https://www.hopetcmclinic.ca/therapists.html",
-    "https://www.hopetcmclinic.ca/index.html",
-    "https://www.hopetcmclinic.ca/treatments.html",
-    "https://www.hopetcmclinic.ca/blog.html",
-    "https://www.hopetcmclinic.ca/contact.html",
-    "https://www.hopetcmclinic.ca/blogs/tcm.html",
-    "https://www.hopetcmclinic.ca/blogs/acupuncture.html",
-    "https://www.hopetcmclinic.ca/blogs/cupping.html",
-    "https://www.hopetcmclinic.ca/blogs/moxibustion.html",
-]
-sitemap_content = generate_sitemap(urls)
-save_sitemap_to_file(sitemap_content, "../sitemap.xml")
 
+    def write_html(self, html: str, filename: str) -> None:
+        with open(f'{self.output_path}{filename}', 'w') as f:
+            f.write(html)
+        
+        # Generate the SHA-256 hash
+        input_bytes = html.encode('utf-8')
+        hash = hashlib.sha256(input_bytes).hexdigest()
+
+        if filename not in self.sitemap:
+            self.sitemap[filename] = SitemapEntry(filename)
+        sitemap_entry = self.sitemap[filename]
+        if hash != sitemap_entry.hash:
+            sitemap_entry.hash = hashlib.sha256(input_bytes).hexdigest()
+            sitemap_entry.lastmod = datetime.now().strftime('%Y-%m-%d')
+        sitemap_entry.touched = True
+
+
+    # Generate sitemap
+    def generate_sitemap(self, output_filename: str):        
+        # Define the root element
+        urlset = etree.Element("urlset", xmlns="http://www.sitemaps.org/schemas/sitemap/0.9")
+
+        tourched_sitemap_entries = [entry for entry in self.sitemap.values() if entry.touched]
+        for entry in tourched_sitemap_entries:            
+            url_element = etree.SubElement(urlset, "url")
+            loc = etree.SubElement(url_element, "loc")
+            loc.text = f'{self.root_url}/{entry.filename}'
+            lastmod = etree.SubElement(url_element, "lastmod")
+            lastmod.text = entry.lastmod        
+        sitemap_content = etree.tostring(urlset, pretty_print=True, xml_declaration=True, encoding="UTF-8")
+    
+        with open(output_filename, "wb") as file:
+            file.write(sitemap_content)
+
+        with open(self.SITEMAP_JSON, 'w') as file:
+            json.dump(tourched_sitemap_entries, file, default=SitemapEntry.serialize)
+
+
+if __name__ == "__main__":
+    run_tailwind()
+
+    cms = SimpleSiteCMS()
+    cms.publish()
