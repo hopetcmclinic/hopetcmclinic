@@ -1,0 +1,3 @@
+watchdog
+jinja2
+lxml
