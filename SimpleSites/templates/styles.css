@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+a:link {
+    text-decoration: underline;
+}
+
+.nav-links a:link {
+    text-decoration: none;
+}
+
 img.wrap-left {
     float: left;
     margin-right: 10px;
@@ -44,11 +52,13 @@ img.wrap-right {
     cursor: pointer;
     font-size: 15px;
     font-weight: 700;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease;    
 }
-
 .book-button:hover {
     background-color: #c76f10;
+}
+.book-button:link {
+    text-decoration: none;
 }
 
 .subtitle {
