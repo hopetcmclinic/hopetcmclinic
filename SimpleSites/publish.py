@@ -77,19 +77,21 @@ class SimpleSiteCMS():
 
         for page in pages:
             self.publish_page(page, articles)
+            self.publish_cn_page(page, articles)
 
         for article in articles:
             self.publish_article(article)
+            self.publish_cn_article(article)
 
         self.generate_sitemap("../sitemap.xml")
 
     def publish_page(self, page: Page, articles: list[Article]) -> None:
-        template = self.env.get_template('main.html')
+        template = self.env.get_template('en/main.html')
         data = {        
             'name': page.name,
             'title': page.title,
             'description': page.description,
-            'content_template': f"pages/{page.name}.html",
+            'content_template': f"en/pages/{page.name}.html",
             'articles': articles
         }
         html = template.render(data)
@@ -97,16 +99,42 @@ class SimpleSiteCMS():
 
 
     def publish_article(self, article: Article):
-        template = self.env.get_template('main.html')
+        template = self.env.get_template('en/main.html')
         data = {        
             'name': "article",
-            'content_template': f"article.html",
+            'content_template': f"en/article.html",
             "article": article,
             'title': article.page_title,
             'description': article.abstract
         }
         html = template.render(data)
         self.write_html(html, f'blogs/{article.name}.html')
+
+
+    def publish_cn_page(self, page: Page, articles: list[Article]) -> None:
+        template = self.env.get_template('cn/main.html')
+        data = {        
+            'name': page.name,
+            'title': page.title,
+            'description': page.description,
+            'content_template': f"cn/pages/{page.name}.html",
+            'articles': articles
+        }
+        html = template.render(data)
+        self.write_html(html, f'cn/{page.name}.html')
+
+
+    def publish_cn_article(self, article: Article):
+        template = self.env.get_template('en/main.html')
+        data = {        
+            'name': "article",
+            'content_template': f"en/article.html",
+            "article": article,
+            'title': article.page_title,
+            'description': article.abstract
+        }
+        html = template.render(data)
+        self.write_html(html, f'cn/blogs/{article.name}.html')
 
 
     def write_html(self, html: str, filename: str) -> None:
