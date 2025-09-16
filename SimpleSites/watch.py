@@ -20,7 +20,7 @@ class MyHandler(FileSystemEventHandler):
         if event.src_path.endswith('sitemap.json'):
             return
         
-        print(f'File {event.src_path} has been {event.event_type}')
+        # print(f'File {event.src_path} has been {event.event_type}')
         if event.event_type in ['created', 'modified', 'moved']:
             self.run_python_file()
 

@@ -85,7 +85,7 @@ class SimpleSiteCMS():
 
         self.generate_sitemap("../sitemap.xml")
 
-    def publish_page(self, page: Page, articles: list[Article]) -> None:
+    def publish_page(self, page: Page, articles: list[Article]) -> None:        
         template = self.env.get_template('en/main.html')
         data = {        
             'name': page.name,
