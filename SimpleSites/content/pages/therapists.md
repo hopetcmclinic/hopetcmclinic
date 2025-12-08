@@ -1,3 +1,8 @@
+---
+title: Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic
+description: Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
+template: page
+---
 
 <div>
     <h1 class="text-red-700 mb-12 font-bold">(Eva) Fang Yuan - Registered Acupuncturist, Doctor of TCM</h1>

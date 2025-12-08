@@ -1,6 +1,21 @@
+---
+abstract: Fu's Subcutaneous Needling (FSN) is a contemporary acupuncture technique
+  that has been gaining recognition for its unique approach to treating various health
+  conditions. Invented by Dr. FU Zhonghua, a Chinese doctor, in 1966. FSN diverges
+  from traditional acupuncture by targeting the subcutaneous layer of the skin. This
+  article delves into the intricacies of FSN, shedding light on its safety, efficacy,
+  and potential applications
+date: March 16, 2024
+image: fsn.jpeg
+page_title: Exploring the Therapeutic Potential of Fu's Subcutaneous Needling (FSN)
+  | Hope TCM Clinic
+template: article
+title: Exploring the Therapeutic Potential of Fu's Subcutaneous Needling (FSN)
+---
 
 
-<img src="/images/blogs/{{ article.image }}" style="width:100%; height:auto;" >
+
+<img src="/images/blogs/fsn.jpeg" style="width:100%; height:auto;" >
 <br>
 
 <p>

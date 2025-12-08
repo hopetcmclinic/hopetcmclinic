@@ -1,5 +1,20 @@
+---
+abstract: In the realm of holistic wellness and alternative therapies, Traditional
+  Chinese Medicine (TCM) stands as a beacon of ancient wisdom, offering profound insights
+  into the interconnectedness of mind, body, and spirit. With roots dating back thousands
+  of years, TCM is a comprehensive system of healthcare that has evolved through centuries
+  of observation, experimentation, and refinement.
+date: March 2, 2024
+image: traditional_chinese_medicine.jpg
+page_title: 'Exploring the Essence of Traditional Chinese Medicine: An Introduction
+  to Ancient Healing Wisdom | Hope TCM Clinic'
+template: article
+title: 'Exploring the Essence of Traditional Chinese Medicine: An Introduction to
+  Ancient Healing Wisdom'
+---
 
-<img src="/images/blogs/{{ article.image }}" style="width:100%; height:auto;" >
+
+<img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" >
 <br>
 
 <p>

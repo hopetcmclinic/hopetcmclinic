@@ -45,6 +45,11 @@ if __name__ == "__main__":
     event_handler = MyHandler(filename_to_run)
     observer = Observer()
     observer.schedule(event_handler, directory_to_watch, recursive=True)
+    # Check if content dir exists and watch it specifically if it's outside (it's inside, but valid confirmation)
+    content_dir = os.path.join(directory_to_watch, "content")
+    if os.path.exists(content_dir):
+        print(f"Watching content directory: {content_dir}")
+    
     observer.start()
 
     http_server_process = run_webserver()

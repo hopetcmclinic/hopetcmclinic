@@ -1,5 +1,18 @@
+---
+abstract: In the realm of ancient healing practices, Traditional Chinese Medicine
+  (TCM) stands as a testament to the enduring wisdom of millennia-old traditions.
+  Among its many modalities, moxibustion holds a significant place, offering a fascinating
+  insight into the intricate interplay between mind, body, and energy flow
+date: March 10, 2024
+image: moxibustion.jpg
+page_title: Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine
+  | Hope TCM Clinic
+template: article
+title: Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine
+---
 
-<img src="/images/blogs/{{ article.image }}" style="width:100%; height:auto;" >
+
+<img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" >
 <br>
 
 <p>

@@ -1,3 +1,5 @@
 watchdog
 jinja2
 lxml
+python-frontmatter
+markdown

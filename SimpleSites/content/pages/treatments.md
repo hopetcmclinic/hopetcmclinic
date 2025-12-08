@@ -1,3 +1,9 @@
+---
+title: Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic
+description: We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine.
+template: page
+---
+
 <div>
     <p>
         Acupuncture is a holistic healing practice that aims to restore balance and promote overall well-being. Each treatment is uniquely tailored to meet your specific needs, starting with a comprehensive diagnosis and continuing with a variety of effective techniques designed to address your concerns.

@@ -1,3 +1,9 @@
+---
+title: Contact Hope TCM Clinic in New Westminster - Pain Relief & Health
+description: Book an appointment with Hope TCM Clinic and take care of your wellness. 235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2
+template: page
+---
+
 <div class="w-full">
     <div class="flex flex-col gap-8 md:flex-row md:justify-between">
         <div>

@@ -1,5 +1,19 @@
+---
+abstract: In the intricate tapestry of Traditional Chinese Medicine (TCM), cupping
+  stands as a practice steeped in centuries of history and revered for its profound
+  therapeutic benefits. Originating in ancient China and transcending cultural boundaries,
+  cupping has emerged as a timeless healing modality that continues to captivate and
+  intrigue both practitioners and enthusiasts worldwide
+date: March 10, 2024
+image: cupping.jpg
+page_title: Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine
+  | Hope TCM Clinic
+template: article
+title: Exploring the Timeless Therapy of Cupping in Traditional Chinese Medicine
+---
 
-<img src="/images/blogs/{{ article.image }}" style="width:100%; height:auto;" >
+
+<img src="/images/blogs/cupping.jpg" style="width:100%; height:auto;" >
 <br>
 
 <p>
