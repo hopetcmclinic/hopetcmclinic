@@ -166,7 +166,7 @@ template: page
     </div>
 
     <div class="text-center pt-8">
-        <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5" href="https://hopetcmclinic.janeapp.com/#/staff_member/1">
+        <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline" href="https://hopetcmclinic.janeapp.com/#/staff_member/1">
             Book Your Session
         </a>
     </div>
