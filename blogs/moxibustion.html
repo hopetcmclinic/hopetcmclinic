@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,51 +15,75 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGSXBXHVTX"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
         gtag('config', 'G-VGSXBXHVTX');
     </script>
     <script src="script.js"></script>
 </head>
-<body class="flex flex-col text-slate-700" style="font-family: 'Open Sans', sans-serif;">
-    <header class="flex flex-col border-b border-red-500 mb-6">
-        <nav class="flex justify-between items-center w-[92%] mx-auto py-3 max-w-5xl">
-            <div class="flex md:min-w-[341px]">
-                <div>
-                    <a href="https://www.hopetcmclinic.ca/">
-                        <img class="w-16 mr-2 md:w-24" src="/images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
-                    </a>
-                </div>
-                <div class="flex flex-col justify-center items-center font-semibold">
-                    <p>HOPE TRADITIONAL</p>
-                    <p>CHINESE MEDICINE CLINIC</p>
-                    <p class="hidden md:block">向&nbsp;&nbsp;陽&nbsp;&nbsp;中&nbsp;&nbsp;醫&nbsp;&nbsp;診&nbsp;&nbsp;所</p>
+
+<body class="flex flex-col text-slate-800 bg-stone-50" style="font-family: 'Lato', sans-serif;">
+    <header
+        class="flex flex-col border-b border-primary/20 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm transition-all duration-300">
+        <nav class="flex justify-between items-center w-[92%] mx-auto py-4 max-w-6xl">
+            <div class="flex items-center gap-4">
+                <a href="https://www.hopetcmclinic.ca/" class="shrink-0 hover:opacity-90 transition-opacity">
+                    <img class="w-16 md:w-20" src="/images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
+                </a>
+                <div class="flex flex-col justify-center font-serif text-primary tracking-wide">
+                    <p class="text-lg md:text-2xl font-bold leading-tight uppercase">Hope Traditional</p>
+                    <p class="text-sm md:text-base font-semibold uppercase tracking-wider">Chinese Medicine Clinic</p>
+                    <p class="hidden md:block text-sm text-stone-500 font-sans mt-0.5">
+                        向&nbsp;&nbsp;陽&nbsp;&nbsp;中&nbsp;&nbsp;醫&nbsp;&nbsp;診&nbsp;&nbsp;所</p>
                 </div>
             </div>
+
             <div
-                class="nav-links duration-100 md:static absolute bg-slate-600 md:bg-white md:min-h-fit min-h-[60vh] left-0 top-[-100%] md:w-auto  w-full flex items-center px-5">
-                <ul class="flex flex-col gap-8 md:gap-y-3 md:flex-row md:flex-wrap lg:pt-4 text-white md:text-slate-700">
-                    <li><a href="/index.html" class="hover:text-amber-500">Home</a></li>
-                    <li><a href="/therapists.html" class="hover:text-amber-500">Therapists</a></li>
-                    <li><a href="/treatments.html" class="hover:text-amber-500">Treatments</a></li>
-                    <li><a href="/blog.html" class="text-amber-500">Blog</a></li>
-                    <li><a href="/contact.html" class="hover:text-amber-500">Contact</a></li>
-                    <li><a href="https://hopetcmclinic.janeapp.com/#/staff_member/1"><strong>Book Appointment</strong></a></li>                    
+                class="nav-links duration-300 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[100vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-8 md:px-0 shadow-lg md:shadow-none z-40 transition-all">
+                <ul
+                    class="flex flex-col gap-8 md:gap-x-10 md:flex-row md:items-center text-lg md:text-base font-medium text-slate-600">
+                    <li><a href="/index.html"
+                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Home</a>
+                    </li>
+                    <li><a href="/therapists.html"
+                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Therapists</a>
+                    </li>
+                    <li><a href="/treatments.html"
+                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Treatments</a>
+                    </li>
+                    <li><a href="/blog.html"
+                            class="text-primary font-bold border-b-2 border-accent py-1">Blog</a>
+                    </li>
+                    <li><a href="/contact.html"
+                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Contact</a>
+                    </li>
+                    <li>
+                        <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1"
+                            class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5">
+                            Book Now
+                        </a>
+                    </li>
                 </ul>
+                <!-- Mobile Close Button (Optional) -->
+                <ion-icon onclick="onToggleMenu()" name="close"
+                    class="md:hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></ion-icon>
             </div>
-            <div class="flex items-center gap-6 md:hidden">                
-                <ion-icon onclick="onToggleMenu(this)" name="menu" class="text-3xl cursor-pointer"></ion-icon>
+
+            <div class="flex items-center gap-6 md:hidden">
+                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer text-primary"></ion-icon>
             </div>
         </nav>
     </header>
 
-    <main class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-5xl min-h-[700px]">
+    <main
+        class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-5xl min-h-[700px]">
         <div class="flex-grow p-5 w-full">
             
             <div class="flex-grow p-5 w-full">
     <h1 class="text-2xl font-semibold border-b border-slate-200 pb-8 mb-6">Exploring the Ancient Art of Moxibustion in Traditional Chinese Medicine<h1>
 
-            <div class="mt-8">
+            <div
+                class="prose prose-lg prose-slate max-w-4xl mx-auto prose-headings:font-serif prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:shadow-lg">
                 <p><img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" >
 <br></p>
 <p>
@@ -97,18 +122,22 @@ As we delve deeper into the realm of traditional healing practices, moxibustion 
 </div>
         </div>
     </main>
-    
+
     <footer class="flex flex-col justify-center text-center py-8 text-sm leading-5 bg-slate-100">
         <div>
-            <p><i aria-hidden="true" class="fas fa-map-marker-alt pr-1"></i>235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2</p>            
+            <p><i aria-hidden="true" class="fas fa-map-marker-alt pr-1"></i>235-889 Carnarvon St, Buzzer 235, New
+                Westminster, BC V3M1G2</p>
             <p class="mt-1">
-                <i aria-hidden="true" class="fas fa-envelope pr-1"></i><a href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com</a>
+                <i aria-hidden="true" class="fas fa-envelope pr-1"></i><a
+                    href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com</a>
                 <i aria-hidden="true" class="fas fa-phone-alt ml-2 pr-1"></i>(778) 871-1439
             </p>
         </div>
         <p class="mt-2">
-        Copyright © 2023 - 2025. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Hebal treatments at Hope Traditional Chinese Medicine Clinic.
+            Copyright © 2023 - 2025. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Hebal treatments
+            at Hope Traditional Chinese Medicine Clinic.
         </p>
     </footer>
 </body>
+
 </html>

@@ -4,27 +4,139 @@ description: Book an appointment with Hope TCM Clinic and take care of your well
 template: page
 ---
 
-<div class="w-full">
-    <div class="flex flex-col gap-8 md:flex-row md:justify-between">
-        <div>
-            <h2 class="text-2xl font-medium mb-2">Contact Us</h2>
-            <p><i aria-hidden="true" class="fas fa-phone-alt mr-2"></i>(778) 871-1439</p>
-            <p><i aria-hidden="true" class="fas fa-envelope mr-2"></i><a href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com</a></p>
-            <p><i aria-hidden="true" class="fas fa-map-marker-alt mr-2"></i>235-889 Carnarvon St, New Westminster, BC V3M1G2</p>
-            <p><i aria-hidden="true" class="fas fa-bell mr-2"></i>Buzzer 235 (Press the UP key, then enter code 235) <a href="videos/buzzer.mp4">Instructional Video</a> </p>
-        </div>        
-        <div>
-            <h2 class="text-2xl font-medium mb-2">Clinic Hours</h2>
-            <p><i aria-hidden="true" class="fas fa-clock mr-2"></i>Tuesday: 9:30 AM to 2:30 PM</p>
-            <p><i aria-hidden="true" class="fas fa-clock mr-2"></i>Wednesday: 2:00 PM to 6:00 PM</p>
-            <p><i aria-hidden="true" class="fas fa-clock mr-2"></i>Friday: 9:30 PM to 2:30 PM</p>
-            <p><i aria-hidden="true" class="fas fa-clock mr-2"></i>Saturday: 9:30 AM to 4:30 PM</p>
+<div class="max-w-4xl mx-auto">
+    
+    <!-- Intro Section -->
+    <div class="text-center mb-16">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">Visit Us</h1>
+        <p class="text-xl text-slate-600 leading-relaxed max-w-2xl mx-auto">
+            Experience healing in a serene environment. We are conveniently located in New Westminster, adjacent to the Skytrain station.
+        </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mb-16">
+        
+        <!-- Contact Info & Map Card -->
+        <div class="space-y-10">
+            <!-- Info Card -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100">
+                <h2 class="font-serif text-2xl font-bold text-slate-800 mb-6 border-b border-stone-100 pb-4">Contact Details</h2>
+                
+                <div class="space-y-6">
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center text-primary shrink-0 mt-1">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800 mb-1">Hope TCM Clinic</p>
+                            <p class="text-slate-600 leading-relaxed">
+                                235-889 Carnarvon St,<br>
+                                New Westminster, BC V3M 1G2
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-accent/10 flex items-center justify-center text-accent shrink-0 mt-1">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800 mb-1">Phone</p>
+                            <p class="text-slate-600 font-medium">(778) 871-1439</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-stone-100 flex items-center justify-center text-slate-500 shrink-0 mt-1">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800 mb-1">Email</p>
+                            <a href="mailto:hopetcmclinic@gmail.com" class="text-primary hover:text-accent transition-colors font-medium">hopetcmclinic@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-start gap-4">
+                        <div class="w-10 h-10 rounded-full bg-red-50 flex items-center justify-center text-red-500 shrink-0 mt-1">
+                            <i class="fas fa-bell"></i>
+                        </div>
+                        <div>
+                            <p class="font-bold text-slate-800 mb-1">Entry Access</p>
+                            <p class="text-slate-600 leading-relaxed text-sm">
+                                <strong>Buzzer 235</strong><br>
+                                Press the UP key, then enter code 235.
+                            </p>
+                            <i class="fas fa-play-circle"></i>
+                            <a href="videos/buzzer.mp4" class="inline-flex items-center gap-2 text-xs font-bold text-accent hover:text-primary mt-2 uppercase tracking-wide">
+                                 Watch Video Guide
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!-- CTA - Moved inside card for better grouping and centered -->
+            <div class="text-center pt-6 border-t border-stone-100">
+                <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5" href="https://hopetcmclinic.janeapp.com/#/staff_member/1">
+                    Book An Appointment Now
+                </a>
+            </div>
+        </div>
+
+        </div>
+
+        <!-- Hours & Additional Info -->
+        <div class="space-y-10">
+             <!-- Hours Card -->
+            <div class="bg-stone-50 p-8 rounded-2xl border border-stone-200">
+                <h2 class="font-serif text-2xl font-bold text-slate-800 mb-6 flex items-center gap-3">
+                    <i class="fas fa-clock text-accent"></i> Clinic Hours
+                </h2>
+                <ul class="space-y-4">
+                    <li class="flex justify-between items-center border-b border-stone-200 pb-3 last:border-0 last:pb-0">
+                        <span class="font-medium text-slate-700">Tuesday</span>
+                        <span class="font-bold text-primary">9:30 AM - 2:30 PM</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-stone-200 pb-3 last:border-0 last:pb-0">
+                        <span class="font-medium text-slate-700">Wednesday</span>
+                        <span class="font-bold text-primary">2:00 PM - 6:00 PM</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-stone-200 pb-3 last:border-0 last:pb-0">
+                        <span class="font-medium text-slate-700">Friday</span>
+                        <span class="font-bold text-primary">9:30 AM - 2:30 PM</span>
+                    </li>
+                    <li class="flex justify-between items-center border-b border-stone-200 pb-3 last:border-0 last:pb-0">
+                        <span class="font-medium text-slate-700">Saturday</span>
+                        <span class="font-bold text-primary">9:30 AM - 4:30 PM</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Getting Here -->
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-stone-100">
+                <h3 class="font-serif text-xl font-bold text-slate-800 mb-4">Getting Here</h3>
+                <p class="text-slate-600 mb-4 text-sm leading-relaxed">
+                    We are located inside the integrated residential and commercial complex at New Westminster Skytrain Station.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-blue-50 text-blue-700 text-xs font-bold border border-blue-100">
+                        <i class="fas fa-subway mr-2"></i> Skytrain Access
+                    </span>
+                    <span class="inline-flex items-center px-3 py-1 rounded-full bg-green-50 text-green-700 text-xs font-bold border border-green-100">
+                        <i class="fas fa-parking mr-2"></i> Paid Parking
+                    </span>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="text-center my-6">
-        <a class="book-button" href="https://hopetcmclinic.janeapp.com/#/staff_member/1">Book An Appointment Online</a>
+
+    <!-- Map Section -->
+    <div class="rounded-2xl overflow-hidden shadow-2xl border-4 border-white mb-10 h-96 md:h-[500px] relative group">
+        <iframe class="w-full h-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.976425638737!2d-122.91749432289889!3d49.20100677138064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d86fc3366269%3A0xc67dad28555f5c62!2s889%20Carnarvon%20St%20%23235%2C%20New%20Westminster%2C%20BC%20V3M%201G2!5e0!3m2!1sen!2sca!4v1697314789913!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        
+        <!-- Overlay Label -->
+        <div class="absolute bottom-6 left-16 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-lg shadow-lg border border-white/50 pointer-events-none">
+            <p class="font-serif font-bold text-primary">Hope TCM Clinic</p>
+            <p class="text-xs text-slate-500">New Westminster</p>
+        </div>
     </div>
-    <div>
-        <iframe class="border-0 w-full h-80 md:h-[480px]" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2606.976425638737!2d-122.91749432289889!3d49.20100677138064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5485d86fc3366269%3A0xc67dad28555f5c62!2s889%20Carnarvon%20St%20%23235%2C%20New%20Westminster%2C%20BC%20V3M%201G2!5e0!3m2!1sen!2sca!4v1697314789913!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
+
 </div>

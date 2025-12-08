@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -34,32 +36,14 @@ img.wrap-right {
 
 .table_text {
     width: 100%;
-    display: flex; 
-    flex-direction: row; 
-    gap: 10%; 
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
     line-height: 1.6;
 }
 
 
-.book-button {
-    display: inline-block;
-    padding: 11px 36px;
-    border-radius: 30px;
-    background-color: #ffa135;
-    color: #000;
-    text-decoration: none;
-    border: none;    
-    cursor: pointer;
-    font-size: 15px;
-    font-weight: 700;
-    transition: background-color 0.3s ease;    
-}
-.book-button:hover {
-    background-color: #c76f10;
-}
-.book-button:link {
-    text-decoration: none;
-}
+
 
 .subtitle {
     font-size: 20px;

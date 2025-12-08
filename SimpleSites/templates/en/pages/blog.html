@@ -1,29 +1,30 @@
-
-<div class="grid grid-cols-1 md:grid-cols-2 gap-6 gap-y-16">
+<div class="max-w-3xl mx-auto flex flex-col gap-12">
     {% for article in articles %}
-        <div class="border border-slate-300 p-5">
-            <h2 class="italic text-2xl font-medium">
-                <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">{{ article.title }}</a>
-            </h2>
-            <div class="text-sm text-gray-600 mt-2">
-                {{ article.publish_date }}
-            </div>
-            <div class="my-6">
-                <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">
-                    <img src="/images/blogs/{{ article.image }}" style="width:500px; height:auto;" alt="{{ article.name }}" >
-                </a>
-            </div>
-            <div>
-                {{ article.abstract }} 
-                …
-                <a class="text-[#6b98c2] hover:text-slate-700" href="blogs/{{ article.name }}.html" title="{{ article.title }}">Read more</a>
-            </div>
-            
+    <article class="flex flex-col group border-b border-stone-200 pb-12 last:border-0">
+        <div class="text-sm font-semibold text-accent uppercase tracking-wider mb-3">
+            {{ article.publish_date }}
         </div>
-    {% endfor %}
 
-    <div>
-    </div>
+        <h2
+            class="font-serif text-3xl font-bold text-slate-800 mb-4 group-hover:text-primary transition-colors leading-tight">
+            <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">
+                {{ article.title }}
+            </a>
+        </h2>
+
+        <div class="text-slate-600 text-lg leading-relaxed mb-6">
+            {{ article.abstract }}
+        </div>
+
+        <div class="mt-auto">
+            <a class="inline-flex items-center text-primary font-bold hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-0.5"
+                href="blogs/{{ article.name }}.html" title="{{ article.title }}">
+                Read Full Article
+                <i class="fas fa-arrow-right ml-2 text-sm transform group-hover:translate-x-1 transition-transform"></i>
+            </a>
+        </div>
+    </article>
+    {% endfor %}
 </div>
 
 
