@@ -1,102 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+title: Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic
+description: We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine.
+template: page
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="We offer wide range of traditional chinese medicine treatmeats, including acupuncture, cupping, moxibustion, guasha, and herbal medicine.">
-    <title>Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic</title>
-    <link rel="stylesheet" href="/styles.css" type="text/css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="icon" type="image/x-icon" href="favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGSXBXHVTX"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-        gtag('config', 'G-VGSXBXHVTX');
-    </script>
-    <script src="script.js"></script>
-</head>
-
-<body class="flex flex-col text-slate-800 bg-stone-50" style="font-family: 'Lato', sans-serif;">
-    <header
-        class="flex flex-col border-b border-primary/20 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm transition-all duration-300">
-        <nav class="flex justify-between items-center w-[92%] mx-auto py-4 max-w-6xl">
-            <div class="flex items-center gap-4">
-                <a href="/" class="shrink-0 hover:opacity-90 transition-opacity">
-                    <img class="w-16 md:w-16 lg:w-20" src="/images/logo.png"
-                        alt="Hope Traditional Chinese Medicine Clinic">
-                </a>
-                <div class="flex flex-col justify-center font-serif text-primary tracking-wide">
-                    <!-- Title: Small on MD, Med on LG, Large on XL -->
-                    <p
-                        class="text-lg md:text-sm lg:text-lg xl:text-2xl font-bold leading-tight uppercase whitespace-nowrap">
-                        Hope Traditional</p>
-                    <p
-                        class="text-sm md:text-[10px] lg:text-xs xl:text-base font-semibold uppercase tracking-wider whitespace-nowrap">
-                        Chinese Medicine Clinic</p>
-
-                    <!-- Subtitle: Only visible on XL (Desktop) -->
-                    <p class="hidden xl:block text-sm text-stone-500 font-sans mt-0.5 whitespace-nowrap">
-                        向&nbsp;&nbsp;陽&nbsp;&nbsp;中&nbsp;&nbsp;醫&nbsp;&nbsp;診&nbsp;&nbsp;所</p>
-                </div>
-            </div>
-
-            <div
-                class="nav-links hidden md:flex md:static absolute top-[100%] left-0 w-full md:w-auto bg-white md:bg-transparent px-8 md:px-0 shadow-lg md:shadow-none z-40">
-                <ul
-                    class="flex flex-col gap-8 md:gap-x-3 lg:gap-x-6 xl:gap-x-10 md:flex-row md:items-center text-lg md:text-base lg:text-lg xl:text-lg font-medium text-slate-600">
-                    <li><a href="/index.html" onclick="closeMenu()"
-                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1 whitespace-nowrap">Home</a>
-                    </li>
-                    <li><a href="/therapists.html" onclick="closeMenu()"
-                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1 whitespace-nowrap">Therapists</a>
-                    </li>
-                    <li><a href="/treatments.html" onclick="closeMenu()"
-                            class="text-primary font-bold border-b-2 border-accent py-1 whitespace-nowrap">Treatments</a>
-                    </li>
-                    <li><a href="/blog.html" onclick="closeMenu()"
-                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1 whitespace-nowrap">Blog</a>
-                    </li>
-                    <li><a href="/contact.html" onclick="closeMenu()"
-                            class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1 whitespace-nowrap">Contact</a>
-                    </li>
-                    <li>
-                        <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" onclick="closeMenu()"
-                            class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 md:px-3 md:py-1.5 lg:px-4 lg:py-2 xl:px-6 xl:py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline whitespace-nowrap text-sm md:text-xs lg:text-sm xl:text-base">
-                            Book Now
-                        </a>
-                    </li>
-                    <li class="mt-4 md:mt-0 md:ml-2 lg:ml-4">
-                        <a href="/cn/treatments.html"
-                            class="text-slate-500 hover:text-primary font-medium transition-colors text-base md:text-sm xl:text-base">
-                            中文
-                        </a>
-                    </li>
-                </ul>
-                <!-- Mobile Close Button (Optional) -->
-                <ion-icon onclick="closeMenu()" name="close"
-                    class="md:hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></ion-icon>
-            </div>
-
-            <div class="flex items-center gap-6 md:hidden">
-                <ion-icon onclick="onToggleMenu(this)" name="menu"
-                    class="text-3xl cursor-pointer text-primary"></ion-icon>
-            </div>
-        </nav>
-    </header>
-
-    <main
-        class="flex flex-col items-center md:flex-row md:justify-between md:items-start w-full mx-auto max-w-5xl min-h-[700px]">
-        <div class="flex-grow p-5 w-full">
-            
-            <div class="flex-grow p-5 w-full">
-    <div class="max-w-4xl mx-auto space-y-16">
-
+<div class="max-w-4xl mx-auto space-y-16">
+    
     <!-- Intro Section -->
     <div class="text-center">
         <h1 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 leading-tight">Holistic Treatment Offerings</h1>
@@ -134,7 +43,7 @@
     <!-- Core Treatments Section -->
     <div>
         <h2 class="font-serif text-3xl font-bold text-slate-800 mb-10 text-center relative inline-block left-1/2 -translate-x-1/2 pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/3 after:w-1/3 after:h-1 after:bg-accent after:rounded-full">Core Treatments</h2>
-
+        
         <div class="grid grid-cols-1 gap-12">
             <!-- Acupuncture -->
             <div class="flex flex-col md:flex-row gap-8 items-start border-b border-stone-200 pb-12 last:border-0">
@@ -222,7 +131,7 @@
     <!-- FAQ Section -->
     <div class="max-w-3xl mx-auto pt-10 border-t border-stone-200">
         <h2 class="font-serif text-3xl font-bold text-slate-800 mb-8 text-center">Treatment FAQ</h2>
-
+        
         <div class="space-y-6">
             <details class="group bg-white rounded-xl border border-stone-200 overflow-hidden">
                 <summary class="flex items-center justify-between p-4 cursor-pointer font-serif font-bold text-slate-700 group-hover:bg-stone-50 transition-colors list-none">
@@ -263,25 +172,3 @@
     </div>
 
 </div>
-</div>
-        </div>
-    </main>
-
-    <footer class="flex flex-col justify-center text-center py-8 text-sm leading-5 bg-slate-100">
-        <div>
-            <p><i aria-hidden="true" class="fas fa-map-marker-alt pr-1"></i>235-889 Carnarvon St, Buzzer 235, New
-                Westminster, BC V3M1G2</p>
-            <p class="mt-1">
-                <i aria-hidden="true" class="fas fa-envelope pr-1"></i><a
-                    href="mailto:hopetcmclinic@gmail.com">hopetcmclinic@gmail.com</a>
-                <i aria-hidden="true" class="fas fa-phone-alt ml-2 pr-1"></i>(778) 871-1439
-            </p>
-        </div>
-        <p class="mt-2">
-            Copyright © 2023 - 2025. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Hebal treatments
-            at Hope Traditional Chinese Medicine Clinic.
-        </p>
-    </footer>
-</body>
-
-</html>

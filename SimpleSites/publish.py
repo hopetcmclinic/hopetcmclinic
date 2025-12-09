@@ -14,6 +14,7 @@ import markdown
 import shutil
 
 
+
 class Config:
     ROOT_URL = 'https://www.hopetcmclinic.ca'
     OUTPUT_PATH = '../dist/'
@@ -21,7 +22,8 @@ class Config:
     SITEMAP_XML = '../dist/sitemap.xml'
     TAILWIND_EXEC = './tailwindcss'
     ARTICLE_DIR = './content/articles/*.md'
-    PAGE_DIR = './content/pages/*.md'
+    PAGE_DIR_TEMPLATE = './content/pages/{lang}/*.md'
+    LANGUAGES = ['en', 'cn']
 
 
 def run_tailwind():
@@ -115,27 +117,13 @@ class SimpleSiteCMS():
         # Copy assets first
         self.copy_assets()
 
-        # Load Pages from Markdown
-        pages = []
-        md_pages = glob.glob(Config.PAGE_DIR)
-        for md_file in md_pages:
-            post = frontmatter.load(md_file)
-            filename = os.path.splitext(os.path.basename(md_file))[0]
-            
-            # Convert markdown body to HTML if needed
-            # For pages with custom template, content might be empty or used inside template
-            html_content = markdown.markdown(post.content)
-            
-            page = Page(
-                name=filename,
-                title=post.get('title', ''),
-                description=post.get('description', ''),
-                template=post.get('template', ''),
-                content=html_content
-            )
-            pages.append(page)
-
-        # Load Articles from Markdown
+        # Load Articles from Markdown - currently articles are shared/translated via one folder, 
+        # but in this design we might want to split them too. For now, assuming articles are just EN or mixed.
+        # User only asked to split PAGES for now as per plan.
+        # BUT the plan says "Articles" were rendering for both languages from the same object. 
+        # We will keep existing logic for articles for now (rendering same content for both EN/CN templates),
+        # unless user asked to split articles too. The request was generally about "bilingual support".
+        # Let's keep articles global for now to avoid breaking changes, but render them into both sites.
         articles = []
         md_files = glob.glob(Config.ARTICLE_DIR)
         for md_file in md_files:
@@ -159,25 +147,66 @@ class SimpleSiteCMS():
         # Sort articles by date descending
         # articles.sort(key=lambda x: x.publish_date, reverse=True) 
 
-        for page in pages:
-            self.render_page('en', page, articles)
-            self.render_page('cn', page, articles)
+        # Render Pages per Language
+        for lang in Config.LANGUAGES:
+            print(f"Publishing {lang.upper()} sites...")
+            
+            # Load Pages for this specific language
+            page_glob = Config.PAGE_DIR_TEMPLATE.format(lang=lang)
+            md_pages = glob.glob(page_glob)
+            
+            # If no pages found (e.g. if we haven't created cn pages yet), just warn
+            if not md_pages:
+                print(f"Warning: No content found for language '{lang}' in {page_glob}")
+                continue
 
-        for article in articles:
-            self.render_article('en', article)
-            self.render_article('cn', article)
+            current_lang_pages = []
+            for md_file in md_pages:
+                post = frontmatter.load(md_file)
+                filename = os.path.splitext(os.path.basename(md_file))[0]
+                
+                html_content = markdown.markdown(post.content)
+                
+                page = Page(
+                    name=filename,
+                    title=post.get('title', ''),
+                    description=post.get('description', ''),
+                    template=post.get('template', ''),
+                    content=html_content
+                )
+                current_lang_pages.append(page)
+
+            # Render pages for this language
+            for page in current_lang_pages:
+                self.render_page(lang, page, articles)
+
+            # Render articles for this language (using shared article data for now)
+            # This ensures /cn/blogs/foo.html exists
+            for article in articles:
+                self.render_article(lang, article)
 
         self.generate_sitemap(Config.SITEMAP_XML)
 
     def render_page(self, lang: str, page: Page, articles: list[Article]) -> None:
-        template = self.env.get_template(f'{lang}/main.html')
-        
+        template_name = f'{lang}/main.html' 
+        # Check if template exists, if not fallback to en? No, we should assume templates exist.
+        try:
+            template = self.env.get_template(template_name)
+        except:
+             print(f"Error: Template {template_name} not found.")
+             return
+
         # Determine content template
         # If page has a specific template defined (e.g. 'pages/blog.html'), use it.
         # Otherwise use default.html
         if page.template and page.template.lower() != 'page':
             # Ensure we look in the language specific dir if the path is relative
-            # If frontmatter says "pages/blog.html", we prepend {lang}/
+            # The frontmatter might say "pages/blog.html".
+            # We want to use "{lang}/pages/blog.html".
+            # If the user put "pages/blog.html" in frontmatter, we prepend lang.
+            
+            # Special case: if frontmatter path starts with pages/, we prepend lang/
+            # Example: "pages/index.html" -> "en/pages/index.html" or "cn/pages/index.html"
             content_template = f"{lang}/{page.template}"
         else:
             content_template = f"{lang}/pages/default.html"
@@ -197,8 +226,16 @@ class SimpleSiteCMS():
 
     def render_article(self, lang: str, article: Article) -> None:
         template = self.env.get_template(f'{lang}/main.html')
-        content_template = "en/article.html" 
+        content_template = "en/article.html" # Assuming we share the article detailed view template or use EN for now
+        # Ideally we should have cn/article.html too. Let's try to use lang specific if available, else EN.
         
+        # Check if we have a lang specific article template
+        try:
+            self.env.get_template(f"{lang}/article.html")
+            content_template = f"{lang}/article.html"
+        except:
+            content_template = "en/article.html"
+
         filename = f'blogs/{article.name}.html' if lang == 'en' else f'{lang}/blogs/{article.name}.html'
         
         data = {        

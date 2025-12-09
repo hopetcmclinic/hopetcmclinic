@@ -11,7 +11,7 @@ function toggleMenu() {
 function onToggleMenu(e) {
     const navLinks = document.querySelector('.nav-links');
     // Toggle hidden/flex for mobile menu logic
-    // Default is hidden on mobile, lg:flex on desktop
+    // Default is hidden on mobile, md:flex on desktop
     navLinks.classList.toggle('hidden');
     navLinks.classList.toggle('flex');
 }
