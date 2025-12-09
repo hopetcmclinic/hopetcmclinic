@@ -2,6 +2,7 @@ import json
 from jinja2 import Environment, FileSystemLoader
 from lxml import etree
 from datetime import datetime
+from dataclasses import dataclass
 import os
 import sys
 import urllib.request
@@ -10,15 +11,16 @@ import hashlib
 import glob
 import frontmatter
 import markdown
+import shutil
 
 
 class Config:
     ROOT_URL = 'https://www.hopetcmclinic.ca'
-    OUTPUT_PATH = '../'
+    OUTPUT_PATH = '../dist/'
     SITEMAP_JSON = './sitemap.json'
-    SITEMAP_XML = '../sitemap.xml'
+    SITEMAP_XML = '../dist/sitemap.xml'
     TAILWIND_EXEC = './tailwindcss'
-    CONTENT_DIR = './content/articles/*.md'
+    ARTICLE_DIR = './content/articles/*.md'
     PAGE_DIR = './content/pages/*.md'
 
 
@@ -35,28 +37,31 @@ def run_tailwind():
     else:
         print("Tailwindcss already exists: ", os.path.abspath("tailwindcss"))
 
+    # Ensure output directory exists before running tailwind
+    os.makedirs(Config.OUTPUT_PATH, exist_ok=True)
+
     # Compile and minify your CSS for production
     subprocess.run([f'{Config.TAILWIND_EXEC} -i ./templates/styles.css -o {Config.OUTPUT_PATH}styles.css --minify'], shell=True)
 
 
+@dataclass
 class Page:
-    def __init__(self, name='', title='', description='', template='', content=''):
-        self.name = name
-        self.title = title
-        self.description = description
-        self.template = template
-        self.content = content
+    name: str=""
+    title: str=""
+    description: str=""
+    template: str=""
+    content: str=""
 
 
+@dataclass
 class Article:
-    def __init__(self, name='', title='', publish_date='', image='', abstract='', page_title='', content=''):
-        self.name = name
-        self.title = title
-        self.publish_date = publish_date
-        self.image = image
-        self.abstract = abstract
-        self.page_title = page_title
-        self.content = content
+    name: str=""
+    title: str=""
+    publish_date: str=""
+    image: str=""
+    abstract: str=""
+    page_title: str=""
+    content: str=""
 
 
 class SitemapEntry:
@@ -77,11 +82,38 @@ class SimpleSiteCMS():
         self.env = Environment(loader=file_loader)
         self.sitemap = {}
 
+    def copy_assets(self) -> None:
+        print("Copying assets to dist folder...")
+        os.makedirs(Config.OUTPUT_PATH, exist_ok=True)
+        
+        assets = [
+            {'src': './assets/images', 'dest': 'images', 'type': 'dir'},
+            {'src': './assets/videos', 'dest': 'videos', 'type': 'dir'},
+            {'src': './assets/script.js', 'dest': 'script.js', 'type': 'file'},
+            {'src': './assets/favicon.ico', 'dest': 'favicon.ico', 'type': 'file'},
+            {'src': './assets/CNAME', 'dest': 'CNAME', 'type': 'file'}
+        ]
+
+        for asset in assets:
+            src = asset['src']
+            dest = os.path.join(Config.OUTPUT_PATH, asset['dest'])
+            
+            if asset['type'] == 'dir':
+                if os.path.exists(src):
+                    # shutil.copytree requires destination dir to NOT exist usually, or dirs_exist_ok=True in 3.8+
+                    shutil.copytree(src, dest, dirs_exist_ok=True)
+            elif asset['type'] == 'file':
+                if os.path.exists(src):
+                    shutil.copy2(src, dest)
+
     def publish(self) -> None:
         self.sitemap = {}
         if os.path.isfile(Config.SITEMAP_JSON):
             with open(Config.SITEMAP_JSON, 'r') as f:
                 self.sitemap = {item.filename: item for item in [SitemapEntry(**a) for a in json.load(f)]}
+        
+        # Copy assets first
+        self.copy_assets()
 
         # Load Pages from Markdown
         pages = []
@@ -105,7 +137,7 @@ class SimpleSiteCMS():
 
         # Load Articles from Markdown
         articles = []
-        md_files = glob.glob(Config.CONTENT_DIR)
+        md_files = glob.glob(Config.ARTICLE_DIR)
         for md_file in md_files:
             post = frontmatter.load(md_file)
             filename = os.path.splitext(os.path.basename(md_file))[0]

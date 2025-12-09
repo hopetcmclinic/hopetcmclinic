@@ -35,7 +35,7 @@ def run_webserver():
     current_dir = os.path.dirname(os.path.abspath(__file__))
     parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
     print("Starting Web Server on port 8000")
-    return subprocess.Popen([python, '-m', 'http.server', '--directory', parent_dir], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    return subprocess.Popen([python, '-m', 'http.server', '--directory', os.path.join(parent_dir, 'dist')], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
 
 if __name__ == "__main__":
