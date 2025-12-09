@@ -1,6 +1,6 @@
 function toggleMenu() {
-    var menuBox = document.getElementById('navMenu');    
-    if (menuBox.style.left == "0px"){ 
+    var menuBox = document.getElementById('navMenu');
+    if (menuBox.style.left == "0px") {
         menuBox.style.left = "-100%";
     } else {
         menuBox.style.left = "0px";
@@ -8,8 +8,19 @@ function toggleMenu() {
 }
 
 
-function onToggleMenu(e){
+function onToggleMenu(e) {
     const navLinks = document.querySelector('.nav-links');
-    e.name = e.name === 'menu' ? 'close' : 'menu';
-    navLinks.classList.toggle('top-[9%]')
+    // Toggle hidden/flex for mobile menu logic
+    // Default is hidden on mobile, lg:flex on desktop
+    navLinks.classList.toggle('hidden');
+    navLinks.classList.toggle('flex');
+}
+
+function closeMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    // Ensure menu is closed (hidden)
+    if (navLinks.classList.contains('flex')) {
+        navLinks.classList.remove('flex');
+        navLinks.classList.add('hidden');
+    }
 }

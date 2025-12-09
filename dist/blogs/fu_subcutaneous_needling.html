@@ -27,7 +27,7 @@
         class="flex flex-col border-b border-primary/20 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm transition-all duration-300">
         <nav class="flex justify-between items-center w-[92%] mx-auto py-4 max-w-6xl">
             <div class="flex items-center gap-4">
-                <a href="https://www.hopetcmclinic.ca/" class="shrink-0 hover:opacity-90 transition-opacity">
+                <a href="/" class="shrink-0 hover:opacity-90 transition-opacity">
                     <img class="w-16 md:w-20" src="/images/logo.png" alt="Hope Traditional Chinese Medicine Clinic">
                 </a>
                 <div class="flex flex-col justify-center font-serif text-primary tracking-wide">
@@ -39,38 +39,39 @@
             </div>
 
             <div
-                class="nav-links duration-300 md:static absolute bg-white md:bg-transparent md:min-h-fit min-h-[100vh] left-0 top-[-100%] md:w-auto w-full flex items-center px-8 md:px-0 shadow-lg md:shadow-none z-40 transition-all">
+                class="nav-links hidden xl:flex xl:static absolute top-[100%] left-0 w-full xl:w-auto bg-white xl:bg-transparent px-8 xl:px-0 shadow-lg xl:shadow-none z-40">
                 <ul
-                    class="flex flex-col gap-8 md:gap-x-10 md:flex-row md:items-center text-lg md:text-base font-medium text-slate-600">
-                    <li><a href="/index.html"
+                    class="flex flex-col gap-8 xl:gap-x-10 xl:flex-row xl:items-center text-lg xl:text-base font-medium text-slate-600">
+                    <li><a href="/index.html" onclick="closeMenu()"
                             class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Home</a>
                     </li>
-                    <li><a href="/therapists.html"
+                    <li><a href="/therapists.html" onclick="closeMenu()"
                             class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Therapists</a>
                     </li>
-                    <li><a href="/treatments.html"
+                    <li><a href="/treatments.html" onclick="closeMenu()"
                             class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Treatments</a>
                     </li>
-                    <li><a href="/blog.html"
+                    <li><a href="/blog.html" onclick="closeMenu()"
                             class="text-primary font-bold border-b-2 border-accent py-1">Blog</a>
                     </li>
-                    <li><a href="/contact.html"
+                    <li><a href="/contact.html" onclick="closeMenu()"
                             class="hover:text-primary hover:border-b-2 hover:border-accent/50 transition-all duration-200 py-1">Contact</a>
                     </li>
                     <li>
-                        <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1"
+                        <a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" onclick="closeMenu()"
                             class="bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline">
                             Book Now
                         </a>
                     </li>
                 </ul>
                 <!-- Mobile Close Button (Optional) -->
-                <ion-icon onclick="onToggleMenu()" name="close"
-                    class="md:hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></ion-icon>
+                <ion-icon onclick="closeMenu()" name="close"
+                    class="xl:hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></ion-icon>
             </div>
 
-            <div class="flex items-center gap-6 md:hidden">
-                <ion-icon onclick="onToggleMenu()" name="menu" class="text-3xl cursor-pointer text-primary"></ion-icon>
+            <div class="flex items-center gap-6 xl:hidden">
+                <ion-icon onclick="onToggleMenu(this)" name="menu"
+                    class="text-3xl cursor-pointer text-primary"></ion-icon>
             </div>
         </nav>
     </header>
