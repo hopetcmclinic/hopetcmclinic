@@ -49,4 +49,21 @@ img.wrap-right {
     font-size: 20px;
     font-weight: 600;
     margin: 10px 0;
+}/* Global Styling for Content Links (Markdown/Raw HTML) */
+/* Targets <a> tags without classes to avoid affecting nav/buttons */
+a:not([class]) {
+    color: #d97706;
+    /* accent */
+    text-decoration: underline;
+    text-underline-offset: 4px;
+    text-decoration-color: rgba(217, 119, 6, 0.3);
+    /* accent/30 */
+    transition: all 0.2s ease-in-out;
+}
+
+a:not([class]):hover {
+    color: #064e3b;
+    /* primary */
+    text-decoration-color: #d97706;
+    /* accent */
 }
