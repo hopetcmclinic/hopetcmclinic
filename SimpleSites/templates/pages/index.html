@@ -7,10 +7,11 @@
                 class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-1000"
                 alt="{{ page.hero.subtitle }}">
             <div
-                class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex flex-col justify-center px-8 md:px-16">
+                class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent flex flex-col justify-center px-8 md:px-16">
                 {% if page.hero.title_line1 %}
                 <h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
-                    {{ page.hero.title_line1 }} <br> <span class="text-accent">{{ page.hero.title_highlight }}</span>
+                    {{ page.hero.title_line1 }} <br> <span class="text-accent-light">{{ page.hero.title_highlight
+                        }}</span>
                 </h1>
                 {% endif %}
                 <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-8 font-medium drop-shadow-md">
@@ -18,7 +19,7 @@
                 </p>
                 {% if page.hero.cta %}
                 <span
-                    class="inline-block bg-white/20 backdrop-blur-md border border-white/50 text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-emerald-900 transition-all w-fit uppercase tracking-wider text-sm">
+                    class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent-light hover:text-emerald-900 transition-all w-fit uppercase tracking-wider text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                     {{ page.hero.cta }}
                 </span>
                 {% endif %}
@@ -60,7 +61,7 @@
             {% for service in page.services.entries %}
             <!-- Card -->
             <div
-                class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:shadow-xl transition-shadow flex flex-col items-center text-center">
+                class="bg-white p-8 rounded-2xl shadow-md border border-stone-100 hover:shadow-xl hover:border-accent/30 hover:-translate-y-2 transition-all duration-300 flex flex-col items-center text-center">
                 <div class="w-16 h-16 {{ service.icon_bg }} rounded-full flex items-center justify-center mb-6">
                     <i class="{{ service.icon }} text-2xl {{ service.icon_color }}"></i>
                 </div>
@@ -80,7 +81,7 @@
 
             <!-- Herbal Card -->
             <div
-                class="md:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-stone-100 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
+                class="md:col-span-2 bg-white p-6 rounded-2xl shadow-md border border-stone-100 hover:shadow-xl hover:border-accent/30 hover:-translate-y-2 transition-all duration-300 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
                 <div class="flex items-center gap-6">
                     <div
                         class="hidden md:flex w-14 h-14 {{ page.services.herbal.icon_bg }} rounded-full items-center justify-center flex-shrink-0">
@@ -128,7 +129,7 @@
     </div>
 
     <div>
-        <div class="text-center my-8">
+        <div class="text-center mb-8">
             <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
                 href="{{ page.book.link }}">{{ page.book.text }}</a>
         </div>
