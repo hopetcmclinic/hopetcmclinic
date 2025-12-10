@@ -209,23 +209,14 @@ class SimpleSiteCMS():
                 self.render_article(lang, article)
 
         self.generate_sitemap(Config.SITEMAP_XML)
+        self.generate_robots_txt()
 
-    def render_page(self, lang: str, page: Page, articles: list[Article]) -> None:
-        template_name = 'main.html' 
-        # Check if template exists, if not fallback to en? No, we should assume templates exist.
-        try:
-            template = self.env.get_template(template_name)
-        except:
-             print(f"Error: Template {template_name} not found.")
-             return
 
-        # Determine content template
-        # If page has a specific template defined (e.g. 'pages/blog.html'), use it.
-        # Otherwise use default.html
+    def render_page(self, lang: str, page: Page, articles: list[Article]):
+        template = self.env.get_template('main.html')
+        
+        # Restore content_template determination logic
         if page.template and page.template.lower() != 'page':
-            # Special case: if frontmatter path starts with pages/, we prepend lang/
-            # Example: "pages/index.html" -> "en/pages/index.html" or "cn/pages/index.html"
-            
             lang_specific_template = f"{lang}/{page.template}"
             if os.path.exists(os.path.join('templates', lang_specific_template)):
                 content_template = lang_specific_template
@@ -237,27 +228,41 @@ class SimpleSiteCMS():
                 content_template = lang_specific_default
             else:
                 content_template = "pages/default.html"
-
-        filename = f'{page.name}.html' if lang == 'en' else f'{lang}/{page.name}.html'
         
-        # Determine link prefix for internal links
-        # en -> /therapists.html
-        # cn -> /cn/therapists.html
         link_prefix = "" if lang == 'en' else f"/{lang}"
+        
+        # Calculate alternates
+        alternates = []
+        for l in Config.LANGUAGES:
+            alt_prefix = "" if l == 'en' else f"/{l}"
+            alt_url = f"{Config.ROOT_URL}{alt_prefix}/{page.name}.html"
+            alternates.append({'lang': l, 'href': alt_url})
 
-        data = {        
-            'lang': lang,
-            'name': page.name,
-            'title': page.title,
-            'description': page.description,
-            'content_template': content_template,
-            'articles': articles,
-            'content': page.content,
-            'i18n': TRANSLATIONS[lang],
-            'link_prefix': link_prefix,
-            'page': page.meta
-        }
-        self.write_html(template.render(data), filename)
+        # Calculate canonical
+        canonical_url = f"{Config.ROOT_URL}{link_prefix}/{page.name}.html"
+
+        output_filename = f"{page.name}.html"
+        if lang != 'en':
+            output_filename = f"{lang}/{output_filename}"
+            
+
+
+        html = template.render(
+            lang=lang, 
+            link_prefix=link_prefix,
+            i18n=TRANSLATIONS[lang], 
+            page=page.meta, 
+            articles=articles,
+            title=page.title, 
+            description=page.description,
+            name=page.name,
+            content_template=content_template,
+            canonical_url=canonical_url,
+            alternates=alternates,
+            root_url=Config.ROOT_URL
+        )
+        
+        self.write_html(html, output_filename)
 
     def render_article(self, lang: str, article: Article) -> None:
         template = self.env.get_template('main.html')
@@ -269,15 +274,28 @@ class SimpleSiteCMS():
         
         link_prefix = "" if lang == 'en' else f"/{lang}"
 
+        # Calculate alternates for articles
+        alternates = []
+        for l in Config.LANGUAGES:
+            alt_prefix = "" if l == 'en' else f"/{l}"
+            alt_url = f"{Config.ROOT_URL}{alt_prefix}/blogs/{article.name}.html"
+            alternates.append({'lang': l, 'href': alt_url})
+
+        # Calculate canonical for articles
+        canonical_url = f"{Config.ROOT_URL}{link_prefix}/blogs/{article.name}.html"
+
         data = {        
             'lang': lang,
             'name': "article",
             'content_template': content_template,
             "article": article,
-            'title': article.page_title,
-            'description': article.abstract,
+            'title': article.page_title, # Assuming page_title is the SEO title for articles
+            'description': article.abstract, # Assuming abstract is the SEO description for articles
             'i18n': TRANSLATIONS[lang],
-            'link_prefix': link_prefix
+            'link_prefix': link_prefix,
+            'canonical_url': canonical_url,
+            'alternates': alternates,
+            'root_url': Config.ROOT_URL
         }
         self.write_html(template.render(data), filename)
 
@@ -320,6 +338,14 @@ class SimpleSiteCMS():
 
         with open(Config.SITEMAP_JSON, 'w') as file:
             json.dump(touched_sitemap_entries, file, default=SitemapEntry.serialize)
+
+    def generate_robots_txt(self):
+        content = f"User-agent: *\nAllow: /\nSitemap: {Config.ROOT_URL}/sitemap.xml"
+        output_file = os.path.join(Config.OUTPUT_PATH, 'robots.txt')
+        # Ensure dir exists (it should, but safety first)
+        os.makedirs(os.path.dirname(output_file), exist_ok=True)
+        with open(output_file, 'w') as f:
+            f.write(content)
 
 
 if __name__ == "__main__":

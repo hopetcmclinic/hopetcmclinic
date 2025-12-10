@@ -5,7 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
+    <meta name="keywords" content="{{ i18n.meta.keywords }}">
     <title>{{title}}{{ i18n.meta.title_suffix }}</title>
+
+    <!-- Canonical URL -->
+    {% if canonical_url %}
+    <link rel="canonical" href="{{ canonical_url }}">
+    {% endif %}
+
+    <!-- Alternate Languages -->
+    {% for alt in alternates %}
+    <link rel="alternate" hreflang="{{ alt.lang }}" href="{{ alt.href }}">
+    {% endfor %}
+
+    <!-- Open Graph / Social Media -->
+    {% set social_image = i18n.meta.og_image %}
+    {% if article is defined and article.image %}
+    {% set social_image = article.image %}
+    {% elif page is defined and page.hero and page.hero.image %}
+    {% set social_image = page.hero.image %}
+    {% endif %}
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{ title }}">
+    <meta property="og:description" content="{{ description }}">
+    <meta property="og:image" content="{{ social_image }}">
+    <meta property="og:url" content="{{ canonical_url }}">
+    <meta property="og:site_name" content="{{ i18n.header.title_line1 }} {{ i18n.header.title_line2 }}">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="{{ i18n.meta.twitter_card }}">
+    <meta name="twitter:title" content="{{ title }}">
+    <meta name="twitter:description" content="{{ description }}">
+    <meta name="twitter:image" content="{{ social_image }}">
+
     <link rel="stylesheet" href="/styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
@@ -19,6 +52,49 @@
         gtag('config', 'G-VGSXBXHVTX');
     </script>
     <script src="/script.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Hope Traditional Chinese Medicine Clinic",
+      "image": "{{ root_url }}/images/logo.png",
+      "@id": "{{ root_url }}",
+      "url": "{{ root_url }}",
+      "telephone": "+17788711439",
+      "priceRange": "$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "235-889 Carnarvon St, Buzzer 235",
+        "addressLocality": "New Westminster",
+        "addressRegion": "BC",
+        "postalCode": "V3M1G2",
+        "addressCountry": "CA"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 49.201396,
+        "longitude": -122.912630
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      },
+      "sameAs": [
+        "https://www.instagram.com/hopetcmclinic/" 
+      ]
+    }
+    </script>
 </head>
 
 <body class="flex flex-col text-slate-800 bg-stone-50 leading-relaxed" style="font-family: 'Lato', sans-serif;">

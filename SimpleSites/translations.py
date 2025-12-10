@@ -1,7 +1,10 @@
 TRANSLATIONS = {
     'en': {
         'meta': {
-            'title_suffix': ' | Hope TCM'
+            'title_suffix': ' | Hope TCM',
+            'og_image': 'https://www.hopetcmclinic.ca/images/Inner-Chinese.jpg', # Default social image
+            'twitter_card': 'summary_large_image',
+            'keywords': 'Acupuncture, TCM, Traditional Chinese Medicine, New Westminster, Cupping, Moxibustion, Herbal Medicine'
         },
         'header': {
             'logo_alt': 'Hope Traditional Chinese Medicine Clinic',
@@ -28,7 +31,10 @@ TRANSLATIONS = {
     },
     'cn': {
         'meta': {
-            'title_suffix': ' | Hope TCM' # Example suffix
+            'title_suffix': ' | Hope TCM', # Example suffix
+            'og_image': 'https://www.hopetcmclinic.ca/images/Inner-Chinese.jpg',
+            'twitter_card': 'summary_large_image',
+            'keywords': '针灸, 中医, 新西敏, 拔罐, 艾灸, 中草药, 推拿'
         },
         'header': {
             'logo_alt': 'Hope Traditional Chinese Medicine Clinic', # Keep English for alt or use CN? keeping EN mostly for file ref but alt text can be CN
