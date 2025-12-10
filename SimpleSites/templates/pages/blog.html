@@ -7,7 +7,7 @@
 
         <h2
             class="font-serif text-3xl font-bold text-slate-800 mb-4 group-hover:text-primary transition-colors leading-tight">
-            <a href="blogs/{{ article.name }}.html" title="{{ article.title }}">
+            <a href="{{ link_prefix }}/blogs/{{ article.name }}.html" title="{{ article.title }}">
                 {{ article.title }}
             </a>
         </h2>
@@ -18,8 +18,8 @@
 
         <div class="mt-auto">
             <a class="inline-flex items-center text-primary font-bold hover:text-accent transition-colors border-b-2 border-transparent hover:border-accent pb-0.5"
-                href="blogs/{{ article.name }}.html" title="{{ article.title }}">
-                Read Full Article
+                href="{{ link_prefix }}/blogs/{{ article.name }}.html" title="{{ article.title }}">
+                {{ page.read_more }}
                 <i class="fas fa-arrow-right ml-2 text-sm transform group-hover:translate-x-1 transition-transform"></i>
             </a>
         </div>
@@ -30,6 +30,5 @@
 
 <div class="text-center my-8">
     <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
-        href="https://hopetcmclinic.janeapp.com/#/staff_member/1">Book An Appointment
-        Online</a>
+        href="{{ page.book.link }}">{{ page.book.text }}</a>
 </div>

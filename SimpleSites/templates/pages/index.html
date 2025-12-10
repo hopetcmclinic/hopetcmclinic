@@ -1,0 +1,141 @@
+<div class="flex flex-col gap-16">
+
+    <!-- Hero Section -->
+    <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl group">
+        <a href="{{ page.hero.link }}" class="block relative h-[250px] md:h-[350px]">
+            <img src="{{ page.hero.image }}"
+                class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-1000"
+                alt="{{ page.hero.subtitle }}">
+            <div
+                class="absolute inset-0 bg-gradient-to-r from-black/60 to-transparent flex flex-col justify-center px-8 md:px-16">
+                {% if page.hero.title_line1 %}
+                <h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
+                    {{ page.hero.title_line1 }} <br> <span class="text-accent">{{ page.hero.title_highlight }}</span>
+                </h1>
+                {% endif %}
+                <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-8 font-medium drop-shadow-md">
+                    {{ page.hero.subtitle }}
+                </p>
+                {% if page.hero.cta %}
+                <span
+                    class="inline-block bg-white/20 backdrop-blur-md border border-white/50 text-white px-6 py-2 rounded-full font-semibold hover:bg-white hover:text-emerald-900 transition-all w-fit uppercase tracking-wider text-sm">
+                    {{ page.hero.cta }}
+                </span>
+                {% endif %}
+            </div>
+        </a>
+    </div>
+
+    <!-- Introduction Section -->
+    <div class="max-w-4xl mx-auto text-center px-4">
+        <p class="text-xl md:text-2xl font-serif text-slate-700 leading-relaxed mb-8">
+            {{ page.intro.main }}
+        </p>
+        {% if page.intro.specialties %}
+        <div class="flex flex-wrap justify-center gap-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
+            {% for item in page.intro.specialties %}
+            <span class="bg-stone-100 px-4 py-2 rounded-full">{{ item }}</span>
+            {% endfor %}
+        </div>
+        {% endif %}
+
+        <div class="mt-12 p-8 bg-stone-50 rounded-2xl border border-stone-100 shadow-inner">
+            <p class="text-slate-600 leading-loose text-lg">
+                {{ page.intro.mission }}
+            </p>
+        </div>
+    </div>
+
+    <!-- Services & Fees Section -->
+    <div class="my-8">
+        <div class="text-center mb-12">
+            <span
+                class="font-serif text-4xl text-primary font-bold relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-accent after:rounded-full">
+                {{ page.services.title }}
+            </span>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-12">
+
+            {% for service in page.services.entries %}
+            <!-- Card -->
+            <div
+                class="bg-white p-8 rounded-2xl shadow-lg border border-stone-100 hover:shadow-xl transition-shadow flex flex-col items-center text-center">
+                <div class="w-16 h-16 {{ service.icon_bg }} rounded-full flex items-center justify-center mb-6">
+                    <i class="{{ service.icon }} text-2xl {{ service.icon_color }}"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-slate-800 mb-2">{{ service.title }}</h3>
+                <p class="text-sm text-slate-500 uppercase tracking-wider mb-6">{{ service.subtitle }}</p>
+
+                <div class="w-full space-y-4">
+                    {% for rate in service.rates %}
+                    <div class="flex justify-between items-center border-b border-dashed border-stone-200 pb-2">
+                        <span class="text-slate-600">{{ rate.label }}</span>
+                        <span class="font-bold text-primary text-xl">{{ rate.price }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+
+            <!-- Herbal Card -->
+            <div
+                class="md:col-span-2 bg-white p-6 rounded-2xl shadow-sm border border-stone-100 flex flex-col md:flex-row items-center justify-between gap-6 w-full">
+                <div class="flex items-center gap-6">
+                    <div
+                        class="hidden md:flex w-14 h-14 {{ page.services.herbal.icon_bg }} rounded-full items-center justify-center flex-shrink-0">
+                        <i class="{{ page.services.herbal.icon }} text-xl {{ page.services.herbal.icon_color }}"></i>
+                    </div>
+                    <div class="text-center md:text-left">
+                        <h4 class="font-serif text-lg font-bold text-slate-800">{{ page.services.herbal.title }}</h4>
+                        <p class="text-slate-500 text-sm">{{ page.services.herbal.desc }}</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4">
+                    <div class="text-right">
+                        {% for rate in page.services.herbal.rates %}
+                        <span class="block text-xs text-slate-400 uppercase">{{ rate.label }}</span>
+                        <span class="font-bold text-primary text-lg">{{ rate.price }}</span>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div class="my-12">
+        <div class="text-center mb-12">
+            <span
+                class="font-serif text-4xl text-primary font-bold relative inline-block pb-4 after:content-[''] after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-16 after:h-1 after:bg-accent after:rounded-full">
+                {{ page.faq.title }}
+            </span>
+        </div>
+
+        <div class="px-4 md:px-12 space-y-6 text-left">
+            {% for item in page.faq.entries %}
+            <div class="bg-white rounded-xl border border-stone-200 overflow-hidden">
+                <div class="p-4 font-serif font-bold text-slate-700 bg-stone-50 border-b border-stone-100">
+                    <span>{{ item.q }}</span>
+                </div>
+                <div class="p-4 text-slate-600 leading-relaxed">
+                    <p>{{ item.a }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <div>
+        <div class="text-center my-8">
+            <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
+                href="{{ page.book.link }}">{{ page.book.text }}</a>
+        </div>
+
+        <div>
+            <iframe src='https://widgets.sociablekit.com/google-reviews/iframe/25604113'
+                class="border-0 w-full h-80 md:h-[420px]"></iframe>
+        </div>
+    </div>
+</div>

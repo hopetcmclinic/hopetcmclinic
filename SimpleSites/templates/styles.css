@@ -4,9 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
-a:link {
+/* a:link {
     text-decoration: underline;
-}
+} */
 
 .nav-links a:link {
     text-decoration: none;

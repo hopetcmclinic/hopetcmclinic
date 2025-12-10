@@ -54,6 +54,8 @@ class Page:
     description: str=""
     template: str=""
     content: str=""
+    meta: dict = None
+
 
 
 @dataclass
@@ -146,7 +148,10 @@ class SimpleSiteCMS():
             articles.append(article)
         
         # Sort articles by date descending
-        # articles.sort(key=lambda x: x.publish_date, reverse=True) 
+        try:
+            articles.sort(key=lambda x: datetime.strptime(x.publish_date, '%B %d, %Y'), reverse=True)
+        except ValueError as e:
+            print(f"Warning: Date parsing failed for sorting: {e}. Articles might not be sorted correctly.")
 
         # Render Pages per Language
         for lang in Config.LANGUAGES:
@@ -173,7 +178,8 @@ class SimpleSiteCMS():
                     title=post.get('title', ''),
                     description=post.get('description', ''),
                     template=post.get('template', ''),
-                    content=html_content
+                    content=html_content,
+                    meta=post.metadata
                 )
                 current_lang_pages.append(page)
 
@@ -201,16 +207,20 @@ class SimpleSiteCMS():
         # If page has a specific template defined (e.g. 'pages/blog.html'), use it.
         # Otherwise use default.html
         if page.template and page.template.lower() != 'page':
-            # Ensure we look in the language specific dir if the path is relative
-            # The frontmatter might say "pages/blog.html".
-            # We want to use "{lang}/pages/blog.html".
-            # If the user put "pages/blog.html" in frontmatter, we prepend lang.
-            
             # Special case: if frontmatter path starts with pages/, we prepend lang/
             # Example: "pages/index.html" -> "en/pages/index.html" or "cn/pages/index.html"
-            content_template = f"{lang}/{page.template}"
+            
+            lang_specific_template = f"{lang}/{page.template}"
+            if os.path.exists(os.path.join('templates', lang_specific_template)):
+                content_template = lang_specific_template
+            else:
+                content_template = page.template
         else:
-            content_template = f"{lang}/pages/default.html"
+            lang_specific_default = f"{lang}/pages/default.html"
+            if os.path.exists(os.path.join('templates', lang_specific_default)):
+                content_template = lang_specific_default
+            else:
+                content_template = "pages/default.html"
 
         filename = f'{page.name}.html' if lang == 'en' else f'{lang}/{page.name}.html'
         
@@ -228,21 +238,16 @@ class SimpleSiteCMS():
             'articles': articles,
             'content': page.content,
             'i18n': TRANSLATIONS[lang],
-            'link_prefix': link_prefix
+            'link_prefix': link_prefix,
+            'page': page.meta
         }
         self.write_html(template.render(data), filename)
 
     def render_article(self, lang: str, article: Article) -> None:
         template = self.env.get_template('main.html')
-        content_template = "en/article.html" # Assuming we share the article detailed view template or use EN for now
-        # Ideally we should have cn/article.html too. Let's try to use lang specific if available, else EN.
         
-        # Check if we have a lang specific article template
-        try:
-            self.env.get_template(f"{lang}/article.html")
-            content_template = f"{lang}/article.html"
-        except:
-            content_template = "en/article.html"
+        # Use unified article template
+        content_template = "pages/article.html"
 
         filename = f'blogs/{article.name}.html' if lang == 'en' else f'{lang}/blogs/{article.name}.html'
         
