@@ -88,15 +88,16 @@
                         <i class="{{ page.services.herbal.icon }} text-xl {{ page.services.herbal.icon_color }}"></i>
                     </div>
                     <div class="text-center md:text-left">
-                        <h4 class="font-serif text-lg font-bold text-slate-800">{{ page.services.herbal.title }}</h4>
-                        <p class="text-slate-500 text-sm">{{ page.services.herbal.desc }}</p>
+                        <h3 class="font-serif text-2xl font-bold text-slate-800 mb-2">{{ page.services.herbal.title }}
+                        </h3>
+                        <p class="text-slate-500 text-sm uppercase tracking-wider">{{ page.services.herbal.desc }}</p>
                     </div>
                 </div>
                 <div class="flex items-center gap-4">
                     <div class="text-right">
                         {% for rate in page.services.herbal.rates %}
                         <span class="block text-xs text-slate-400 uppercase">{{ rate.label }}</span>
-                        <span class="font-bold text-primary text-lg">{{ rate.price }}</span>
+                        <span class="font-bold text-primary text-xl">{{ rate.price }}</span>
                         {% endfor %}
                     </div>
                 </div>
