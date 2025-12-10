@@ -22,7 +22,7 @@ class Config:
     SITEMAP_JSON = './sitemap.json'
     SITEMAP_XML = '../dist/sitemap.xml'
     TAILWIND_EXEC = './tailwindcss'
-    ARTICLE_DIR = './content/articles/*.md'
+    ARTICLE_DIR_TEMPLATE = './content/articles/{lang}/*.md'
     PAGE_DIR_TEMPLATE = './content/pages/{lang}/*.md'
     LANGUAGES = ['en', 'cn']
 
@@ -44,7 +44,9 @@ def run_tailwind():
     os.makedirs(Config.OUTPUT_PATH, exist_ok=True)
 
     # Compile and minify your CSS for production
-    subprocess.run([f'{Config.TAILWIND_EXEC} -i ./templates/styles.css -o {Config.OUTPUT_PATH}styles.css --minify'], shell=True)
+    # v4 CLI: tailwindcss -i input.css -o output.css --minify
+    # No config file needed if configuration is in CSS
+    subprocess.run([f'{Config.TAILWIND_EXEC} -i ./templates/styles.css -o ../dist/styles.css --minify'], shell=True)
 
 
 @dataclass
@@ -120,38 +122,7 @@ class SimpleSiteCMS():
         # Copy assets first
         self.copy_assets()
 
-        # Load Articles from Markdown - currently articles are shared/translated via one folder, 
-        # but in this design we might want to split them too. For now, assuming articles are just EN or mixed.
-        # User only asked to split PAGES for now as per plan.
-        # BUT the plan says "Articles" were rendering for both languages from the same object. 
-        # We will keep existing logic for articles for now (rendering same content for both EN/CN templates),
-        # unless user asked to split articles too. The request was generally about "bilingual support".
-        # Let's keep articles global for now to avoid breaking changes, but render them into both sites.
-        articles = []
-        md_files = glob.glob(Config.ARTICLE_DIR)
-        for md_file in md_files:
-            post = frontmatter.load(md_file)
-            filename = os.path.splitext(os.path.basename(md_file))[0]
-            
-            # Convert markdown body to HTML
-            html_content = markdown.markdown(post.content)
-            
-            article = Article(
-                name=filename,
-                title=post.get('title', ''),
-                publish_date=str(post.get('date', '')), # Ensure string
-                image=post.get('image', ''),
-                abstract=post.get('abstract', ''),
-                page_title=post.get('page_title', ''),
-                content=html_content
-            )
-            articles.append(article)
-        
-        # Sort articles by date descending
-        try:
-            articles.sort(key=lambda x: datetime.strptime(x.publish_date, '%B %d, %Y'), reverse=True)
-        except ValueError as e:
-            print(f"Warning: Date parsing failed for sorting: {e}. Articles might not be sorted correctly.")
+
 
         # Render Pages per Language
         for lang in Config.LANGUAGES:
@@ -164,6 +135,51 @@ class SimpleSiteCMS():
             # If no pages found (e.g. if we haven't created cn pages yet), just warn
             if not md_pages:
                 print(f"Warning: No content found for language '{lang}' in {page_glob}")
+                
+            # Load Articles for this specific language
+            articles = []
+            article_glob = Config.ARTICLE_DIR_TEMPLATE.format(lang=lang)
+            md_articles = glob.glob(article_glob)
+            
+            for md_file in md_articles:
+                post = frontmatter.load(md_file)
+                filename = os.path.splitext(os.path.basename(md_file))[0]
+                
+                # Convert markdown body to HTML
+                html_content = markdown.markdown(post.content)
+                
+                article = Article(
+                    name=filename,
+                    title=post.get('title', ''),
+                    publish_date=str(post.get('date', '')), # Ensure string
+                    image=post.get('image', ''),
+                    abstract=post.get('abstract', ''),
+                    page_title=post.get('page_title', ''),
+                    content=html_content
+                )
+                articles.append(article)
+            
+            # Sort articles by date descending
+            try:
+                # Attempt to parse date with multiple formats if needed, but for now stick to one or string compare? 
+                # Original code used '%B %d, %Y' (December 06, 2023). 
+                # Chinese dates might be different. Let's try standardizing or being flexible.
+                # For now, we'll try the English format, if fail, maybe try ISO?
+                # Actually, standardizing input date format to YYYY-MM-DD in frontmatter is best practice.
+                # But let's support the legacy format too.
+                def parse_date(date_str):
+                    for fmt in ('%B %d, %Y', '%Y-%m-%d'):
+                        try:
+                            return datetime.strptime(date_str, fmt)
+                        except ValueError:
+                            pass
+                    return datetime.min # Fallback
+                
+                articles.sort(key=lambda x: parse_date(x.publish_date), reverse=True)
+            except Exception as e:
+                print(f"Warning: Date sorting issue: {e}")
+
+            if not md_pages:
                 continue
 
             current_lang_pages = []
