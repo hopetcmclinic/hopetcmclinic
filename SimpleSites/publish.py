@@ -14,6 +14,7 @@ import markdown
 import shutil
 
 
+from translations import TRANSLATIONS
 
 class Config:
     ROOT_URL = 'https://www.hopetcmclinic.ca'
@@ -188,7 +189,7 @@ class SimpleSiteCMS():
         self.generate_sitemap(Config.SITEMAP_XML)
 
     def render_page(self, lang: str, page: Page, articles: list[Article]) -> None:
-        template_name = f'{lang}/main.html' 
+        template_name = 'main.html' 
         # Check if template exists, if not fallback to en? No, we should assume templates exist.
         try:
             template = self.env.get_template(template_name)
@@ -213,6 +214,11 @@ class SimpleSiteCMS():
 
         filename = f'{page.name}.html' if lang == 'en' else f'{lang}/{page.name}.html'
         
+        # Determine link prefix for internal links
+        # en -> /therapists.html
+        # cn -> /cn/therapists.html
+        link_prefix = "" if lang == 'en' else f"/{lang}"
+
         data = {        
             'lang': lang,
             'name': page.name,
@@ -220,12 +226,14 @@ class SimpleSiteCMS():
             'description': page.description,
             'content_template': content_template,
             'articles': articles,
-            'content': page.content 
+            'content': page.content,
+            'i18n': TRANSLATIONS[lang],
+            'link_prefix': link_prefix
         }
         self.write_html(template.render(data), filename)
 
     def render_article(self, lang: str, article: Article) -> None:
-        template = self.env.get_template(f'{lang}/main.html')
+        template = self.env.get_template('main.html')
         content_template = "en/article.html" # Assuming we share the article detailed view template or use EN for now
         # Ideally we should have cn/article.html too. Let's try to use lang specific if available, else EN.
         
@@ -238,13 +246,17 @@ class SimpleSiteCMS():
 
         filename = f'blogs/{article.name}.html' if lang == 'en' else f'{lang}/blogs/{article.name}.html'
         
+        link_prefix = "" if lang == 'en' else f"/{lang}"
+
         data = {        
             'lang': lang,
             'name': "article",
             'content_template': content_template,
             "article": article,
             'title': article.page_title,
-            'description': article.abstract
+            'description': article.abstract,
+            'i18n': TRANSLATIONS[lang],
+            'link_prefix': link_prefix
         }
         self.write_html(template.render(data), filename)
 
