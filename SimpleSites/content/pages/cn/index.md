@@ -3,8 +3,8 @@ title: 新西敏注册针灸与中医 | ICBC
 description: 经验丰富的注册针灸师在新西敏提供多种中医服务，包括针灸、拔罐、艾灸、刮痧和中药。
 template: pages/index.html
 hero:
-  title_line1: "恢复活力 &"
-  title_highlight: "和谐"
+  title_line1: "恢复健康 &"
+  title_highlight: "活力"
   subtitle: "在新西敏拥抱传统中医的古老智慧。"
   cta: "了解理念"
   link: "/cn/blogs/traditional_chinese_medicine.html"
