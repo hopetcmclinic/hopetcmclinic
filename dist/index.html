@@ -101,12 +101,12 @@
     <header
         class="flex flex-col border-b border-primary/20 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm transition-all duration-300">
         <nav class="flex justify-between items-center w-[92%] mx-auto py-4 max-w-6xl">
-            <div class="flex items-center">
+            <div class="flex items-center gap-4 md:gap-0">
                 <a href="/index.html" class="shrink-0 hover:opacity-90 transition-opacity">
                     <img class="w-16 lg:w-24" src="/images/logo.png" alt="e Traditional Chinese Medicine Clinic">
                 </a>
                 <div
-                    class="flex flex-col justify-center items-center text-center font-serif text-primary tracking-wide">
+                    class="flex flex-col justify-center items-center text-center font-serif text-primary tracking-wide md:hidden lg:flex">
                     <!-- Title: Small on MD, Med on LG, Large on XL -->
                     <p class="text-sm md:text-sm lg:text-base font-bold leading-tight uppercase whitespace-nowrap">
                         HOPE TRADITIONAL</p>
@@ -122,9 +122,9 @@
             </div>
 
             <div
-                class="nav-links hidden md:flex md:static absolute top-[100%] left-0 w-full md:w-auto bg-white md:bg-transparent px-8 md:px-0 shadow-lg md:shadow-none z-40">
+                class="nav-links hidden md:flex md:static absolute top-[100%] left-0 w-full md:w-auto bg-white md:bg-transparent px-8 md:px-0 pb-8 md:pb-0 shadow-lg md:shadow-none z-40">
                 <ul
-                    class="flex flex-col gap-8 md:gap-x-3 lg:gap-x-5 xl:gap-x-10 md:flex-row md:items-center text-lg md:text-base lg:text-lg xl:text-lg font-medium text-slate-600">
+                    class="flex flex-col gap-8 md:gap-x-6 lg:gap-x-5 xl:gap-x-10 md:flex-row md:items-center text-lg md:text-base lg:text-lg xl:text-lg font-medium text-slate-600">
                     <li><a href="/index.html" onclick="closeMenu()"
                             class="text-primary font-bold border-b-2 border-accent py-1 whitespace-nowrap">Home</a>
                     </li>
@@ -248,28 +248,28 @@
 
     <!-- Hero Section -->
     <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl group">
-        <a href="/blogs/traditional_chinese_medicine.html" class="block relative h-[250px] md:h-[350px]">
+        <div class="block relative h-[500px] md:h-[350px]">
             <img src="/images/Inner-Chinese.jpg"
                 class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-1000"
                 alt="Embrace the ancient wisdom of Traditional Chinese Medicine in New Westminster.">
             <div
                 class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent flex flex-col justify-center px-8 md:px-16">
                 
-                <h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
+                <h1 class="font-serif text-3xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
                     Restore Vitality & <br> Harmony
                 </h1>
                 
-                <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-8 font-medium drop-shadow-md">
+                <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-6 md:mb-8 font-medium drop-shadow-md">
                     Embrace the ancient wisdom of Traditional Chinese Medicine in New Westminster.
                 </p>
                 
-                <span
+                <a href="/blogs/traditional_chinese_medicine.html"
                     class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent-light hover:text-emerald-900 transition-all w-fit uppercase tracking-wider text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                     Learn Philosophy
-                </span>
+                </a>
                 
             </div>
-        </a>
+        </div>
     </div>
 
     <!-- Introduction Section -->
@@ -375,11 +375,14 @@
                         <p class="text-slate-500 text-sm uppercase tracking-wider">Personalized herbal prescriptions to support your healing.</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
-                    <div class="text-right">
+                <div class="flex items-center gap-4 w-full md:w-auto">
+                    <div class="w-full md:w-auto">
                         
-                        <span class="block text-xs text-slate-400 uppercase">Follow-up (20 min)</span>
-                        <span class="font-bold text-primary text-xl">$30</span>
+                        <div
+                            class="flex justify-between items-center border-b border-dashed border-stone-200 pb-2 md:border-0 md:pb-0 md:block md:text-right">
+                            <span class="text-slate-600 md:text-slate-400 md:text-xs md:uppercase">Follow-up (20 min)</span>
+                            <span class="font-bold text-primary text-xl md:block">$30</span>
+                        </div>
                         
                     </div>
                 </div>

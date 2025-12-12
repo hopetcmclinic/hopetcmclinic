@@ -2,28 +2,28 @@
 
     <!-- Hero Section -->
     <div class="relative w-full rounded-2xl overflow-hidden shadow-2xl group">
-        <a href="{{ page.hero.link }}" class="block relative h-[250px] md:h-[350px]">
+        <div class="block relative h-[500px] md:h-[350px]">
             <img src="{{ page.hero.image }}"
                 class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-1000"
                 alt="{{ page.hero.subtitle }}">
             <div
                 class="absolute inset-0 bg-gradient-to-r from-primary/90 to-transparent flex flex-col justify-center px-8 md:px-16">
                 {% if page.hero.title_line1 %}
-                <h1 class="font-serif text-4xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
+                <h1 class="font-serif text-3xl md:text-6xl text-white font-bold mb-4 drop-shadow-md leading-tight">
                     {{ page.hero.title_line1 }} <br> {{ page.hero.title_highlight }}
                 </h1>
                 {% endif %}
-                <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-8 font-medium drop-shadow-md">
+                <p class="text-stone-100 text-lg md:text-xl max-w-xl mb-6 md:mb-8 font-medium drop-shadow-md">
                     {{ page.hero.subtitle }}
                 </p>
                 {% if page.hero.cta %}
-                <span
+                <a href="{{ page.hero.link }}"
                     class="inline-block bg-accent text-white px-8 py-3 rounded-full font-semibold hover:bg-accent-light hover:text-emerald-900 transition-all w-fit uppercase tracking-wider text-sm shadow-lg hover:shadow-xl hover:-translate-y-0.5">
                     {{ page.hero.cta }}
-                </span>
+                </a>
                 {% endif %}
             </div>
-        </a>
+        </div>
     </div>
 
     <!-- Introduction Section -->
@@ -92,11 +92,15 @@
                         <p class="text-slate-500 text-sm uppercase tracking-wider">{{ page.services.herbal.desc }}</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-4">
-                    <div class="text-right">
+                <div class="flex items-center gap-4 w-full md:w-auto">
+                    <div class="w-full md:w-auto">
                         {% for rate in page.services.herbal.rates %}
-                        <span class="block text-xs text-slate-400 uppercase">{{ rate.label }}</span>
-                        <span class="font-bold text-primary text-xl">{{ rate.price }}</span>
+                        <div
+                            class="flex justify-between items-center border-b border-dashed border-stone-200 pb-2 md:border-0 md:pb-0 md:block md:text-right">
+                            <span class="text-slate-600 md:text-slate-400 md:text-xs md:uppercase">{{ rate.label
+                                }}</span>
+                            <span class="font-bold text-primary text-xl md:block">{{ rate.price }}</span>
+                        </div>
                         {% endfor %}
                     </div>
                 </div>
