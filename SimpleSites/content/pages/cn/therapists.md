@@ -1,50 +1,50 @@
 ---
-title: Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic
-description: Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
+title: Yuan Fang (Eva) - 新西敏注册针灸师 | Hope TCM Clinic
+description: Yuan Fang (Eva)，BC 省注册中医师，毕业于温哥华慈济中医学院。专长疼痛缓解、消化系统问题、情绪困扰及女性健康。提供针灸、浮针、中药、拔罐、耳穴、艾灸和刮痧服务。推崇自然疗法，将道家理念融入治疗实践。
 template: pages/therapists.html
 therapist:
-  name: "Dr. Eva Fang Yuan"
-  title: "Doctor of TCM | R.Ac."
+  name: "Yuan Fang (Eva)"
+  title: "注册中医师 (Dr. TCM) | 注册针灸师 (R.Ac.)"
   image: "/images/Eva.jpg"
-  book_text: "Book Appointment"
+  book_text: "预约治疗"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:
-  heading: "Embracing Holistic Healing"
-  quote: "My practice reflects the Taoist principle of harmony between human and nature."
-  intro: "Dr. Eva is a licensed acupuncturist and Doctor of Traditional Chinese Medicine (TCM) registered with the <a href=\"https://portal.ctcma.bc.ca/Public/Public/Public-Registry-Main.aspx\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CTCMA of British Columbia</a>. She graduated in 2019 from the esteemed Tzu Chi International College of Traditional Chinese Medicine in Vancouver."
+  heading: "拥抱整体疗愈"
+  quote: "我的诊治理念体现了道家‘天人合一’的和谐原则。"
+  intro: "Eva 医生是 BC 省 CTCMA 注册的执业针灸师和中医师。她于 2019 年毕业于温哥华著名的慈济中医学院。"
 specs:
-  title: "Specializations"
-  intro: "With a deep passion for holistic health, Dr. Eva focuses on treating the root causes of:"
+  title: "专长领域"
+  intro: "Eva 医生热衷于整体健康，专注于从根本上治疗以下问题："
   entries:
-    - name: "Digestive Issues"
+    - name: "消化系统问题"
       icon: "fas fa-leaf"
-    - name: "Emotional Imbalances"
+    - name: "情绪失衡"
       icon: "fas fa-heart"
-    - name: "Women’s Health"
+    - name: "女性健康"
       icon: "fas fa-female"
-    - name: "Post-COVID Symptoms"
+    - name: "新冠后遗症"
       icon: "fas fa-lungs"
-    - name: "Sports Injuries"
+    - name: "运动损伤"
       icon: "fas fa-running"
-    - name: "Acute & Chronic Pain"
+    - name: "急慢性疼痛"
       icon: "fas fa-bolt"
 approach:
-  title: "Integrative Approach"
-  intro: "Utilizing a powerful combination of modalities to achieve balance:"
+  title: "综合治疗方法"
+  intro: "运用多种强效疗法以达到平衡："
   entries:
-    - name: "Acupuncture"
-      link: "/blogs/acupuncture.html"
-    - name: "Herbal Medicine"
-      link: "/blogs/traditional_chinese_medicine.html"
-    - name: "Cupping"
-      link: "/blogs/cupping.html"
-    - name: "Moxibustion"
-      link: "/blogs/moxibustion.html"
-    - name: "Gua Sha"
-    - name: "Ear Seeds"
+    - name: "针灸"
+      link: "/cn/blogs/acupuncture.html"
+    - name: "中药"
+      link: "/cn/blogs/traditional_chinese_medicine.html"
+    - name: "拔罐"
+      link: "/cn/blogs/cupping.html"
+    - name: "艾灸"
+      link: "/cn/blogs/moxibustion.html"
+    - name: "刮痧"
+    - name: "耳穴"
 philosophy:
-  title: "Philosophy"
+  title: "治疗理念"
   paragraphs:
-    - "A strong advocate for alternative medicine, Dr. Eva believes in reducing reliance on pharmaceuticals when natural solutions can support long-term wellness."
-    - "Inspired by Taoism, she encourages clients to embrace a balanced lifestyle where physical health, emotional well-being, and spiritual harmony thrive together."
+    - "Eva 医生大力倡导替代医学，相信当自然疗法能够支持长期健康时，应减少对药物的依赖。"
+    - "受道家思想启发，她鼓励患者拥抱平衡的生活方式，使身体健康、情绪稳定和精神和谐共同发展。"
 ---

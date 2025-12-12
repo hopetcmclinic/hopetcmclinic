@@ -1,9 +1,9 @@
 ---
-title: TCM Blog and Health Tips | Hope TCM Clinic
-description: Read our latest articles on Traditional Chinese Medicine, acupuncture, and holistic health.
+title: 中医博客与健康贴士 | Hope TCM Clinic
+description: 阅读我们要关于中医、针灸和整体健康的最新文章。
 template: pages/blog.html
-read_more: "Read Full Article"
+read_more: "阅读全文"
 book:
-  text: "Book An Appointment Online"
+  text: "立即在线预约"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 ---
