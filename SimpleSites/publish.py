@@ -23,7 +23,7 @@ class Config:
     SITEMAP_XML = '../dist/sitemap.xml'
     TAILWIND_EXEC = './tailwindcss'
     ARTICLE_DIR_TEMPLATE = './content/articles/{lang}/*.md'
-    PAGE_DIR_TEMPLATE = './content/pages/{lang}/*.md'
+    PAGE_DIR_TEMPLATE = './content/pages/{lang}/**/*.md'
     LANGUAGES = ['en', 'cn']
 
 
@@ -130,7 +130,8 @@ class SimpleSiteCMS():
             
             # Load Pages for this specific language
             page_glob = Config.PAGE_DIR_TEMPLATE.format(lang=lang)
-            md_pages = glob.glob(page_glob)
+            # Use recursive glob to find all md files in subdirectories
+            md_pages = glob.glob(page_glob, recursive=True)
             
             # If no pages found (e.g. if we haven't created cn pages yet), just warn
             if not md_pages:
@@ -183,9 +184,15 @@ class SimpleSiteCMS():
                 continue
 
             current_lang_pages = []
+            base_content_dir = os.path.dirname(Config.PAGE_DIR_TEMPLATE.format(lang=lang).replace('/*.md', '').replace('/**/*.md', ''))
+            
             for md_file in md_pages:
                 post = frontmatter.load(md_file)
-                filename = os.path.splitext(os.path.basename(md_file))[0]
+                
+                # Calculate relative path from the content root to allow for subdirectories
+                # e.g. content/pages/en/treatments/acupuncture.md -> treatments/acupuncture
+                rel_path = os.path.relpath(md_file, base_content_dir)
+                filename = os.path.splitext(rel_path)[0]
                 
                 html_content = markdown.markdown(post.content)
                 
@@ -247,12 +254,23 @@ class SimpleSiteCMS():
             
 
 
+        # If the template is using article.html, we need to pass an 'article' object
+        # This is because article.html expects {{ article.title }} and {{ article.content }}
+        page_as_article = None
+        if content_template == "pages/article.html" or content_template.endswith("/article.html"):
+            page_as_article = Article(
+                title=page.title,
+                content=page.content,
+                # Add other fields if needed by article.html
+            )
+
         html = template.render(
             lang=lang, 
             link_prefix=link_prefix,
             i18n=TRANSLATIONS[lang], 
             page=page.meta, 
             articles=articles,
+            article=page_as_article, # Pass the pseudo-article
             title=page.title, 
             description=page.description,
             name=page.name,
