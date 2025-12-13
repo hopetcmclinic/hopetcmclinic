@@ -7,4 +7,4 @@ class Config:
     ARTICLE_DIR_TEMPLATE = './content/articles/{lang}/*.md'
     PAGE_DIR_TEMPLATE = './content/pages/{lang}/**/*.md'
     LANGUAGES = ['en', 'cn']
-    MINIFY_HTML = True
+    MINIFY_HTML = False

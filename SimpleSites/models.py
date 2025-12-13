@@ -21,12 +21,12 @@ class Article:
     content: str=""
 
 
+@dataclass
 class SitemapEntry:
-    def __init__(self, filename='', hash='', lastmod=''):
-        self.filename = filename
-        self.hash = hash
-        self.lastmod = lastmod
-        self.touched = False
+    filename: str = ''
+    hash: str = ''
+    lastmod: str = ''
+    touched: bool = False
     
     @staticmethod
     def serialize(entry):

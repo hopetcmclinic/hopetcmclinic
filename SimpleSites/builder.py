@@ -192,7 +192,7 @@ class SimpleSiteCMS():
             file.write(sitemap_content)
 
         with open(Config.SITEMAP_JSON, 'w') as file:
-            json.dump(touched_sitemap_entries, file, default=SitemapEntry.serialize)
+            json.dump(touched_sitemap_entries, file, default=SitemapEntry.serialize, indent=4)
 
     def generate_robots_txt(self):
         content = f"User-agent: *\nAllow: /\nSitemap: {Config.ROOT_URL}/sitemap.xml"
