@@ -31,9 +31,20 @@ def build_site():
         print(f"Build failed: {e}")
         sys.exit(1)
 
+def clean_dist():
+    """Remove and recreate the dist directory."""
+    dist_path = os.path.abspath(DIST_DIR)
+    if os.path.exists(dist_path):
+        print(f"Cleaning {dist_path}...")
+        shutil.rmtree(dist_path)
+    os.makedirs(dist_path, exist_ok=True)
+
 def deploy():
     """Deploy the contents of dist/ to the gh-pages branch."""
     
+    # 0. Clean the dist directory
+    clean_dist()
+
     # 1. Build the site to ensure fresh content
     build_site()
 
@@ -59,7 +70,7 @@ def deploy():
     
     # 3. Force push to the gh-pages branch
     print(f"Pushing to {BRANCH} branch...")
-    run_command(['git', 'push', '-f', REPO_URL, f'master:{BRANCH}'], cwd=dist_path)
+    run_command(['git', 'push', '-f', REPO_URL, f'main:{BRANCH}'], cwd=dist_path)
     
     print("Deployment complete!")
 
