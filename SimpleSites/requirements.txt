@@ -1,5 +1,7 @@
-watchdog
 jinja2
 lxml
 python-frontmatter
 markdown
+watchdog
+livereload
+Pillow

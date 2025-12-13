@@ -1,64 +1,43 @@
-import time
 import os
 import sys
 import subprocess
-from watchdog.observers import Observer
-from watchdog.events import FileSystemEventHandler
+from livereload import Server
 
-def is_mac():
-    return sys.platform.startswith('darwin')
-python = 'python3' if is_mac() else 'python'
-
-
-class MyHandler(FileSystemEventHandler):
-    def __init__(self, filename_to_run):
-        self.filename_to_run = filename_to_run
-
-    def on_any_event(self, event):
-        if event.is_directory:
-            return
-        if event.src_path.endswith('sitemap.json'):
-            return
-        
-        # print(f'File {event.src_path} has been {event.event_type}')
-        if event.event_type in ['created', 'modified', 'moved']:
-            self.run_python_file()
-
-    def run_python_file(self):        
-        try:
-            subprocess.run([python, self.filename_to_run], check=True)
-        except subprocess.CalledProcessError as e:
-            print(f"Error: {e}")
-
-
-def run_webserver():
-    current_dir = os.path.dirname(os.path.abspath(__file__))
-    parent_dir = os.path.abspath(os.path.join(current_dir, os.pardir))
-    print("Starting Web Server on port 8000")
-    return subprocess.Popen([python, '-m', 'http.server', '--directory', os.path.join(parent_dir, 'dist')], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-
+def run_publish():
+    print("Detected change, rebuilding site...")
+    # Run the publish script
+    # We use subprocess to ensure a clean run each time
+    publish_script = os.path.join(os.path.dirname(__file__), "publish.py")
+    subprocess.run([sys.executable, publish_script])
 
 if __name__ == "__main__":
-    directory_to_watch = os.path.dirname(os.path.realpath(__file__))
-    filename_to_run = os.path.join(directory_to_watch, "publish.py")
-
-    event_handler = MyHandler(filename_to_run)
-    observer = Observer()
-    observer.schedule(event_handler, directory_to_watch, recursive=True)
-    # Check if content dir exists and watch it specifically if it's outside (it's inside, but valid confirmation)
-    content_dir = os.path.join(directory_to_watch, "content")
-    if os.path.exists(content_dir):
-        print(f"Watching content directory: {content_dir}")
+    # Initialize the server
+    server = Server()
     
-    observer.start()
-
-    http_server_process = run_webserver()
-
-    try:
-        while True:
-            time.sleep(1)
-    except KeyboardInterrupt:
-        observer.stop()
-        http_server_process.terminate()
-    observer.join()
-    http_server_process.join()
+    # Watch for changes in key directories and files
+    # Re-run publish.py when changes occur
+    server.watch('content/', run_publish)
+    server.watch('templates/', run_publish)
+    server.watch('assets/', run_publish)
+    server.watch('translations.py', run_publish)
+    server.watch('site_config.py', run_publish)
+    server.watch('models.py', run_publish)
+    server.watch('builder.py', run_publish)
+    server.watch('publish.py', run_publish)
+    
+    # Also watch tailwind output if you want, but usually watching templates is enough
+    # server.watch('templates/styles.css', run_publish) # publish.py runs tailwind anyway
+    
+    # Define the output directory to serve
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    dist_dir = os.path.abspath(os.path.join(current_dir, '../dist'))
+    
+    print(f"Starting Live Reload Server...")
+    print(f"Serving directory: {dist_dir}")
+    print(f"Open http://localhost:8000 in your browser")
+    
+    # Run the initial build to make sure everything is fresh
+    run_publish()
+    
+    # Start serving
+    server.serve(root=dist_dir, port=8000, open_url_delay=None)
