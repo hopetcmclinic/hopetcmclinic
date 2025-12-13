@@ -11,7 +11,7 @@ hero:
   link: "/blogs/traditional_chinese_medicine.html"
   image: "/images/Inner-Chinese.jpg"
 intro:
-  main: "Welcome to <span class=\"text-primary font-bold\">Hope TCM Clinic</span>. Led by <a href=\"/therapists.html\">Eva Fang Yuan</a> (Dr. of TCM, R.AC), we specialize in a holistic approach to healing that honors your body's unique needs."
+  main: "Welcome to <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>, a trusted wellness center in New Westminster. Led by <a href=\"/therapists.html\">Eva Fang Yuan</a> (Dr. of TCM, R.AC), we specialize in a holistic approach to healing that honors your body's unique needs."
   specialties:
     - name: "Acupuncture"
       link: "/treatments/acupuncture.html"

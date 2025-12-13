@@ -26,7 +26,7 @@ TRANSLATIONS = {
         },
         'footer': {
             'address': '235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2',
-            'rights': 'Copyright © 2023 - 2026. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Herbal treatments at Hope Traditional Chinese Medicine Clinic.'
+            'rights': 'Copyright © 2023 - 2026. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Herbal treatments @Hope Traditional Chinese Medicine Clinic'
         }
     },
     'cn': {

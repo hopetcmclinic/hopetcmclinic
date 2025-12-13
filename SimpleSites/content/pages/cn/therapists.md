@@ -10,7 +10,7 @@ therapist:
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:
   heading: "拥抱整体疗愈"
-  quote: "我的诊治理念体现了道家‘天人合一’的和谐原则。"
+  quote: "遵循道家‘天人合一’和谐原则的诊治理念。"
   intro: "Eva 医生是 BC 省 CTCMA 注册的执业针灸师和中医师。她于 2019 年毕业于温哥华著名的慈济中医学院。"
 specs:
   title: "专长领域"

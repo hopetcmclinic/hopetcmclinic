@@ -93,7 +93,7 @@ faq:
   title: "Treatment FAQ"
   entries:
     - q: "How to prepare for my first visit?"
-      a: "Please complete the online intake and consent forms before your appointment (approx. 20 mins). Alternatively, you can fill them out in person upon arrival. It’s a good idea to have a light meal or snack 1–2 hours before your treatment. Avoid consuming coffee or other stimulating beverages before your visit."
+      a: "Please complete the online intake and consent forms before your appointment (approx. 10 mins). Alternatively, you can fill them out in person upon arrival. It’s a good idea to have a light meal or snack 1–2 hours before your treatment. Avoid consuming coffee or other stimulating beverages before your visit."
     - q: "How many treatments will I need?"
       a: "It varies by condition. Acute issues may resolve quickly, while chronic conditions often require ongoing care for reliable results. Consistent acupuncture treatments typically lead to reliable results."
     - q: "Are there side effects?"

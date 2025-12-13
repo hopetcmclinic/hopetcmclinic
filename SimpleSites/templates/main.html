@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="{{description}}">
     <meta name="keywords" content="{{ keywords or i18n.meta.keywords }}">
-    <title>{{title}}{{ i18n.meta.title_suffix }}</title>
+    <title>{% if page is defined and page.page_title %}{{ page.page_title }}{% else %}{{ title }}{% endif %}{{
+        i18n.meta.title_suffix }}</title>
 
     <!-- Canonical URL -->
     {% if canonical_url %}

@@ -14,10 +14,10 @@ contact:
     label: "电话"
     number: "(778) 871-1439"
   email:
-    label: "该电子邮件"
+    label: "电子邮件"
     address: "hopetcmclinic@gmail.com"
   access:
-    title: "门禁通道"
+    title: "门禁系统"
     desc: "<strong>门铃代码 235</strong><br>按 UP 键，然后输入代码 235。"
     video_text: "观看视频指南"
     video_link: "videos/buzzer.mp4"
