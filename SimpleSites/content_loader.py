@@ -60,6 +60,7 @@ class ContentLoader:
                 name=filename,
                 title=post.get('title', ''),
                 description=post.get('description', ''),
+                keywords=post.get('keywords', ''),
                 template=post.get('template', ''),
                 content=html_content,
                 meta=post.metadata
@@ -85,6 +86,7 @@ class ContentLoader:
                 image=post.get('image', ''),
                 abstract=post.get('abstract', ''),
                 page_title=post.get('page_title', ''),
+                keywords=post.get('keywords', ''),
                 content=html_content
             )
             articles.append(article)

@@ -109,6 +109,8 @@ class SimpleSiteCMS():
             canonical_url=canonical_url,
             alternates=alternates,
             root_url=Config.ROOT_URL,
+            keywords=page.keywords,
+            structured_data=self._generate_structured_data(lang, page, is_article=False),
             css_file=getattr(self.assets, 'css_file', 'styles.css'),
             js_file=getattr(self.assets, 'js_file', 'script.js')
         )
@@ -143,6 +145,8 @@ class SimpleSiteCMS():
             'canonical_url': canonical_url,
             'alternates': alternates,
             'root_url': Config.ROOT_URL,
+            'keywords': article.keywords,
+            'structured_data': self._generate_structured_data(lang, article, is_article=True),
             'css_file': getattr(self.assets, 'css_file', 'styles.css'),
             'js_file': getattr(self.assets, 'js_file', 'script.js')
         }
@@ -200,3 +204,76 @@ class SimpleSiteCMS():
         os.makedirs(os.path.dirname(output_file), exist_ok=True)
         with open(output_file, 'w') as f:
             f.write(content)
+
+    def _generate_structured_data(self, lang, obj, is_article=False):
+        base_url = Config.ROOT_URL
+        data = {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": obj.title,
+            "url": f"{base_url}/{lang}/{obj.name}.html" if lang != 'en' else f"{base_url}/{obj.name}.html"
+        }
+
+        # Home Page logic
+        if not is_article and obj.name in ['index', 'home']:
+             data.update({
+              "@type": "MedicalClinic",
+              "name": "Hope Traditional Chinese Medicine Clinic",
+              "image": f"{base_url}/images/logo.png",
+              "logo": f"{base_url}/images/logo.png",
+              "@id": base_url,
+              "url": base_url,
+              "telephone": "+17788711439",
+              "priceRange": "$$",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "235-889 Carnarvon St, Buzzer 235",
+                "addressLocality": "New Westminster",
+                "addressRegion": "BC",
+                "postalCode": "V3M1G2",
+                "addressCountry": "CA"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 49.201396,
+                "longitude": -122.912630
+              },
+              "hasMap": "https://www.google.com/maps/search/?api=1&query=Hope+Traditional+Chinese+Medicine+Clinic+New+Westminster", 
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "opens": "09:00",
+                "closes": "18:00"
+              },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-778-871-1439",
+                "contactType": "customer service",
+                "areaServed": "CA",
+                "availableLanguage": ["en", "zh"]
+              }
+            })
+        
+        # Article logic
+        elif is_article:
+            data.update({
+                "@type": "BlogPosting",
+                "headline": obj.title,
+                "datePublished": obj.publish_date,
+                "author": {
+                    "@type": "Organization",
+                    "name": "Hope TCM Clinic"
+                }
+            })
+            if obj.image:
+                # Assuming article images are in /images/blogs/ relative to root if not absolute
+                img_url = obj.image
+                if not img_url.startswith('http') and not img_url.startswith('/'):
+                    img_url = f"/images/blogs/{img_url}"
+                
+                if not img_url.startswith('http'):
+                     img_url = f"{base_url}{img_url}"
+                     
+                data["image"] = img_url
+                
+        return json.dumps(data, indent=2)

@@ -1,10 +1,12 @@
 from dataclasses import dataclass
 
 @dataclass
+@dataclass
 class Page:
     name: str=""
     title: str=""
     description: str=""
+    keywords: str=""
     template: str=""
     content: str=""
     meta: dict = None
@@ -18,6 +20,7 @@ class Article:
     image: str=""
     abstract: str=""
     page_title: str=""
+    keywords: str=""
     content: str=""
 
 
