@@ -69,3 +69,66 @@ document.addEventListener('click', function (event) {
         dropdown.style.visibility = '';
     }
 });
+
+// Header Shrink on Scroll
+function handleScroll() {
+    const header = document.getElementById('site-header');
+    const nav = document.getElementById('site-nav');
+    const logo = document.getElementById('site-logo');
+    const title1 = document.getElementById('site-title-1');
+    const title2 = document.getElementById('site-title-2');
+    const title3 = document.getElementById('site-title-3');
+
+    if (!header || !nav || !logo) return;
+
+    if (window.scrollY > 20) {
+        // Scrolled down - Aggressive Shrink
+        nav.classList.remove('py-4');
+        nav.classList.add('py-1');
+
+        logo.classList.remove('lg:w-24');
+        logo.classList.add('lg:w-12');
+
+        if (title1) {
+            title1.classList.remove('lg:text-base');
+            title1.classList.add('lg:text-xs');
+        }
+        if (title2) {
+            title2.classList.remove('lg:text-xs');
+            title2.classList.add('lg:text-[8px]');
+        }
+        if (title3) {
+            title3.classList.remove('lg:text-base');
+            title3.classList.add('lg:text-xs');
+        }
+
+        header.classList.add('shadow-md');
+        header.classList.remove('shadow-sm');
+    } else {
+        // Top - Original Size
+        nav.classList.add('py-4');
+        nav.classList.remove('py-1');
+
+        logo.classList.add('lg:w-24');
+        logo.classList.remove('lg:w-12');
+
+        if (title1) {
+            title1.classList.add('lg:text-base');
+            title1.classList.remove('lg:text-xs');
+        }
+        if (title2) {
+            title2.classList.add('lg:text-xs');
+            title2.classList.remove('lg:text-[8px]');
+        }
+        if (title3) {
+            title3.classList.add('lg:text-base');
+            title3.classList.remove('lg:text-xs');
+        }
+
+        header.classList.remove('shadow-md');
+        header.classList.add('shadow-sm');
+    }
+}
+
+window.addEventListener('scroll', handleScroll);
+window.addEventListener('load', handleScroll);
