@@ -150,8 +150,17 @@ class SimpleSiteCMS():
 
     def write_html(self, html: str, filename: str) -> None:
         file_path = f'{Config.OUTPUT_PATH}{filename}'
+        # Ensure directory exists
         os.makedirs(os.path.dirname(file_path), exist_ok=True)
         
+        # Minify HTML
+        if Config.MINIFY_HTML:
+            try:
+                import htmlmin
+                html = htmlmin.minify(html, remove_empty_space=True)
+            except ImportError:
+                print("Warning: htmlmin not installed. Skipping minification.")
+
         with open(file_path, 'w') as f:
             f.write(html)
         

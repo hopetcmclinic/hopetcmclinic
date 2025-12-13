@@ -5,3 +5,4 @@ markdown
 watchdog
 livereload
 Pillow
+htmlmin

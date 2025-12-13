@@ -3,8 +3,37 @@ import glob
 import frontmatter
 import markdown
 from datetime import datetime
+from markdown.extensions import Extension
+from markdown.inlinepatterns import ImageInlineProcessor, IMAGE_LINK_RE
+from xml.etree import ElementTree
+
 from site_config import Config
 from models import Page, Article
+
+class LazyLoadingImagePattern(ImageInlineProcessor):
+    def handleMatch(self, m, data):
+        text, index, handled = self.getText(data, m.start(0))
+        if not handled:
+            return None, None, None
+
+        src, title, index, handled = self.getLink(data, index)
+        if not handled:
+            return None, None, None
+
+        el = ElementTree.Element('img')
+        el.set('src', src)
+        el.set('alt', text)
+        if title:
+            el.set('title', title)
+        
+        # Add lazy loading!
+        el.set('loading', 'lazy')
+        
+        return el, m.start(0), index
+
+class LazyLoadingImageExtension(Extension):
+    def extendMarkdown(self, md):
+        md.inlinePatterns.register(LazyLoadingImagePattern(IMAGE_LINK_RE, md), 'image_link', 150)
 
 class ContentLoader:
     def load_pages(self, lang: str) -> list[Page]:
@@ -25,7 +54,7 @@ class ContentLoader:
             rel_path = os.path.relpath(md_file, base_content_dir)
             filename = os.path.splitext(rel_path)[0]
             
-            html_content = markdown.markdown(post.content)
+            html_content = markdown.markdown(post.content, extensions=[LazyLoadingImageExtension()])
             
             page = Page(
                 name=filename,
@@ -47,7 +76,7 @@ class ContentLoader:
             post = frontmatter.load(md_file)
             filename = os.path.splitext(os.path.basename(md_file))[0]
             
-            html_content = markdown.markdown(post.content)
+            html_content = markdown.markdown(post.content, extensions=[LazyLoadingImageExtension()])
             
             article = Article(
                 name=filename,
