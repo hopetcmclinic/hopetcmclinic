@@ -7,7 +7,7 @@ def run_publish():
     print("Detected change, rebuilding site...")
     # Run the publish script
     # We use subprocess to ensure a clean run each time
-    publish_script = os.path.join(os.path.dirname(__file__), "publish.py")
+    publish_script = os.path.join(os.path.dirname(__file__), "main.py")
     subprocess.run([sys.executable, publish_script])
 
 if __name__ == "__main__":
@@ -15,7 +15,7 @@ if __name__ == "__main__":
     server = Server()
     
     # Watch for changes in key directories and files
-    # Re-run publish.py when changes occur
+    # Re-run main.py when changes occur
     server.watch('content/', run_publish)
     server.watch('templates/', run_publish)
     server.watch('assets/', run_publish)
@@ -23,10 +23,12 @@ if __name__ == "__main__":
     server.watch('site_config.py', run_publish)
     server.watch('models.py', run_publish)
     server.watch('builder.py', run_publish)
-    server.watch('publish.py', run_publish)
+    server.watch('asset_manager.py', run_publish)
+    server.watch('content_loader.py', run_publish)
+    server.watch('main.py', run_publish)
     
     # Also watch tailwind output if you want, but usually watching templates is enough
-    # server.watch('templates/styles.css', run_publish) # publish.py runs tailwind anyway
+    # server.watch('templates/styles.css', run_publish) # main.py runs tailwind anyway
     
     # Define the output directory to serve
     current_dir = os.path.dirname(os.path.abspath(__file__))
