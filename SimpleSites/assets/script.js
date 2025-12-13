@@ -81,7 +81,14 @@ function handleScroll() {
 
     if (!header || !nav || !logo) return;
 
-    if (window.scrollY > 20) {
+    // Current state check (based on nav padding class)
+    const isExpanded = nav.classList.contains('py-4');
+
+    // Hysteresis thresholds
+    const shrinkThreshold = 60; // Scroll down past this to shrink
+    const expandThreshold = 20; // Scroll up past this to expand
+
+    if (isExpanded && window.scrollY > shrinkThreshold) {
         // Scrolled down - Aggressive Shrink
         nav.classList.remove('py-4');
         nav.classList.add('py-1');
@@ -104,7 +111,7 @@ function handleScroll() {
 
         header.classList.add('shadow-md');
         header.classList.remove('shadow-sm');
-    } else {
+    } else if (!isExpanded && window.scrollY < expandThreshold) {
         // Top - Original Size
         nav.classList.add('py-4');
         nav.classList.remove('py-1');

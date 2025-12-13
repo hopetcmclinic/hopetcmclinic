@@ -1,6 +1,6 @@
 ---
 title: Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic
-description: Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and gua sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
+description: Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and Gua Sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
 template: pages/therapists.html
 therapist:
   name: "Eva Fang Yuan"
@@ -33,14 +33,15 @@ approach:
   intro: "Utilizing a powerful combination of modalities to achieve balance:"
   entries:
     - name: "Acupuncture"
-      link: "/blogs/acupuncture.html"
+      link: "/treatments/acupuncture.html"
     - name: "Herbal Medicine"
-      link: "/blogs/traditional_chinese_medicine.html"
+      link: "/treatments/traditional_chinese_medicine.html"
     - name: "Cupping"
-      link: "/blogs/cupping.html"
+      link: "/treatments/cupping.html"
     - name: "Moxibustion"
-      link: "/blogs/moxibustion.html"
+      link: "/treatments/moxibustion.html"
     - name: "Gua Sha"
+      link: "/treatments/gua-sha.html"
     - name: "Ear Seeds"
 philosophy:
   title: "Philosophy"

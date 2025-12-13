@@ -42,8 +42,8 @@
                         <span class="font-serif text-3xl font-bold text-primary/80">{{ loop.index }}</span>
                     </div>
 
-                    <h3 class="font-serif text-xl font-bold text-slate-800 mt-8 mb-2">{{ item }}</h3>
-                    <p class="text-slate-500 text-sm">Comprehensive assessment step</p>
+                    <h3 class="font-serif text-xl font-bold text-slate-800 mt-8 mb-2">{{ item.title }}</h3>
+                    <p class="text-slate-500 text-sm">{{ item.desc }}</p>
                 </div>
                 {% endfor %}
             </div>
@@ -110,36 +110,45 @@
                 <div class="grid grid-cols-1 gap-6">
                     <!-- Facial -->
                     <a href="{{ page.core_treatments.specialized.facial.link }}"
-                        class="group block bg-white rounded-2xl p-8 border border-stone-100 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
-                        <div class="flex items-center justify-between mb-4">
-                            <div
-                                class="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center text-rose-400 text-xl group-hover:scale-110 transition-transform">
-                                <i class="fas fa-sparkles"></i>
-                            </div>
-                            <span
-                                class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
-                                <i class="fas fa-arrow-right text-sm"></i>
-                            </span>
+                        class="group block bg-white rounded-2xl overflow-hidden border border-stone-100 shadow-sm hover:shadow-lg hover:border-primary/20 transition-all duration-300">
+                        {% if page.core_treatments.specialized.facial.image %}
+                        <div class="h-48 overflow-hidden relative">
+                            <img src="{{ page.core_treatments.specialized.facial.image }}"
+                                alt="{{ page.core_treatments.specialized.facial.title }}"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
-                        <h4
-                            class="font-serif text-xl font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors">
-                            {{ page.core_treatments.specialized.facial.title }}</h4>
-                        <p class="text-slate-600 leading-relaxed">{{ page.core_treatments.specialized.facial.desc }}</p>
-                    </a>
+                        <div class="p-8">
+                            {% else %}
+                            <div class="p-8">
+                                {% endif %}
+                                <div class="flex items-center justify-between mb-4">
+                                    <div
+                                        class="w-12 h-12 rounded-full bg-rose-50 flex items-center justify-center text-rose-400 text-xl group-hover:scale-110 transition-transform">
+                                        <i class="fas fa-sparkles"></i>
+                                    </div>
+                                    <span
+                                        class="w-8 h-8 rounded-full border border-stone-200 flex items-center justify-center text-stone-300 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
+                                        <i class="fas fa-arrow-right text-sm"></i>
+                                    </span>
+                                </div>
+                                <h4
+                                    class="font-serif text-xl font-bold text-slate-800 mb-2 group-hover:text-primary transition-colors">
+                                    {{ page.core_treatments.specialized.facial.title }}</h4>
+                                <p class="text-slate-600 leading-relaxed mb-6">{{
+                                    page.core_treatments.specialized.facial.desc }}</p>
 
-                    <!-- Auricular -->
-                    <div class="bg-stone-50 rounded-2xl p-8 border border-stone-100">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div
-                                class="w-12 h-12 rounded-full bg-amber-50 flex items-center justify-center text-amber-500 text-xl">
-                                <i class="fas fa-ear-listen"></i>
+                                {% if page.core_treatments.specialized.facial.benefits %}
+                                <ul class="space-y-3">
+                                    {% for benefit in page.core_treatments.specialized.facial.benefits %}
+                                    <li class="flex items-start text-slate-600 text-sm">
+                                        <span class="text-primary mt-1 mr-2"><i class="fas fa-check-circle"></i></span>
+                                        <span>{{ benefit }}</span>
+                                    </li>
+                                    {% endfor %}
+                                </ul>
+                                {% endif %}
                             </div>
-                            <h4 class="font-serif text-xl font-bold text-slate-800">{{
-                                page.core_treatments.specialized.auricular.title }}</h4>
-                        </div>
-                        <p class="text-slate-600 leading-relaxed pl-16">{{
-                            page.core_treatments.specialized.auricular.desc }}</p>
-                    </div>
+                    </a>
                 </div>
             </div>
 
@@ -208,12 +217,12 @@
 </div>
 
 <!-- FAQ Section -->
-<div class="max-w-3xl mx-auto px-6">
+<div class="max-w-7xl mx-auto px-6">
     <h2 class="font-serif text-3xl font-bold text-slate-800 mb-10 text-center">{{ page.faq.title }}</h2>
 
     <div class="space-y-4">
         {% for item in page.faq.entries %}
-        <details
+        <details open
             class="group bg-white rounded-xl border border-stone-200 overflow-hidden [&_summary::-webkit-details-marker]:hidden">
             <summary
                 class="flex items-center justify-between gap-4 p-5 cursor-pointer bg-white group-hover:bg-stone-50 transition-colors list-none select-none">

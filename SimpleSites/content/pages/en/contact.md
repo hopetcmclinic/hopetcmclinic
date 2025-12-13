@@ -34,7 +34,7 @@ hours:
       time: "9:30 AM - 4:30 PM"
 location:
   title: "Getting Here"
-  desc: "We are located inside the integrated residential and commercial complex at New Westminster Skytrain Station."
+  desc: "We are located inside the integrated residential and commercial complex adjacent to the New Westminster Skytrain Station."
   skytrain: "Skytrain Access"
   parking: "Paid Parking"
 map:

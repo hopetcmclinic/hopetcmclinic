@@ -1,6 +1,6 @@
 ---
 title: Registered Acupuncture and TCM in New Westminster | ICBC
-description: Seasoned registered acupuncturists offer a diverse array of TCM services including acupuncture, cupping, moxibustion, guasha, and herbal medicine in New West.
+description: Seasoned registered acupuncturists offer a diverse array of TCM services including acupuncture, cupping, moxibustion, Gua Sha, and herbal medicine in New West.
 keywords: "Acupuncture New Westminster, TCM Clinic, Registered Acupuncturist, Cupping Therapy, Moxibustion, Herbal Medicine, ICBC Acupuncture"
 template: pages/index.html
 hero:
@@ -11,19 +11,25 @@ hero:
   link: "/blogs/traditional_chinese_medicine.html"
   image: "/images/Inner-Chinese.jpg"
 intro:
-  main: "Welcome to <span class=\"text-primary font-bold\">Hope TCM Clinic</span>. Led by Dr. Eva Fang Yuan, we specialize in a holistic approach to healing that honors your body's unique needs."
+  main: "Welcome to <span class=\"text-primary font-bold\">Hope TCM Clinic</span>. Led by <a href=\"/therapists.html\">Eva Fang Yuan</a> (Dr. of TCM, R.AC), we specialize in a holistic approach to healing that honors your body's unique needs."
   specialties:
-    - "Acupuncture"
-    - "Cupping"
-    - "Moxibustion"
-    - "Guasha"
-    - "Herbal Medicine"
+    - name: "Acupuncture"
+      link: "/treatments/acupuncture.html"
+    - name: "Facial Rejuvenation"
+      link: "/treatments/facial-rejuvenation.html"
+    - name: "Cupping"
+      link: "/treatments/cupping.html"
+    - name: "Moxibustion"
+      link: "/treatments/moxibustion.html"
+    - name: "Herbal Medicine"
+      link: "/treatments/herbal-formulas.html"
   mission: "\"Our mission is to restore harmony and vitality to your body, mind, and spirit. We guide you on your journey to optimal health, empowering you to achieve lasting wellness.\""
 services:
   title: "Services & Fees"
   entries:
     - title: "Acupuncture"
       subtitle: "Standard Treatment"
+      link: "/treatments/acupuncture.html"
       icon: "fas fa-bullseye"
       icon_bg: "bg-primary/10"
       icon_color: "text-primary"
@@ -33,7 +39,8 @@ services:
         - label: "Follow-up (60 min)"
           price: "$100"
     - title: "Facial Rejuvenation"
-      subtitle: "<a href=\"/blogs/facial-rejuvenation-acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">Natural Aesthetic Method</a>"
+      subtitle: "Natural Aesthetic Method"
+      link: "/treatments/facial-rejuvenation.html"
       icon: "fas fa-spa"
       icon_bg: "bg-accent/10"
       icon_color: "text-accent"
@@ -45,6 +52,7 @@ services:
   herbal:
     title: "Herbal Consultation"
     desc: "Personalized herbal prescriptions to support your healing."
+    link: "/treatments/herbal-formulas.html"
     icon: "fas fa-mortar-pestle"
     icon_bg: "bg-primary/10"
     icon_color: "text-primary"

@@ -9,9 +9,12 @@ diagnosis:
   title: "诊断与评估"
   desc: "您的治疗之旅始于全面的评估，以了解您的健康状况并确定失衡之处。我们将回顾您的病史、生活方式和症状，并采用脉诊、舌诊和腹诊等传统技术。"
   steps:
-    - "健康病史"
-    - "身体检查"
-    - "脉诊与舌诊"
+    - title: "健康病史"
+      desc: "了解您当前的健康问题、既往病史以及生活方式等因素。"
+    - title: "身体检查"
+      desc: "通过观察和触诊检查身体是否存在失衡的体征。"
+    - title: "脉诊与舌诊"
+      desc: "评估您脏腑功能和气血状态的传统中医诊断方法。"
 core_treatments:
   title: "核心疗法"
   acupuncture:
@@ -33,11 +36,14 @@ core_treatments:
     subtitle: "针对性方案"
     facial:
       title: "美容针灸"
-      desc: "刺激胶原蛋白再生，提升皮肤弹性的整体美容疗法。"
-      link: "/cn/blogs/facial-rejuvenation-acupuncture.html"
-    auricular:
-      title: "耳穴疗法"
-      desc: "无针疗法，使用耳豆，适合儿童和敏感体质的成人。"
+      desc: "一种整体美容疗法，因其能自然刺激胶原蛋白生成并改善皮肤弹性，焕发光彩。"
+      link: "/cn/treatments/facial-rejuvenation.html"
+      image: "/images/facial-rejuvenation.png"
+      benefits:
+        - "减少细纹和皱纹"
+        - "改善肤色和质地"
+        - "提升并紧致松弛的皮肤"
+        - "促进整体放松"
   complementary:
     title: "辅助疗法"
     subtitle: "物理治疗"
@@ -62,6 +68,11 @@ core_treatments:
         bg_class: "bg-primary/10"
         text_class: "text-primary"
         link: "/cn/blogs/traditional_chinese_medicine.html"
+      - name: "耳穴疗法"
+        icon: "fas fa-ear-listen"
+        bg_class: "bg-primary/10"
+        text_class: "text-primary"
+        desc: "无针疗法，使用耳豆，适合儿童和敏感体质的成人。"
 after_treatment:
   title: "治疗后的护理"
   desc: "为最大程度发挥治疗效果，我们建议您遵循以下简单的自我护理步骤："
