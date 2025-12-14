@@ -1,11 +1,11 @@
 ---
 abstract: Discover Traditional Chinese Medicine not just as a medical system, but as a 3,000-year-old philosophy of living in accordance with nature. At Hope TCM Clinic, our mission is to help you restore vitality and harmony.
-keywords: "Traditional Chinese Medicine Philosophy, TCM Basics, Qi and Blood, Yin Yang Balance, Holistic Health New Westminster"
+keywords: "Traditional Chinese Medicine New Westminster, TCM Philosophy, Holistic Health, Qi and Balance, Hope TCM Clinic"
 date:  December 12, 2025
 image: traditional_chinese_medicine.jpg
-page_title: 'Restoring Vitality & Harmony: The Wisdom of Traditional Chinese Medicine'
+page_title: "Traditional Chinese Medicine New Westminster | Restoring Vitality & Harmony"
 template: article
-title: 'Restoring Vitality & Harmony: The Wisdom of Traditional Chinese Medicine'
+title: "Restoring Vitality & Harmony: The Wisdom of Traditional Chinese Medicine"
 ---
 
 <img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Traditional Chinese Medicine herbs and tools">
