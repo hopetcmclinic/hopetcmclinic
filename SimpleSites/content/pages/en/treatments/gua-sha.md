@@ -1,5 +1,6 @@
 ---
-title: "Scraping Away Stagnation: Understanding Gua Sha"
+title: "Gua Sha Therapy New Westminster | Muscle Tension Relief"
+keywords: "Gua Sha New Westminster, Scraping Therapy, Muscle Pain Relief, TCM Gua Sha"
 description: An in-depth guide to Gua Sha (Scraping) therapy, its mechanism for pain relief and immune support, and how it differs from cupping.
 template: pages/article.html
 image: gua-sha.png

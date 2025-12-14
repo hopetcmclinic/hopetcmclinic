@@ -1,7 +1,7 @@
 ---
-title: Registered Acupuncture and TCM in New Westminster
+title: Acupuncture & TCM New Westminster
 description: Seasoned registered acupuncturists offer a diverse array of TCM services including Acupuncture, Facial Rejuvenation Acupuncture, Cupping, Moxibustion, Gua Sha, and Herbal Medicine in New West.
-keywords: "Acupuncture New Westminster, TCM Clinic, Registered Acupuncturist, Cupping Therapy, Moxibustion, Herbal Medicine"
+keywords: "Acupuncture New Westminster, TCM Clinic, Registered Acupuncturist, Cupping Therapy, Moxibustion, Herbal Medicine, Gua Sha, Facial Rejuvenation Acupuncture"
 template: pages/index.html
 hero:
   title_line1: "Restore Vitality &"

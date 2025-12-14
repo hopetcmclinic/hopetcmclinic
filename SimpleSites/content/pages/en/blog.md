@@ -1,5 +1,6 @@
 ---
-title: TCM Blog and Health Tips | Hope TCM Clinic
+title: Holistic Health Blog
+keywords: "TCM Blog, Health Tips, Acupuncture News, Wellness Articles New Westminster"
 description: Read our latest articles on Traditional Chinese Medicine, acupuncture, and holistic health.
 template: pages/blog.html
 read_more: "Read Full Article"

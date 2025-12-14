@@ -1,5 +1,6 @@
 ---
-title: Herbal Formulas - Hope TCM Clinic
+title: "Traditional Chinese Herbal Medicine New Westminster | Custom Formulas"
+keywords: "Chinese Herbal Medicine New Westminster, TCM Herbs, Custom Herbal Formulas, GMP Certified Herbs"
 description: Traditional Chinese Herbal Medicine uses custom, GMP-certified natural plant and mineral substances to treat the root cause of illness safely and effectively.
 template: pages/article.html
 image: herbal-formulas.png

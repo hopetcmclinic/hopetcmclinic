@@ -1,8 +1,9 @@
 ---
 abstract: Discover Fu's Subcutaneous Needling (FSN), a revolutionary acupuncture technique invented in 1996. Known as the 'magic needle', FSN targets the subcutaneous layer to provide immediate relief for sports injuries and chronic pain while being gentle and minimally invasive.
+keywords: "FSN, Fu's Subcutaneous Needling, Magic Needle, Instant Pain Relief, Dry Needling vs FSN"
 date: December 13, 2025
 image: fsn.jpeg
-page_title: Fu's Subcutaneous Needling (FSN) - Instant Pain Relief | Hope TCM Clinic
+page_title: Fu's Subcutaneous Needling (FSN) - Instant Pain Relief
 template: article
 title: "Fu's Subcutaneous Needling (FSN): The 'Magic Needle' for Instant Pain Relief"
 ---

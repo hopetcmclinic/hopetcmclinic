@@ -1,5 +1,6 @@
 ---
-title: "Radiate from Within: Facial Rejuvenation Acupuncture"
+title: "Facial Rejuvenation Acupuncture New Westminster | Natural Facelift"
+keywords: "Facial Acupuncture New Westminster, Cosmetic Acupuncture, Anti-Aging Treatment, Natural Facelift"
 description: "Discover the natural, non-surgical path to radiant skin with Facial Rejuvenation Acupuncture. A holistic treatment for timeless beauty."
 template: pages/article.html
 image: facial-rejuvenation-acupuncture.jpg

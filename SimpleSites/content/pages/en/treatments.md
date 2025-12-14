@@ -1,6 +1,7 @@
 ---
-title: Acupuncture, Herbs, Cupping, Gua Sha & Traditional Chinese Medicine in New Westminster | Hope TCM Clinic
-description: We offer wide range of traditional chinese medicine treatments, including acupuncture, cupping, moxibustion, Gua Sha, and herbal medicine.
+title: TCM Treatments New Westminster | Acupuncture, Cupping & Herbs
+description: We offer a wide range of Traditional Chinese Medicine treatments in New Westminster, including Acupuncture, Facial Acupuncture,Cupping, Moxibustion, Gua Sha, and Herbal Medicine.
+keywords: "TCM Treatments New Westminster, Acupuncture Services, Cupping Therapy, Herbal Medicine, Pain Relief Treatments"
 template: pages/treatments.html
 intro:
   title: "Holistic Treatment Offerings"
@@ -69,6 +70,8 @@ core_treatments:
         bg_class: "bg-stone-200/50"
         text_class: "text-slate-500"
         link: "/treatments/gua-sha.html"
+      - name: "More ..."
+        
 after_treatment:
   title: "After Your Treatment"
   desc: "To maximize the benefits of your session, we recommend following these simple self-care steps:"

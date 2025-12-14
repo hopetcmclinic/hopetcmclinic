@@ -1,7 +1,7 @@
 TRANSLATIONS = {
     'en': {
         'meta': {
-            'title_suffix': ' | Hope TCM',
+            'title_suffix': ' | Hope TCM Clinic',
             'og_image': 'https://www.hopetcmclinic.ca/images/Inner-Chinese.jpg', # Default social image
             'twitter_card': 'summary_large_image',
             'keywords': 'Acupuncture, Facial Acupuncture, TCM, Traditional Chinese Medicine, New Westminster, Cupping, Moxibustion, Herbal Medicine'
@@ -34,7 +34,7 @@ TRANSLATIONS = {
     },
     'cn': {
         'meta': {
-            'title_suffix': ' | Hope TCM', # Example suffix
+            'title_suffix': ' | Hope TCM Clinic', # Example suffix
             'og_image': 'https://www.hopetcmclinic.ca/images/Inner-Chinese.jpg',
             'twitter_card': 'summary_large_image',
             'keywords': '针灸, 美容针灸, 中医, 新西敏, 拔罐, 艾灸, 刮痧, 中草药'
