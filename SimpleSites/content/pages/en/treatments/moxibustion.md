@@ -1,10 +1,10 @@
 ---
-title: "Moxibustion Therapy New Westminster | Heat Healing"
+title: "Moxibustion Therapy at Hope TCM: Heat Healing"
 keywords: "Moxibustion New Westminster, Moxa Therapy, Breech Baby Correction, Heat Therapy TCM"
 description: Discover the warming, healing power of Moxibustion at Hope TCM Clinic. Learn how this ancient therapy boosts vitality, relieves pain, and supports women's health.
 template: pages/article.html
 image: moxibustion.jpg
-page_title: 'Moxibustion Therapy | Hope TCM Clinic'
+page_title: "Moxibustion Therapy New Westminster | Heat Healing"
 ---
 
 <img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Moxibustion Therapy at Hope TCM">

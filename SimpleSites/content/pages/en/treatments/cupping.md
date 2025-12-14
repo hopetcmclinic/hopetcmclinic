@@ -1,10 +1,10 @@
 ---
-title: "Cupping Therapy New Westminster | Pain Relief & Detox"
+title: "Cupping Therapy at Hope TCM: Pain Relief & Detox"
 keywords: "Cupping Therapy New Westminster, Fire Cupping, Detox, Muscle Tension Relief, Chinese Cupping"
 description: Discover the benefits of Cupping Therapy at Hope TCM Clinic. Learn how this ancient "reverse massage" technique relieves pain, detoxifies the body, and promotes deep healing.
 template: pages/article.html
 image: cupping.jpg
-page_title: 'Cupping Therapy | Hope TCM Clinic'
+page_title: "Cupping Therapy New Westminster | Pain Relief & Detox"
 ---
 
 <img src="/images/blogs/cupping.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Cupping Therapy at Hope TCM Clinic">

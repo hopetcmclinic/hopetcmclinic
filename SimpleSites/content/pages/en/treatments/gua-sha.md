@@ -1,10 +1,10 @@
 ---
-title: "Gua Sha Therapy New Westminster | Muscle Tension Relief"
+title: "Gua Sha Therapy at Hope TCM: Muscle Tension Relief"
 keywords: "Gua Sha New Westminster, Scraping Therapy, Muscle Pain Relief, TCM Gua Sha"
 description: An in-depth guide to Gua Sha (Scraping) therapy, its mechanism for pain relief and immune support, and how it differs from cupping.
 template: pages/article.html
 image: gua-sha.png
-page_title: "Gua Sha Therapy | Hope TCM Clinic"
+page_title: "Gua Sha Therapy New Westminster | Muscle Tension Relief"
 ---
 
 <img src="/images/gua-sha.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Gua Sha Treatment at Hope TCM">

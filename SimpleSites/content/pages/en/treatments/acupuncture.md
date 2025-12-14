@@ -1,10 +1,10 @@
 ---
-title: "Acupuncture in New Westminster | Restoration & Balance"
+title: "Acupuncture at Hope TCM: Restoring Balance & Health"
 keywords: "Acupuncture New Westminster, Pain Relief, Stress Relief, Holistic Healing, R.Ac New West"
 description: Discover how acupuncture at Hope TCM Clinic can help restore balance, relieve pain, and improve your overall well-being. A comprehensive guide for new patients.
 template: pages/article.html
 image: acupuncture.jpeg
-page_title: 'Acupuncture at Hope TCM: Restoring Balance & Health'
+page_title: 'Acupuncture in New Westminster | Restoration & Balance'
 ---
 
 <img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Acupuncture Treatment at Hope TCM">
