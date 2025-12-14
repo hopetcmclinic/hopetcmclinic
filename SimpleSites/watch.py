@@ -36,10 +36,10 @@ if __name__ == "__main__":
     
     print(f"Starting Live Reload Server...")
     print(f"Serving directory: {dist_dir}")
-    print(f"Open http://localhost:8000 in your browser")
+    print(f"Open http://localhost:8000 (or http://<your-ip>:8000) in your browser")
     
     # Run the initial build to make sure everything is fresh
     run_publish()
     
     # Start serving
-    server.serve(root=dist_dir, port=8000, open_url_delay=None)
+    server.serve(root=dist_dir, port=8000, host='0.0.0.0', open_url_delay=None)

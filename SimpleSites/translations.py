@@ -17,7 +17,7 @@ TRANSLATIONS = {
             'lang_link_prefix': '/cn',  # Link to switch TO
             'treatments_dropdown': [
                 {'name': 'Acupuncture', 'link': '/treatments/acupuncture.html'},
-                {'name': 'Facial Rejuvenation', 'link': '/treatments/facial-rejuvenation.html'},
+                {'name': 'Facial Acupuncture', 'link': '/treatments/facial-rejuvenation.html'},
                 {'name': 'Herbal Formulas', 'link': '/treatments/herbal-formulas.html'},
                 {'name': 'Cupping', 'link': '/treatments/cupping.html'},
                 {'name': 'Moxibustion', 'link': '/treatments/moxibustion.html'},
@@ -26,7 +26,7 @@ TRANSLATIONS = {
         },
         'footer': {
             'address': '235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2',
-            'rights': 'Copyright © 2023 - 2026. Acupuncture, Facial Rejuvenation, Cupping, Moxibustion, Gua Sha & Herbal treatments @Hope Traditional Chinese Medicine Clinic'
+            'rights': 'Copyright © 2023 - 2026. <a href="/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">Acupuncture</a>, <a href="/treatments/facial-rejuvenation.html" class="hover:text-primary transition-colors duration-300">Facial Rejuvenation</a>, <a href="/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">Cupping</a>, <a href="/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">Moxibustion</a>, <a href="/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">Gua Sha</a> & <a href="/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">Herbal treatments</a> @Hope TCM Clinic'
         }
     },
     'cn': {
@@ -56,7 +56,7 @@ TRANSLATIONS = {
         },
         'footer': {
             'address': '235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2',
-            'rights': '版权所有 © 2023 - 2026. 针灸, 美容针灸, 拔罐, 艾灸, 刮痧, 中草药治疗等 @Hope Traditional Chinese Medicine Clinic'
+            'rights': '版权所有 © 2023 - 2026. <a href="/cn/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">针灸</a>, <a href="/cn/treatments/facial-rejuvenation.html" class="hover:text-primary transition-colors duration-300">美容针灸</a>, <a href="/cn/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">拔罐</a>, <a href="/cn/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">艾灸</a>, <a href="/cn/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">刮痧</a>, <a href="/cn/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">中草药治疗</a>等 @Hope Traditional Chinese Medicine Clinic'
         }
     }
 }

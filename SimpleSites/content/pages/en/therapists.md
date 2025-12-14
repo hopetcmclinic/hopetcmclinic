@@ -1,6 +1,6 @@
 ---
 title: Eva Fang Yuan - Acupuncturist in New Westminster | Hope TCM Clinic
-description: Eva Fang Yuan, a CTCMA-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and Gua Sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
+description: Eva Fang Yuan, a CCHPBC-registered Doctor of Traditional Chinese Medicine, graduated from Tzu Chi International College in Vancouver. Specializing in pain relief, digestive issues, emotional disturbances, and women’s health, she offers acupuncture, FSN, herbal remedies, cupping, auricular acupuncture, moxibustion, and Gua Sha. Advocating for natural wellness, she integrates Taoist philosophy into her practice.
 template: pages/therapists.html
 therapist:
   name: "Eva Fang Yuan"
@@ -11,7 +11,7 @@ therapist:
 bio:
   heading: "Embracing Holistic Healing"
   quote: "My practice reflects the Taoist principle of harmony between human and nature."
-  intro: "Dr. Eva is a licensed acupuncturist and Doctor of Traditional Chinese Medicine (TCM) registered with the <a href=\"https://portal.ctcma.bc.ca/Public/Public/Public-Registry-Main.aspx\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CTCMA of British Columbia</a>. She graduated in 2019 from the esteemed Tzu Chi International College of Traditional Chinese Medicine in Vancouver."
+  intro: "Dr. Eva is a licensed acupuncturist and Doctor of Traditional Chinese Medicine (TCM) registered with the <a href=\"https://cchpbc.ca/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CCHPBC</a>. She graduated in 2019 from the esteemed Tzu Chi International College of Traditional Chinese Medicine in Vancouver."
 specs:
   title: "Specializations"
   intro: "With a deep passion for holistic health, Dr. Eva focuses on treating the root causes of:"
