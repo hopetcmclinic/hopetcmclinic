@@ -2,11 +2,11 @@
 title: Herbal Formulas - Hope TCM Clinic
 description: Traditional Chinese Herbal Medicine uses custom, GMP-certified natural plant and mineral substances to treat the root cause of illness safely and effectively.
 template: pages/article.html
-image: traditional_chinese_medicine.jpg
+image: herbal-formulas.png
 page_title: 'Herbal Formulas & Medicine | Hope TCM Clinic'
 ---
 
-<img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
 
 <h2 class="title text-3xl font-serif text-primary mb-6">Nature’s Pharmacy: Custom Herbal Medicine Prescriptions</h2>
 

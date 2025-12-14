@@ -2,11 +2,11 @@
 title: 草药配方 - 向阳中医诊所
 description: 传统中医草药使用定制的、GMP认证的天然植物和矿物物质，安全有效地治疗疾病的根本原因。
 template: pages/article.html
-image: traditional_chinese_medicine.jpg
+image: herbal-formulas.png
 page_title: '草药配方与医药 | 向阳中医诊所'
 ---
 
-<img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
 
 <h2 class="title text-3xl font-serif text-primary mb-6">大自然的药房：定制草药处方</h2>
 

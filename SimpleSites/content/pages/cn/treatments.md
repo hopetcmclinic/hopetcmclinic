@@ -14,7 +14,7 @@ diagnosis:
     - title: "身体检查"
       desc: "通过观察和触诊检查身体是否存在失衡的体征。"
     - title: "脉诊与舌诊"
-      desc: "评估您脏腑功能和气血状态的传统中医诊断方法。"
+      desc: "通过传统中医诊断方法，对您的脏腑功能及气血、阴阳平衡状态进行评估。"
 core_treatments:
   title: "核心疗法"
   acupuncture:
@@ -24,20 +24,20 @@ core_treatments:
     desc_long: "我们经验丰富的针灸师根据您的需求定制疗程，选择合适手法优化能量流动。"
     techniques:
       - name: "针灵"
-        desc: "依据个性化脉象特征调节表层卫气。"
-      - name: "激痛点疗法"
-        desc: "结合 IMS 和针灸治疗慢性疼痛和活动受限。"
+        desc: "依据个体化脉象特征调节气血循环。"
+      - name: "平衡针法"
+        desc: "平衡全身能量流动的系统。"      
       - name: "浮针"
         desc: "针对浅层及深层失衡的精准技术。"
-      - name: "平衡针法"
-        desc: "平衡全身能量流动的系统。"
+      - name: "触发点疗法"
+        desc: "结合 IMS 和针灸治疗慢性疼痛和活动受限。"
   specialized:
     title: "特色疗法"
     subtitle: "针对性方案"
     facial:
       title: "美容针灸"
       desc: "一种整体美容疗法，因其能自然刺激胶原蛋白生成并改善皮肤弹性，焕发光彩。"
-      link: "/cn/treatments/facial-rejuvenation.html"
+      link: "/cn/treatments/facial-rejuvenation-acupuncture.html"
       image: "/images/facial-rejuvenation.png"
       benefits:
         - "减少细纹和皱纹"
@@ -67,7 +67,7 @@ core_treatments:
         icon: "fas fa-mortar-pestle"
         bg_class: "bg-primary/10"
         text_class: "text-primary"
-        link: "/cn/blogs/traditional_chinese_medicine.html"
+        link: "/cn/blogs/traditional-chinese-medicine.html"
       - name: "耳穴疗法"
         icon: "fas fa-ear-listen"
         bg_class: "bg-primary/10"

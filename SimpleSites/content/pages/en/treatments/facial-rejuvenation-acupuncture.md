@@ -6,7 +6,7 @@ image: facial-rejuvenation-acupuncture.jpg
 page_title: 'Facial Rejuvenation Acupuncture | Hope TCM Clinic'
 ---
 
-<img src="/images/blogs/facial-rejuvenation-acupuncture.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Embrace Timeless Beauty</h3>
 <p class="mb-6">
