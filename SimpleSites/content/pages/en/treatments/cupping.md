@@ -51,7 +51,7 @@ The colour of the marks tells a story about what is happening inside your body:
     <li><strong>Pale / No Mark:</strong> Can indicate vitality deficiency or poor circulation.</li>
 </ul>
 <p class="mb-6">
-These marks are temporary and typically fade within <strong>3 to 7 days</strong>. They are rarely painful, though they may look intense!
+These marks are temporary and typically fade within <strong>2 to 7 days</strong>. They are rarely painful, though they may look intense!
 </p>
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Post-Treatment & Aftercare</h3>
@@ -59,8 +59,8 @@ These marks are temporary and typically fade within <strong>3 to 7 days</strong>
 Most patients describe the feeling after cupping as being "lighter and looser," as if a weight has been lifted from their shoulders. To get the most out of your session, we recommend:
 </p>
 <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>Stay Hydrated:</strong> Drink plenty of water to help your lymphatic system flush out the released toxins.</li>
-    <li><strong>Keep Warm:</strong> Your pores are open after cupping. Keep the treated area covered and avoid cold drafts or air conditioning for 24 hours.</li>
+    <li><strong>Stay Hydrated:</strong> Drink warm water to help your lymphatic system flush out the released toxins.</li>
+    <li><strong>Keep Warm:</strong> Your pores are open after cupping. Keep the treated area covered and avoid cold drafts or air conditioning for 4 hours.</li>
     <li><strong>Rest:</strong> Allow your body time to recuperate and integrate the changes.</li>
 </ul>
 

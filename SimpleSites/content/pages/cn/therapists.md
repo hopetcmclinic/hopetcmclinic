@@ -1,46 +1,46 @@
 ---
-title: Yuan Fang (Eva) - 注册针灸师
-description: Yuan Fang (Eva)是BC省注册中医师，毕业于温哥华慈济中医学院。专长疼痛缓解、消化系统问题、情绪困扰及女性健康。推崇自然疗法，将道家理念融入治疗实践。
+title: Yuan Fang (Eva) - 註冊針灸師
+description: Yuan Fang (Eva)是BC省註冊中醫師，畢業於溫哥華慈濟中醫學院。專長疼痛緩解、消化系統問題、情緒困擾及女性健康。推崇自然療法，將道家理念融入治療實踐。
 template: pages/therapists.html
 therapist:
   name: "Yuan Fang (Eva)"
-  title: "注册中医师 | 注册针灸师"
+  title: "註冊中醫師 | 註冊針灸師"
   image: "/images/Eva.jpg"
-  book_text: "预约治疗"
+  book_text: "預約治療"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:
-  heading: "拥抱整体疗愈"
-  quote: "遵循道家‘天人合一’和谐原则的诊治理念。"
-  intro: "Eva 医生是 BC 省 CCHPBC 注册的执业针灸师和中医师。她于 2019 年毕业于温哥华著名的慈济中医学院。"
+  heading: "擁抱整體療癒"
+  quote: "遵循道家‘天人合一’和諧原則的診治理念。"
+  intro: "Eva 醫生是 BC 省 CCHPBC 註冊的執業針灸師和中醫師。她於 2019 年畢業於溫哥華著名的慈濟中醫學院。"
 specs:
-  title: "专长领域"
-  intro: "Eva 医生热衷于整体健康，专注于从根本上治疗以下问题："
+  title: "專長領域"
+  intro: "Eva 醫生熱衷於整體健康，專注於從根本上治療以下問題："
   entries:
-    - name: "消化系统问题"
+    - name: "消化系統問題"
       icon: "fas fa-leaf"
-    - name: "肠易激综合征"
+    - name: "腸易激綜合徵"
       icon: "fas fa-seedling"
-    - name: "情绪失衡"
+    - name: "情緒失衡"
       icon: "fas fa-heart"
     - name: "失眠"
       icon: "fas fa-moon"
-    - name: "月经失调"
+    - name: "月經失調"
       icon: "fas fa-venus"
     - name: "不孕不育"
       icon: "fas fa-baby"
-    - name: "更年期症状"
+    - name: "更年期症狀"
       icon: "fas fa-user-clock"
     - name: "急慢性疼痛"
       icon: "fas fa-bolt"
 approach:
-  title: "综合治疗方法"
-  intro: "运用多种强效疗法以达到平衡："
+  title: "綜合治療方法"
+  intro: "運用多種強效療法以達到平衡："
   entries:
-    - name: "针灸"
+    - name: "針灸"
       link: "/cn/treatments/acupuncture.html"
-    - name: "美容针灸"
+    - name: "美容針灸"
       link: "/cn/treatments/facial-rejuvenation-acupuncture.html"
-    - name: "中药"
+    - name: "中藥"
       link: "/cn/treatments/herbal-formulas.html"
     - name: "拔罐"
       link: "/cn/treatments/cupping.html"
@@ -48,10 +48,10 @@ approach:
       link: "/cn/treatments/moxibustion.html"
     - name: "刮痧"
       link: "/cn/treatments/gua-sha.html"
-    - name: "耳穴贴压"      
+    - name: "耳穴貼壓"      
 philosophy:
-  title: "治疗理念"
+  title: "治療理念"
   paragraphs:
-    - "Eva 医生大力倡导替代医学，相信当自然疗法能够支持长期健康时，应减少对药物的依赖。"
-    - "受道家思想启发，她鼓励患者拥抱平衡的生活方式，使身体健康、情绪稳定和精神和谐共同发展。"
+    - "Eva 醫生大力倡導替代醫學，相信當自然療法能夠支持長期健康時，應減少對藥物的依賴。"
+    - "受道家思想啟發，她鼓勵患者擁抱平衡的生活方式，使身體健康、情緒穩定和精神和諧共同發展。"
 ---

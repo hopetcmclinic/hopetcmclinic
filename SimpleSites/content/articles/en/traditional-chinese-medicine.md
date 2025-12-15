@@ -92,6 +92,8 @@ Once we understand your unique pattern, we draw from a toolbox of time-tested th
     <li><strong><a href="/treatments/acupuncture.html">Acupuncture</a>:</strong> The insertion of hair-thin needles to unlock the flow of Qi and signal the nervous system to heal.</li>
     <li><strong><a href="/treatments/herbal-formulas.html">Herbal Medicine</a>:</strong> Powerful, natural plant formulas prescribed to nourish depleted reserves or clear obstructions.</li>
     <li><strong><a href="/treatments/cupping.html">Cupping</a>:</strong> Using suction to release deep muscle tension and draw out stagnation.</li>
+    <li><strong><a href="/treatments/moxibustion.html">Moxibustion</a>:</strong> Burning dried mugwort near the skin to warm deeply and reinvigorate the flow of Qi.</li>
+    <li><strong><a href="/treatments/gua-sha.html">Gua Sha</a>:</strong> A therapeutic scraping technique to release muscle tension, break down scar tissue, and improve circulation.</li>    
     <li><strong>Diet & Nutrition:</strong> Food is medicine. We provide guidance on eating according to your constitution and the seasons.</li>
     <li><strong>Tui Na:</strong> Therapeutic massage and bodywork that moves Qi and aligns the musculoskeletal system.</li>
 </ul>

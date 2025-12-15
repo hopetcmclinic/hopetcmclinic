@@ -1,9 +1,9 @@
 ---
-title: 中医博客与健康贴士
-description: 阅读我们要关于中医、针灸和整体健康的最新文章。
+title: 中醫博客與健康貼士
+description: 閱讀我們要關於中醫、針灸和整體健康的最新文章。
 template: pages/blog.html
-read_more: "阅读全文"
+read_more: "閱讀全文"
 book:
-  text: "立即在线预约"
+  text: "立即在線預約"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 ---

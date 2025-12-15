@@ -1,22 +1,22 @@
 ---
-title: 新西敏针灸与中医
-description: 经验丰富的注册针灸师在新西敏提供多种中医服务，包括针灸、美容针灸、拔罐、艾灸、刮痧和中药。
+title: 新西敏針灸與中醫
+description: 經驗豐富的註冊針灸師在新西敏提供多種中醫服務，包括針灸、美容針灸、拔罐、艾灸、刮痧和中藥。
 template: pages/index.html
 hero:
-  title_line1: "恢复健康 &"
+  title_line1: "恢復健康 &"
   title_highlight: "活力"
-  subtitle: "在新西敏拥抱传统中医的古老智慧。"
-  cta: "了解理念"
+  subtitle: "在新西敏擁抱傳統中醫的古老智慧。"
+  cta: "瞭解理念"
   link: "/cn/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"
 intro:
-  main: "欢迎来到 <span class=\"text-primary font-bold\">Hope TCM Clinic</span>，这是新西敏一家值得信赖的健康中心，由著名中医师 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（注册中医师，注册针灸师）领导。我们专注于整体治疗实践并为您提供量身定制的治疗方案，以实现您独特的健康目标。"
+  main: "歡迎來到 <span class=\"text-primary font-bold\">Hope TCM Clinic</span>，這是新西敏一家值得信賴的健康中心，由著名中醫師 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊中醫師，註冊針灸師）領導。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
   specialties:
-    - name: "针灸"
+    - name: "針灸"
       link: "/cn/treatments/acupuncture.html"
-    - name: "美容针灸"
+    - name: "美容針灸"
       link: "/cn/treatments/facial-rejuvenation-acupuncture.html"
-    - name: "中草药"
+    - name: "中草藥"
       link: "/cn/treatments/herbal-formulas.html"
     - name: "拔罐"
       link: "/cn/treatments/cupping.html"
@@ -24,52 +24,52 @@ intro:
       link: "/cn/treatments/moxibustion.html"
     - name: "刮痧"
       link: "/cn/treatments/gua-sha.html"    
-  mission: "\"我们的使命是恢复您身、心、灵的和谐与活力。我们致力于指导您走上最佳健康之旅，赋予您实现持久健康的能力。\""
+  mission: "\"我們的使命是恢復您身、心、靈的和諧與活力。我們致力於指導您走上最佳健康之旅，賦予您實現持久健康的能力。\""
 services:
-  title: "服务与费用"
+  title: "服務與費用"
   entries:
-    - title: "针灸治疗"
-      subtitle: "<a href=\"/cn/treatments/acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">标准治疗</a>"
+    - title: "針灸治療"
+      subtitle: "<a href=\"/cn/treatments/acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">標準治療</a>"
       link: "/cn/treatments/acupuncture.html"
       icon: "fas fa-bullseye"
       icon_bg: "bg-primary/10"
       icon_color: "text-primary"
       rates:
-        - label: "初诊 (90 分钟)"
+        - label: "初診 (90 分鐘)"
           price: "$120"
-        - label: "复诊 (60 分钟)"
+        - label: "複診 (60 分鐘)"
           price: "$100"
-    - title: "美容针灸"
-      subtitle: "<a href=\"/cn/treatments/facial-rejuvenation-acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">自然美学疗法</a>"
+    - title: "美容針灸"
+      subtitle: "<a href=\"/cn/treatments/facial-rejuvenation-acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">自然美學療法</a>"
       link: "/cn/treatments/facial-rejuvenation-acupuncture.html"
       icon: "fas fa-spa"
       icon_bg: "bg-accent/10"
       icon_color: "text-accent"
       rates:
-        - label: "初诊 (90 分钟)"
+        - label: "初診 (90 分鐘)"
           price: "$150"
-        - label: "复诊 (60 分钟)"
+        - label: "複診 (60 分鐘)"
           price: "$125"
   herbal:
-    title: "中药咨询"
-    desc: "个性化中草药处方和配药，不包括草药(约 $20-$40/周，根据处方而定)。"
+    title: "中藥諮詢"
+    desc: "個性化中草藥處方和配藥，不包括草藥(約 $20-$40/週，根據處方而定)。"
     link: "/cn/treatments/herbal-formulas.html"
     icon: "fas fa-mortar-pestle"
     icon_bg: "bg-primary/10"
     icon_color: "text-primary"
     rates:
-      - label: "复诊 (20 分钟)"
+      - label: "複診 (20 分鐘)"
         price: "$30"
 faq:
-  title: "常见问题"
+  title: "常見問題"
   entries:
-    - q: "您们有哪些治疗方式？"
-      a: "有关每种治疗的更多详细信息，请访问我们的<a href=\"/cn/treatments.html\">治疗服务</a>页面。"
-    - q: "你们提供保险直接结算吗？"
-      a: "我们是注册针灸师，但不向 MSP 或保险公司提供直接账单结算。每次治疗后都会开具收据。患者可以使用收据申请补贴或补充健康保险。"
-    - q: "你们接受什么付款方式？"
-      a: "借记卡/信用卡、电子转账、现金均可接受。"
+    - q: "您們有哪些治療方式？"
+      a: "有關每種治療的更多詳細信息，請訪問我們的<a href=\"/cn/treatments.html\">治療服務</a>頁面。"
+    - q: "你們提供保險直接結算嗎？"
+      a: "我們是註冊針灸師，但不向 MSP 或保險公司提供直接賬單結算。每次治療後都會開具收據。患者可以使用收據申請補貼或補充健康保險。"
+    - q: "你們接受什麼付款方式？"
+      a: "借記卡/信用卡、電子轉賬、現金均可接受。"
 book:
-  text: "网上预约"
+  text: "網上預約"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 ---

@@ -27,7 +27,7 @@ At Hope TCM Clinic, we use several methods of Moxibustion, tailoring the techniq
 
 <h4 class="text-xl font-semibold text-primary mb-2">Indirect Moxa</h4>
 <p class="mb-4">
-This is the most common form used in the clinic. The practitioner lights one end of a moxa stick, roughly the shape and size of a cigar, and holds it close to the area being treated for several minutes until the area turns red. The stick never touches the skin, but you will feel a pleasant, intense warmth radiating into the area.
+This is the most common form used in the clinic. The practitioner lights one end of a moxa stick, roughly the shape and size of a cigar, and holds it close to the area being treated. The stick never touches the skin, but you will feel a pleasant, intense warmth radiating into the area.
 </p>
 
 <h4 class="text-xl font-semibold text-primary mb-2">Needle Moxa</h4>
@@ -98,6 +98,16 @@ Because Moxa adds heat to the body, it is generally <strong>not used</strong> if
     <li>High fever</li>
     <li>Acute inflammation with redness and swelling</li>
     <li>Rapid pulse or severe thirst</li>
+</ul>
+
+<h3 class="subtitle text-2xl font-serif text-primary mb-4">Post-Treatment & Aftercare</h3>
+<p class="mb-6">
+Moxibustion adds heat to the body and opens the pores to expel cold. To maintain this warmth and prevent cold from re-entering, we recommend:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><strong>Keep Warm:</strong> This is crucial. Your pores are open after moxibustion. Avoid direct exposure to drafts, air conditioning, or cold winds for at least 4 hours after treatment. Keep the treated area covered.</li>
+    <li><strong>Stay Hydrated:</strong> Drink warm water or herbal tea to support the movement of Qi and Blood. Avoid ice-cold drinks immediately after treatment.</li>
+    <li><strong>Rest:</strong> Allow your body to absorb the warmth and energy. Avoid intense physical activity or sweating profusely right after the session.</li>
 </ul>
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Ignite Your Healing Journey</h3>
