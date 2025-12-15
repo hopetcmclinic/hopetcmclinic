@@ -140,7 +140,12 @@ def scan_site(dist_dir, check_external=False):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description='Scan static site for dead links.')
-    parser.add_argument('--dist', default='../dist', help='Path to dist directory')
+    
+    # Calculate default dist path relative to this script
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    default_dist = os.path.join(script_dir, '..', 'dist')
+    
+    parser.add_argument('--dist', default=default_dist, help='Path to dist directory')
     parser.add_argument('--external', action='store_true', help='Check external links')
     
     args = parser.parse_args()
