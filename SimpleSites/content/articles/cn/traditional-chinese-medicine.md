@@ -1,7 +1,7 @@
 ---
 abstract: 在整體健康和替代療法領域，傳統中醫 (TCM) 猶如古老智慧的燈塔，提供了關於身、心、靈相互聯繫的深刻見解。TCM 植根於數千年前，是一個綜合的醫療保健體系，經過幾個世紀的觀察、實驗和完善而發展起來。
 keywords: "Traditional Chinese Medicine New Westminster, TCM Philosophy, Holistic Health, Qi and Balance, Hope TCM Clinic"
-date:  December 12, 2025
+date: 2025年12月12日
 image: traditional_chinese_medicine.jpg
 page_title: '探索傳統中醫的精髓：古老治癒智慧介紹'
 template: article

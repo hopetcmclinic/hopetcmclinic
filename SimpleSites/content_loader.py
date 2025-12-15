@@ -96,7 +96,7 @@ class ContentLoader:
         return articles
 
     def _parse_date(self, date_str):
-        for fmt in ('%B %d, %Y', '%Y-%m-%d'):
+        for fmt in ('%B %d, %Y', '%Y-%m-%d', '%Y年%m月%d日'):
             try:
                 return datetime.strptime(date_str, fmt)
             except ValueError:

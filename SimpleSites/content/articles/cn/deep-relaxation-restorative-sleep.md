@@ -1,7 +1,7 @@
 ---
 abstract: 探索針灸如何通過將身體轉換到自然的“休息和恢復”模式來促進深度放鬆和恢復性睡眠。了解這種無藥物療法如何幫助緩解壓力、焦慮和失眠。
 keywords: "紐西敏針灸改善睡眠, 深度放鬆, 失眠治療, 緩解壓力, Hope TCM Clinic, 恢復性睡眠"
-date: December 14, 2025
+date: 2025年12月14日
 image: deep_relaxation_sleep.jpg
 page_title: "針灸助您深度放鬆與恢復性睡眠"
 template: article
