@@ -1,5 +1,5 @@
 ---
-title: 新西敏 Hope TCM Clinic 联系方式 - 疼痛缓解与健康
+title: 联系我们 - 疼痛缓解与健康
 description: 预约 Hope TCM Clinic 享受中医养生服务。位置：235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2
 template: pages/contact.html
 intro:
@@ -20,7 +20,7 @@ contact:
     title: "门禁系统"
     desc: "<strong>门铃代码 235</strong><br>按 UP 键，然后输入代码 235。"
     video_text: "观看视频指南"
-    video_link: "videos/buzzer.mp4"
+    video_link: "/videos/buzzer.mp4"
 hours:
   title: "诊所工作时间"
   entries:

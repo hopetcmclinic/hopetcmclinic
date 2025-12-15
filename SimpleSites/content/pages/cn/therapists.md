@@ -1,31 +1,35 @@
 ---
-title: Yuan Fang (Eva) - 新西敏注册针灸师 | Hope TCM Clinic
-description: Yuan Fang (Eva)，BC 省注册中医师，毕业于温哥华慈济中医学院。专长疼痛缓解、消化系统问题、情绪困扰及女性健康。提供针灸、浮针、中药、拔罐、耳穴、艾灸和刮痧服务。推崇自然疗法，将道家理念融入治疗实践。
+title: Yuan Fang (Eva) - 注册针灸师
+description: Yuan Fang (Eva)是BC省注册中医师，毕业于温哥华慈济中医学院。专长疼痛缓解、消化系统问题、情绪困扰及女性健康。推崇自然疗法，将道家理念融入治疗实践。
 template: pages/therapists.html
 therapist:
   name: "Yuan Fang (Eva)"
-  title: "注册中医师 (Dr. TCM) | 注册针灸师 (R.Ac.)"
+  title: "注册中医师 | 注册针灸师"
   image: "/images/Eva.jpg"
   book_text: "预约治疗"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:
   heading: "拥抱整体疗愈"
   quote: "遵循道家‘天人合一’和谐原则的诊治理念。"
-  intro: "Eva 医生是 BC 省 CTCMA 注册的执业针灸师和中医师。她于 2019 年毕业于温哥华著名的慈济中医学院。"
+  intro: "Eva 医生是 BC 省 CCHPBC 注册的执业针灸师和中医师。她于 2019 年毕业于温哥华著名的慈济中医学院。"
 specs:
   title: "专长领域"
   intro: "Eva 医生热衷于整体健康，专注于从根本上治疗以下问题："
   entries:
     - name: "消化系统问题"
       icon: "fas fa-leaf"
+    - name: "肠易激综合征"
+      icon: "fas fa-seedling"
     - name: "情绪失衡"
       icon: "fas fa-heart"
-    - name: "女性健康"
-      icon: "fas fa-female"
-    - name: "新冠后遗症"
-      icon: "fas fa-lungs"
-    - name: "运动损伤"
-      icon: "fas fa-running"
+    - name: "失眠"
+      icon: "fas fa-moon"
+    - name: "月经失调"
+      icon: "fas fa-venus"
+    - name: "不孕不育"
+      icon: "fas fa-baby"
+    - name: "更年期症状"
+      icon: "fas fa-user-clock"
     - name: "急慢性疼痛"
       icon: "fas fa-bolt"
 approach:
@@ -34,15 +38,17 @@ approach:
   entries:
     - name: "针灸"
       link: "/cn/treatments/acupuncture.html"
+    - name: "美容针灸"
+      link: "/cn/treatments/facial-rejuvenation-acupuncture.html"
     - name: "中药"
-      link: "/cn/treatments/traditional_chinese_medicine.html"
+      link: "/cn/treatments/herbal-formulas.html"
     - name: "拔罐"
       link: "/cn/treatments/cupping.html"
     - name: "艾灸"
       link: "/cn/treatments/moxibustion.html"
     - name: "刮痧"
       link: "/cn/treatments/gua-sha.html"
-    - name: "耳穴"
+    - name: "耳穴贴压"      
 philosophy:
   title: "治疗理念"
   paragraphs:

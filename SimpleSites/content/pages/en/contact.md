@@ -21,7 +21,7 @@ contact:
     title: "Entry Access"
     desc: "<strong>Buzzer 235</strong><br>Press the UP key, then enter code 235."
     video_text: "Watch Video Guide"
-    video_link: "videos/buzzer.mp4"
+    video_link: "/videos/buzzer.mp4"
 hours:
   title: "Clinic Hours"
   entries:

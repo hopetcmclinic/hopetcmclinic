@@ -1,12 +1,13 @@
 ---
-title: "恢复平衡：向阳中医诊所针灸治疗全指南"
-description: 了解向阳中医诊所的针灸治疗如何帮助您恢复平衡、缓解疼痛并改善整体健康。新患者的综合指南。
+title: "恢复平衡：针灸治疗全指南"
+keywords: "新西敏, 针灸, 疼痛缓解, 压力缓解, 整体疗法, 中医诊所, 注册针灸师"
+description: 了解针灸治疗如何帮助您恢复平衡、缓解疼痛并改善整体健康。新患者的综合指南。
 template: pages/article.html
 image: acupuncture.jpeg
-page_title: '向阳中医针灸：恢复平衡与健康'
+page_title: '针灸：恢复平衡与健康'
 ---
 
-<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向阳中医诊所针灸治疗">
+<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="针灸治疗">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">简介</h3>
 <p class="mb-6">

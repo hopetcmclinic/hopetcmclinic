@@ -3,7 +3,7 @@ title: "疏通与释放：古老的拔罐疗法艺术"
 description: 了解向阳中医诊所拔罐疗法的益处。了解这种古老的“反向按摩”技术如何缓解疼痛、排毒并促进深度愈合。
 template: pages/article.html
 image: cupping.jpg
-page_title: '拔罐疗法 | 向阳中医诊所'
+page_title: '拔罐疗法'
 ---
 
 <img src="/images/blogs/cupping.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向阳中医诊所拔罐疗法">

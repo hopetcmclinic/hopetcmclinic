@@ -21,11 +21,11 @@ core_treatments:
   acupuncture:
     title: "Acupuncture"
     subtitle: "Foundation of Healing"
-    desc_short: "Uses ultra-thin, sterile needles to stimulate acupoints and balance Qi."
+    desc_short: "Uses ultra-thin, sterile needles to stimulate acupoints and balance Qi & Blood."
     desc_long: "Our skilled acupuncturists tailor each session to your needs, selecting techniques to optimize energy flow."
     techniques:
       - name: "Spirit of Acupuncture (针灵)"
-        desc: "Regulating the circulation of Qi and Blood based on individualized pulse characteristics."
+        desc: "Regulating the circulation of Qi & Blood based on individualized pulse characteristics."
       - name: "Balance Method Acupuncture"
         desc: "System balancing energy flow across the entire body."
       - name: "Fu's Subcutaneous Needling"
@@ -70,8 +70,10 @@ core_treatments:
         bg_class: "bg-stone-200/50"
         text_class: "text-slate-500"
         link: "/treatments/gua-sha.html"
-      - name: "More ..."
-        
+      - name: "Ear Seeds"
+        icon: "fas fa-ear-listen"
+        bg_class: "bg-primary/10"
+        text_class: "text-primary"
 after_treatment:
   title: "After Your Treatment"
   desc: "To maximize the benefits of your session, we recommend following these simple self-care steps:"

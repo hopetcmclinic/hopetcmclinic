@@ -1,9 +1,10 @@
 ---
 title: "刮除停滞：了解刮痧"
+keywords: "刮痧疗法, 缓解肌肉疼痛, 中医刮痧"
 description: 刮痧疗法的深度指南，其缓解疼痛和免疫支持的机制，以及它与拔罐的区别。
 template: pages/article.html
 image: gua-sha.png
-page_title: "刮痧疗法 | 向阳中医诊所"
+page_title: "刮痧疗法"
 ---
 
 <img src="/images/gua-sha.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向阳中医诊所刮痧治疗">
@@ -18,6 +19,7 @@ page_title: "刮痧疗法 | 向阳中医诊所"
 <ul class="list-disc pl-6 mb-6 space-y-2">
     <li><strong>玉石：</strong> 以其冷却特性而闻名，常用于面部和颈部。</li>
     <li><strong>水牛角：</strong> 一种模拟人类头发和指甲化学成分的传统材料，非常适合移动停滞的血液。</li>
+    <li><strong>铜：</strong> 一种传统上用于中医的材料，铜刮痧工具被认为通过其导电特性支持气血的平滑循环。</li>
     <li><strong>砭石：</strong> 含有微量矿物质，常用于更深层的肌肉工作。</li>
 </ul>
 <p class="mb-6">
@@ -81,10 +83,10 @@ page_title: "刮痧疗法 | 向阳中医诊所"
 由于刮痧会刺激运动并打开毛孔，您的身体在治疗后立即暂时更容易受到环境因素的影响。
 </p>
 <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>避风避寒：</strong> 治疗后 24 小时内，保持治疗区域覆盖。避免直接暴露在穿堂风、空调或冷风中。毛孔是张开的，冷空气进入会导致肌肉再次收紧。</li>
-    <li><strong>补水：</strong> 多喝温水或室温水。代谢废物的释放需要充足的水分才能将这些毒素排出体外。</li>
+    <li><strong>避风避寒：</strong> 治疗后 4 小时内，保持治疗区域覆盖。避免直接暴露在穿堂风、空调或冷风中。毛孔是张开的，冷空气进入会导致肌肉再次收紧。</li>
+    <li><strong>补水：</strong> 喝温水。代谢废物的释放需要充足的水分才能将这些毒素排出体外。</li>
     <li><strong>休息：</strong> 您的身体正在经历一个愈合过程。给自己一些休息时间，让治疗效果沉淀下来。</li>
 </ul>
 <p class="mb-6">
-印记（“痧”）通常在 2 到 4 天内消退，具体取决于您的循环情况。看到这些印记是一个积极的信号，表明治疗已成功作用于您组织中的停滞。
+印记（“痧”）通常在 2 到 7 天内消退，具体取决于您的循环情况。看到这些印记是一个积极的信号，表明治疗已成功作用于您组织中的停滞。
 </p>

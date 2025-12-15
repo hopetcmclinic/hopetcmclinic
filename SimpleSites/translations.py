@@ -34,7 +34,7 @@ TRANSLATIONS = {
     },
     'cn': {
         'meta': {
-            'title_suffix': ' | Hope TCM Clinic', # Example suffix
+            'title_suffix': ' | Hope TCM Clinic',
             'og_image': 'https://www.hopetcmclinic.ca/images/Inner-Chinese.jpg',
             'twitter_card': 'summary_large_image',
             'keywords': '针灸, 美容针灸, 中医, 新西敏, 拔罐, 艾灸, 刮痧, 中草药'
@@ -47,7 +47,7 @@ TRANSLATIONS = {
             'contact': '联系我们',
             'book_now': '网上预约',
             'lang_switch': 'English',
-            'lang_link_prefix': '', # Link to switch TO (root for EN)
+            'lang_link_prefix': '',
             'treatments_dropdown': [
                 {'name': '针灸', 'link': '/cn/treatments/acupuncture.html'},
                 {'name': '美容针灸', 'link': '/cn/treatments/facial-rejuvenation-acupuncture.html'},

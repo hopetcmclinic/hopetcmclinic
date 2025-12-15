@@ -3,7 +3,7 @@ title: "点燃您的活力：艾灸的治愈力量"
 description: 了解向阳中医诊所艾灸的温暖治愈力量。了解这种古老的疗法如何增强活力、缓解疼痛并支持女性健康。
 template: pages/article.html
 image: moxibustion.jpg
-page_title: '艾灸疗法 | 向阳中医诊所'
+page_title: '艾灸疗法'
 ---
 
 <img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向阳中医诊所艾灸疗法">

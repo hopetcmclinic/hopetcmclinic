@@ -71,7 +71,7 @@ faq:
     - q: "What payment methods do you accept?"
       a: "Debit/Credit cards, E-transfer, cash are all accepted."
     - q: "Clinic Buzzer System Instructions"
-      a: "To access the clinic using the buzzer system, please follow these steps or refer to the <a href=\"videos/buzzer.mp4\" target=\"_blank\" >instructional video</a>:<ul class=\"my-2 mx-4\"><li>1. Locate the buzzer panel outside the clinic entrance.</li><li>2. Press the <strong>UP</strong> key once.</li><li>3. Enter the code <strong>235</strong> using the keypad.</li></ul>If you encounter any issues, please contact clinic staff for assistance."
+      a: "To access the clinic using the buzzer system, please follow these steps or refer to the <a href=\"/videos/buzzer.mp4\" target=\"_blank\" >instructional video</a>:<ul class=\"my-2 mx-4\"><li>1. Locate the buzzer panel outside the clinic entrance.</li><li>2. Press the <strong>UP</strong> key once.</li><li>3. Enter the code <strong>235</strong> using the keypad.</li></ul>If you encounter any issues, please contact clinic staff for assistance."
 book:
   text: "Book An Appointment Online"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"

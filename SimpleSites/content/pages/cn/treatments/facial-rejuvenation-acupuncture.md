@@ -1,12 +1,13 @@
 ---
 title: "由内而外的光彩：面部回春针灸"
+keywords: "面部回春针灸, 美容针灸, 面部提升针灸, 新西敏"
 description: "探索面部回春针灸——通往光彩肌肤的自然、非手术途径。一种追求永恒之美的整体疗法。"
 template: pages/article.html
-image: facial-rejuvenation-acupuncture.jpg
-page_title: '面部回春针灸 | 向阳中医诊所'
+image: facial-rejuvenation.png
+page_title: '面部回春针灸'
 ---
 
-<img src="/images/blogs/facial-rejuvenation-acupuncture.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">拥抱永恒之美</h3>
 <p class="mb-6">

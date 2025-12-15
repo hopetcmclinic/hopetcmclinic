@@ -1,5 +1,6 @@
 ---
 abstract: 浮针 (FSN) 是一种现代针灸技术，因其治疗各种健康状况的独特方法而日益受到认可。由中国医生符仲华博士于 1996 年发明。FSN 与传统针灸不同，主要针对皮下层。本文将深入探讨 FSN 的复杂性，阐明其安全性、有效性和潜在应用。
+keywords: "Fu's Subcutaneous Needling New Westminster, FSN Acupuncture, Magic Needle, Instant Pain Relief, Dry Needling Alternative, Hope TCM"
 date: March 16, 2024
 image: fsn.jpeg
 page_title: 探索浮针疗法 (FSN) 的治疗潜力 | Hope TCM Clinic

@@ -19,6 +19,7 @@ At <strong>Hope TCM Clinic</strong>, we use Gua Sha to resolve deep-seated stagn
 <ul class="list-disc pl-6 mb-6 space-y-2">
     <li><strong>Jade:</strong> Known for its cooling properties, often used on the face and neck.</li>
     <li><strong>Buffalo Horn:</strong> A traditional material that mimics the chemical composition of human hair and nails, excellent for moving stagnant blood.</li>
+    <li><strong>Copper:</strong> A traditionally used material in TCM, copper gua sha tools are believed to support the smooth circulation of Qi and Blood through their conductive properties.</li>
     <li><strong>Stone (Bian Stone):</strong> Contains trace minerals and is often used for deeper muscle work.</li>
 </ul>
 <p class="mb-6">
@@ -82,10 +83,10 @@ Your practitioner at Hope TCM Clinic will assess your specific condition to dete
 Because Gua Sha stimulates movement and opens the pores, your body is temporarily more vulnerable to environmental factors immediately after treatment.
 </p>
 <ul class="list-disc pl-6 mb-6 space-y-2">
-    <li><strong>Avoid Wind and Cold:</strong> For 24 hours after treatment, keep the treated area covered. Avoid direct exposure to drafts, air conditioning, or cold winds. The pores are open, and entering cold air can cause the muscles to seize up again.</li>
-    <li><strong>Hydrate:</strong> Drink plenty of warm or room-temperature water. The release of metabolic waste requires adequate hydration to flush these toxins out of your system.</li>
+    <li><strong>Avoid Wind and Cold:</strong> For 4 hours after treatment, keep the treated area covered. Avoid direct exposure to drafts, air conditioning, or cold winds. The pores are open, and entering cold air can cause the muscles to seize up again.</li>
+    <li><strong>Hydrate:</strong> Drink warm water. The release of metabolic waste requires adequate hydration to flush these toxins out of your system.</li>
     <li><strong>Rest:</strong> Your body is undergoing a healing process. Allow yourself some downtime to let the treatment settle in.</li>
 </ul>
 <p class="mb-6">
-The marks ("Sha") typically fade within 2 to 4 days, depending on your circulation. Seeing these marks is a positive sign that the treatment has successfully acted on the stagnation in your tissues.
+The marks ("Sha") typically fade within 2 to 7 days, depending on your circulation. Seeing these marks is a positive sign that the treatment has successfully acted on the stagnation in your tissues.
 </p>
