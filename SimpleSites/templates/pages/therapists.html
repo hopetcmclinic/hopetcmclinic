@@ -47,11 +47,23 @@
                 </p>
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-4 gap-y-3">
                     {% for spec in page.specs.entries %}
+                    {% if spec.link %}
+                    <a href="{{ spec.link }}"
+                        class="flex items-center p-3 rounded-lg bg-stone-50 border border-stone-100 hover:border-accent/30 hover:bg-white hover:shadow-sm transition-all group decoration-0">
+                        <i
+                            class="{{ spec.icon }} text-primary/70 mr-3 text-lg group-hover:text-accent transition-colors"></i>
+                        <span class="font-medium text-slate-700 group-hover:text-slate-900 transition-colors">{{
+                            spec.name }}</span>
+                        <i
+                            class="fas fa-chevron-right text-slate-400 text-sm ml-auto group-hover:text-accent transition-colors"></i>
+                    </a>
+                    {% else %}
                     <div
                         class="flex items-center p-3 rounded-lg bg-stone-50 border border-stone-100 hover:border-accent/30 transition-colors">
                         <i class="{{ spec.icon }} text-primary/70 mr-3 text-lg"></i>
                         <span class="font-medium text-slate-700">{{ spec.name }}</span>
                     </div>
+                    {% endif %}
                     {% endfor %}
                 </div>
             </div>

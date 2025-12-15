@@ -2,11 +2,11 @@
 title: "疏通與釋放：古老的拔罐療法藝術"
 description: 瞭解向陽中醫診所拔罐療法的益處。瞭解這種古老的“反向按摩”技術如何緩解疼痛、排毒並促進深度癒合。
 template: pages/article.html
-image: cupping.jpg
+image: cupping.png
 page_title: '拔罐療法'
 ---
 
-<img src="/images/blogs/cupping.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所拔罐療法">
+<img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所拔罐療法">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">簡介</h3>
 <p class="mb-6">

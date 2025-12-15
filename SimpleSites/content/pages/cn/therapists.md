@@ -24,6 +24,7 @@ specs:
       icon: "fas fa-heart"
     - name: "失眠"
       icon: "fas fa-moon"
+      link: "/cn/blogs/deep-relaxation-restorative-sleep.html"
     - name: "月經失調"
       icon: "fas fa-venus"
     - name: "不孕不育"

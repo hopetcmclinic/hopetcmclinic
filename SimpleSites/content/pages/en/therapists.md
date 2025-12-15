@@ -25,6 +25,7 @@ specs:
       icon: "fas fa-heart"
     - name: "Insomnia"
       icon: "fas fa-moon"
+      link: "/blogs/deep-relaxation-restorative-sleep.html"
     - name: "Menstrual Disorders"
       icon: "fas fa-venus"
     - name: "Infertility"
