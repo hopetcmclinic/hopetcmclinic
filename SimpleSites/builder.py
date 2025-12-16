@@ -112,7 +112,8 @@ class SimpleSiteCMS():
             keywords=page.keywords,
             structured_data=self._generate_structured_data(lang, page, is_article=False),
             css_file=getattr(self.assets, 'css_file', 'styles.css'),
-            js_file=getattr(self.assets, 'js_file', 'script.js')
+            js_file=getattr(self.assets, 'js_file', 'script.js'),
+            content=page.content
         )
         
         self.write_html(html, output_filename)

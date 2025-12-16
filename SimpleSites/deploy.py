@@ -70,7 +70,7 @@ def deploy():
     
     # 3. Force push to the gh-pages branch
     print(f"Pushing to {BRANCH} branch...")
-    run_command(['git', 'push', '-f', REPO_URL, f'main:{BRANCH}'], cwd=dist_path)
+    run_command(['git', 'push', '-f', REPO_URL, f'HEAD:{BRANCH}'], cwd=dist_path)
     
     print("Deployment complete!")
 
