@@ -1,4 +1,8 @@
 <div class="max-w-3xl mx-auto flex flex-col gap-12">
+    <!-- Page Title -->
+    <div class="text-center mb-8">
+        <h1 class="font-serif text-4xl md:text-5xl font-bold text-primary leading-tight">{{ page.title }}</h1>
+    </div>
     {% for article in articles %}
     <article class="flex flex-col group border-b border-stone-200 pb-12 last:border-0">
         <div class="text-sm font-semibold text-accent uppercase tracking-wider mb-3">
@@ -29,6 +33,6 @@
 
 
 <div class="text-center my-8">
-    <a class="inline-block bg-amber-600 hover:bg-amber-500 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
+    <a class="inline-block bg-accent hover:bg-accent-light hover:text-emerald-900 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
         href="{{ page.book.link }}">{{ page.book.text }}</a>
 </div>
