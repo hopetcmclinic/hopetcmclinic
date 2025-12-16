@@ -9,7 +9,7 @@ page_title: "Facial Rejuvenation Acupuncture New Westminster | Natural Facelift"
 
 <img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">Embrace Timeless Beauty</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Embrace Timeless Beauty</h2>
 <p class="mb-6">
 Embrace a holistic approach to beauty that goes beyond surface level. <strong>Facial Rejuvenation Acupuncture</strong> is a luxurious, natural alternative to invasive procedures and Botox. It doesn't just treat your skin; it treats <em>you</em>. Rooted in Traditional Chinese Medicine (TCM), this therapy revitalizes your complexion by balancing the body’s internal energy, promoting health that radiates from the inside out.
 </p>
@@ -18,7 +18,7 @@ Embrace a holistic approach to beauty that goes beyond surface level. <strong>Fa
 It is time to celebrate your vitality and enhance your natural glow with a treatment that honors your body's wisdom.
 </p>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">The Science: Awakening Your Skin's Potential</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">The Science: Awakening Your Skin's Potential</h2>
 
 <p class="mb-6">
 How does it work? The magic lies in your body's own healing capability.
@@ -29,7 +29,7 @@ How does it work? The magic lies in your body's own healing capability.
     <li><strong>Enhanced Circulation:</strong> The treatment significantly increases local blood circulation and oxygenation. This brings a fresh supply of nutrients to the skin cells while flushing out metabolic waste, resulting in a clearer, more vibrant complexion.</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">Key Benefits</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Key Benefits</h2>
 
 <p class="mb-6">
 More than just an aesthetic treatment, Facial Rejuvenation Acupuncture offers a "natural face-lift" with benefits that extend to your overall well-being:
@@ -43,7 +43,7 @@ More than just an aesthetic treatment, Facial Rejuvenation Acupuncture offers a 
     <li><strong>Internal Harmony:</strong> Since we treat the constitutional root, you may also experience better sleep, reduced stress, and balanced digestion.</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">The Procedure: A Ritual of Self-Care</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">The Procedure: A Ritual of Self-Care</h2>
 
 <p class="mb-6">
 Your session is designed to be a relaxing, restorative experience.
@@ -61,7 +61,7 @@ To elevate results, we often integrate complementary therapies such as <strong>G
     <li><strong>Course of Treatment:</strong> True rejuvenation is a journey. For lasting, visible results, a course of <strong>10 sessions</strong> is typically recommended (usually once or twice a week). Maintenance sessions can then be scheduled to keep your glow vibrant.</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">Is This For You?</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Is This For You?</h2>
 
 <p class="mb-6">
 Facial Rejuvenation Acupuncture fits perfectly into a lifestyle of conscious self-care.
@@ -72,7 +72,7 @@ Facial Rejuvenation Acupuncture fits perfectly into a lifestyle of conscious sel
     <li><strong>Restorative Care (40s+):</strong> A powerful tool to reverse visible signs of aging, restore firmness, and bring life back to tired skin.</li>
 </ul>
 
-<h4 class="text-xl font-semibold text-primary mb-2">Contraindications</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">Contraindications</h3>
 <p class="mb-4">
 While safe for most, this treatment is not suitable for everyone. It is contra-indicated for:
 </p>
@@ -83,24 +83,24 @@ While safe for most, this treatment is not suitable for everyone. It is contra-i
     <li>Severe migraines (during an active attack)</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h2>
 
 <div class="space-y-4 mb-8">
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">How long do the results last?</h5>
+        <h3 class="text-lg font-bold text-gray-800">How long do the results last?</h3>
         <p class="text-gray-700">With a full course of treatment and proper maintenance (monthly visits), results can last for years. Your skin will continue to age, but from a "younger" baseline.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">Is there any downtime or bruising?</h5>
+        <h3 class="text-lg font-bold text-gray-800">Is there any downtime or bruising?</h3>
         <p class="text-gray-700">There is zero social downtime—you can return to your day immediately! While rare, slight bruising can occur at needle sites, but this heals quickly and can be covered with makeup.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">Can I wear makeup after the session?</h5>
+        <h3 class="text-lg font-bold text-gray-800">Can I wear makeup after the session?</h3>
         <p class="text-gray-700">Yes, you can apply makeup immediately after your treatment. We recommend mineral-based or natural products to let your skin breathe.</p>
     </div>
 </div>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">Conclusion</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Conclusion</h2>
 
 <p class="mb-6">
 Facial Rejuvenation Acupuncture is an invitation to age gracefully and confidently. By nurturing your body's internal balance, you unlock a radiant, timeless beauty that is uniquely yours. Step into a world of natural vitality and let your inner light shine through.

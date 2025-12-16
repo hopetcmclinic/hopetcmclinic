@@ -9,7 +9,7 @@ page_title: '針灸：恢復平衡與健康'
 
 <img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="針灸治療">
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">簡介</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">簡介</h2>
 <p class="mb-6">
 在新西敏向陽中醫診所（Hope TCM Clinic），我們相信真正的健康不僅僅是沒有疾病，而是一種充滿活力和和諧平衡的狀態。針灸作為一種有著數千年歷史的療法，正是這一理念的基石。
 </p>
@@ -17,12 +17,12 @@ page_title: '針灸：恢復平衡與健康'
 對於許多新患者來說，針刺的想法可能會讓人感到畏懼。然而，針灸針非常細——細如髮絲，無菌且一次性使用。與用於注射的皮下注射針頭不同，它們設計為在組織之間順滑滑動，產生的觸感通常被描述為酸脹或微麻，而不是尖銳的疼痛。我們在向陽中醫的使命是為您的生活帶來“希望（Hope）”和新的活力，而針灸是開啟這一旅程的安全、溫和且有效的方式。
 </p>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">治療原理：中西醫結合</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">治療原理：中西醫結合</h2>
 <p class="mb-6">
 我們經常聽到的一個問題是：“它到底是從何起作用的？”答案在於古老智慧與現代科學的美妙融合。
 </p>
 
-<h4 class="text-xl font-semibold text-primary mb-2">傳統中醫（TCM）視角</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">傳統中醫（TCM）視角</h3>
 <p class="mb-4">
 在中醫看來，您的健康取決於**氣**（Qi）——您身體的生命能量——的順暢流動。氣通過稱為**經絡**的無形網絡流動。當這些通路因壓力、受傷或不良生活習慣而受阻時，就會出現疼痛和疾病。
 </p>
@@ -30,7 +30,7 @@ page_title: '針灸：恢復平衡與健康'
 把您的經絡想像成河流系統。如果河流被堵塞，上游壓力會增加（疼痛/炎症），而下游區域會乾涸（虛弱/疲勞）。針灸針就像打開這些水壩的鑰匙，恢復氣的自然流動。這種**陰陽**的重新平衡使您的身體能夠自然癒合。
 </p>
 
-<h4 class="text-xl font-semibold text-primary mb-2">西方科學視角</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">西方科學視角</h3>
 <p class="mb-4">
 從生物醫學的角度來看，針灸被視為刺激神經系統的有效方式。針刺會觸發特定的生理反應：
 </p>
@@ -40,12 +40,12 @@ page_title: '針灸：恢復平衡與健康'
     <li><strong>調節神經系統：</strong> 針灸可以將身體從“戰鬥或逃跑”（交感神經）狀態轉變為“休息和消化”（副交感神經）狀態，顯著降低壓力水平和炎症。</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">治療病症</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">治療病症</h2>
 <p class="mb-6">
 針灸被世界衛生組織（WHO）認可用於治療多種疾病。在向陽中醫，我們常見以下病症的患者：
 </p>
 
-<h4 class="text-xl font-semibold text-primary mb-2">疼痛管理</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">疼痛管理</h3>
 <p class="mb-4">
 無論是慢性背痛、辦公室工作引起的頸部僵硬，還是急性運動損傷，針灸都非常有效。它解決炎症和肌肉緊張的根源，緩解以下症狀：
 </p>
@@ -57,7 +57,7 @@ page_title: '針灸：恢復平衡與健康'
     <li>膝關節疼痛和關節炎</li>
 </ul>
 
-<h4 class="text-xl font-semibold text-primary mb-2">心理健康與減壓</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">心理健康與減壓</h3>
 <p class="mb-4">
 在快節奏的現代生活中，壓力是導致疾病的主要因素。針灸就像神經系統的重置按鈕，有助於改善：
 </p>
@@ -68,7 +68,7 @@ page_title: '針灸：恢復平衡與健康'
     <li>失眠和睡眠障礙</li>
 </ul>
 
-<h4 class="text-xl font-semibold text-primary mb-2">內科健康與保健</h4>
+<h3 class="text-xl font-semibold text-primary mb-2">內科健康與保健</h3>
 <p class="mb-4">
 除了疼痛，針灸還能調節內臟功能，有助於治療：
 </p>
@@ -78,7 +78,7 @@ page_title: '針灸：恢復平衡與健康'
     <li><strong>呼吸系統健康：</strong> 過敏、鼻竇炎和哮喘。</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">就診體驗：您可以期待什麼</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">就診體驗：您可以期待什麼</h2>
 <p class="mb-6">
 您的舒適是我們的首要任務。以下是向陽中醫的典型治療流程：
 </p>
@@ -97,7 +97,7 @@ page_title: '針灸：恢復平衡與健康'
     </li>
 </ol>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">安全性與副作用</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">安全性與副作用</h2>
 <p class="mb-6">
 由註冊針灸師進行操作時，針灸是一種極其安全的療法。
 </p>
@@ -106,24 +106,24 @@ page_title: '針灸：恢復平衡與健康'
     <li><strong>副作用：</strong> 嚴重的副作用非常罕見。一些患者可能會在針刺部位出現輕微瘀青或出血。最常見的“副作用”是治療後立即感到深​​度放鬆或輕微睏倦。我們建議治療後多喝水並休息。</li>
 </ul>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">常見問題解答</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">常見問題解答</h2>
 
 <div class="space-y-4 mb-8">
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">針灸痛嗎？</h5>
+        <h3 class="text-lg font-bold text-gray-800">針灸痛嗎？</h3>
         <p class="text-gray-700">通常不痛。針頭細如髮絲。進針時您可能會感到輕微的刺痛，但隨後的感覺（得氣）更多是一種酸脹或壓迫感，這是治療性的，而不是痛苦的。</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">我需要多少次治療？</h5>
+        <h3 class="text-lg font-bold text-gray-800">我需要多少次治療？</h3>
         <p class="text-gray-700">這取決於您的病情。急性問題（如落枕）可能在 2-3 次治療後緩解。慢性疾病（如長期背痛）通常需要 6-10 次治療才能看到持久的效果。我們將為您制定個性化的治療計劃。</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
-        <h5 class="text-lg font-bold text-gray-800">保險涵蓋針灸嗎？</h5>
+        <h3 class="text-lg font-bold text-gray-800">保險涵蓋針灸嗎？</h3>
         <p class="text-gray-700">是的，BC 省的大多數補充健康保險計劃都涵蓋由註冊針灸師（R.Ac.）提供的針灸治療。我們通常可以直接為您向保險公司報銷。</p>
     </div>
 </div>
 
-<h3 class="subtitle text-2xl font-serif text-primary mb-4">結語</h3>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">結語</h2>
 <p class="mb-6">
 邁出改善健康的第一步可能是您做出的最重要的決定。無論您是尋求緩解疼痛、希望控制壓力，還是只想優化您的健康，針灸都提供了一條經過時間考驗的整體康復之路。
 </p>

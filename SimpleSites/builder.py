@@ -15,6 +15,11 @@ def run_tailwind():
    AssetManager().run_tailwind()
 
 class SimpleSiteCMS():
+    HREFLANG_MAP = {
+        'en': 'en',
+        'cn': 'zh-Hant'
+    }
+
     def __init__(self) -> None:        
         file_loader = FileSystemLoader('templates')
         self.env = Environment(loader=file_loader)
@@ -78,7 +83,7 @@ class SimpleSiteCMS():
         for l in Config.LANGUAGES:
             alt_prefix = "" if l == 'en' else f"/{l}"
             alt_url = f"{Config.ROOT_URL}{alt_prefix}/{page.name}.html"
-            alternates.append({'lang': l, 'href': alt_url})
+            alternates.append({'lang': self.HREFLANG_MAP.get(l, l), 'href': alt_url})
 
         # Calculate canonical
         canonical_url = f"{Config.ROOT_URL}{link_prefix}/{page.name}.html"
@@ -96,7 +101,7 @@ class SimpleSiteCMS():
             )
 
         html = template.render(
-            lang=lang, 
+            lang=self.HREFLANG_MAP.get(lang, lang), 
             link_prefix=link_prefix,
             i18n=TRANSLATIONS[lang], 
             page=page.meta, 
@@ -130,12 +135,12 @@ class SimpleSiteCMS():
         for l in Config.LANGUAGES:
             alt_prefix = "" if l == 'en' else f"/{l}"
             alt_url = f"{Config.ROOT_URL}{alt_prefix}/blogs/{article.name}.html"
-            alternates.append({'lang': l, 'href': alt_url})
+            alternates.append({'lang': self.HREFLANG_MAP.get(l, l), 'href': alt_url})
 
         canonical_url = f"{Config.ROOT_URL}{link_prefix}/blogs/{article.name}.html"
 
         data = {        
-            'lang': lang,
+            'lang': self.HREFLANG_MAP.get(lang, lang),
             'name': "article",
             'content_template': content_template,
             "article": article,
@@ -251,7 +256,7 @@ class SimpleSiteCMS():
                 "telephone": "+1-778-871-1439",
                 "contactType": "customer service",
                 "areaServed": "CA",
-                "availableLanguage": ["en", "zh"]
+                "availableLanguage": ["en", "zh-Hant"]
               }
             })
         
