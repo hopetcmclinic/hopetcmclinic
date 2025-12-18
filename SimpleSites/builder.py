@@ -81,12 +81,18 @@ class SimpleSiteCMS():
         # Calculate alternates
         alternates = []
         for l in Config.LANGUAGES:
-            alt_prefix = "" if l == 'en' else f"/{l}"
-            alt_url = f"{Config.ROOT_URL}{alt_prefix}/{page.name}.html"
-            alternates.append({'lang': self.HREFLANG_MAP.get(l, l), 'href': alt_url})
+            alt_prefix = "" if l == "en" else f"/{l}"
+            if page.name == "index":
+                alt_url = f"{Config.ROOT_URL}{alt_prefix}/"
+            else:
+                alt_url = f"{Config.ROOT_URL}{alt_prefix}/{page.name}.html"
+            alternates.append({"lang": self.HREFLANG_MAP.get(l, l), "href": alt_url})
 
         # Calculate canonical
-        canonical_url = f"{Config.ROOT_URL}{link_prefix}/{page.name}.html"
+        if page.name == "index":
+             canonical_url = f"{Config.ROOT_URL}{link_prefix}/"
+        else:
+             canonical_url = f"{Config.ROOT_URL}{link_prefix}/{page.name}.html"
 
         output_filename = f"{page.name}.html"
         if lang != 'en':
@@ -193,7 +199,15 @@ class SimpleSiteCMS():
         for entry in touched_sitemap_entries:            
             url_element = etree.SubElement(urlset, "url")
             loc = etree.SubElement(url_element, "loc")
-            loc.text = f'{Config.ROOT_URL}/{entry.filename}'
+            
+            # Use root URL for index pages
+            url = f'{Config.ROOT_URL}/{entry.filename}'
+            if url.endswith("/index.html"):
+                url = url[:-10] # Remove "index.html", keep trailing slash if present
+                if not url.endswith('/'):
+                     url += '/'
+            
+            loc.text = url
             lastmod = etree.SubElement(url_element, "lastmod")
             lastmod.text = entry.lastmod        
         
