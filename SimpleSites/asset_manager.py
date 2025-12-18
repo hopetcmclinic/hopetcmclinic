@@ -39,7 +39,7 @@ class AssetManager:
             {'src': './assets/images', 'dest': 'images', 'type': 'dir'},
             {'src': './assets/videos', 'dest': 'videos', 'type': 'dir'},
             {'src': './assets/script.js', 'dest': 'script.js', 'type': 'file'},
-            {'src': './assets/favicon.ico', 'dest': 'favicon.ico', 'type': 'file'},
+            {'src': './assets/favicons', 'dest': '', 'type': 'dir'}, # Copy to root            
             {'src': './assets/CNAME', 'dest': 'CNAME', 'type': 'file'}
         ]
 
