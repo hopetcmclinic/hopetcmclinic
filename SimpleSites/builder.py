@@ -261,7 +261,7 @@ class SimpleSiteCMS():
               "hasMap": "https://www.google.com/maps/search/?api=1&query=Hope+Traditional+Chinese+Medicine+Clinic+New+Westminster", 
               "openingHoursSpecification": {
                 "@type": "OpeningHoursSpecification",
-                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+                "dayOfWeek": ["Tuesday", "Wednesday", "Friday", "Saturday"],
                 "opens": "09:00",
                 "closes": "18:00"
               },

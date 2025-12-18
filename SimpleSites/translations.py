@@ -26,7 +26,7 @@ TRANSLATIONS = {
         },
         'footer': {
             'address': '235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2',
-            'rights': 'Copyright © 2023 - 2026. <a href="/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">Acupuncture</a>, <a href="/treatments/facial-rejuvenation-acupuncture.html" class="hover:text-primary transition-colors duration-300">Facial Rejuvenation</a>, <a href="/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">Cupping</a>, <a href="/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">Moxibustion</a>, <a href="/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">Gua Sha</a> & <a href="/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">Herbal treatments</a> @Hope TCM Clinic'
+            'rights': '<a href="/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">Acupuncture</a>, <a href="/treatments/facial-rejuvenation-acupuncture.html" class="hover:text-primary transition-colors duration-300">Facial Rejuvenation</a>, <a href="/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">Cupping</a>, <a href="/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">Moxibustion</a>, <a href="/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">Gua Sha</a> & <a href="/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">Herbal treatments</a><br>Copyright © 2023 - 2026. Hope Traditional Chinese Medicine Clinic (Hope TCM Clinic). All rights reserved.'
         },
         'others': {
             'book_online': 'Book An Appointment Online',
@@ -59,7 +59,7 @@ TRANSLATIONS = {
         },
         'footer': {
             'address': '235-889 Carnarvon St, Buzzer 235, New Westminster, BC V3M1G2',
-            'rights': '版權所有 © 2023 - 2026. <a href="/cn/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">針灸</a>, <a href="/cn/treatments/facial-rejuvenation-acupuncture.html" class="hover:text-primary transition-colors duration-300">美容針灸</a>, <a href="/cn/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">拔罐</a>, <a href="/cn/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">艾灸</a>, <a href="/cn/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">刮痧</a>, <a href="/cn/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">中草藥</a>等 @Hope TCM Clinic'
+            'rights': '<a href="/cn/treatments/acupuncture.html" class="hover:text-primary transition-colors duration-300">針灸</a>, <a href="/cn/treatments/facial-rejuvenation-acupuncture.html" class="hover:text-primary transition-colors duration-300">美容針灸</a>, <a href="/cn/treatments/cupping.html" class="hover:text-primary transition-colors duration-300">拔罐</a>, <a href="/cn/treatments/moxibustion.html" class="hover:text-primary transition-colors duration-300">艾灸</a>, <a href="/cn/treatments/gua-sha.html" class="hover:text-primary transition-colors duration-300">刮痧</a>, <a href="/cn/treatments/herbal-formulas.html" class="hover:text-primary transition-colors duration-300">中草藥</a>等<br>版權所有 © 2023 - 2026. Hope Traditional Chinese Medicine Clinic (Hope TCM Clinic).'
         },
         'others': {
             'book_online': '網上預約',
