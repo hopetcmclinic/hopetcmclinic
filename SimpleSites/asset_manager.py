@@ -98,8 +98,14 @@ class AssetManager:
                     if img.mode != 'RGB':
                         img = img.convert('RGB')
                     img.save(dest, 'JPEG', quality=85, optimize=True)
+                    # Generate WebP
+                    webp_dest = os.path.splitext(dest)[0] + '.webp'
+                    img.save(webp_dest, 'WEBP', quality=85)
                 elif ext in ['.png']:
                     img.save(dest, 'PNG', optimize=True)
+                    # Generate WebP
+                    webp_dest = os.path.splitext(dest)[0] + '.webp'
+                    img.save(webp_dest, 'WEBP', quality=85)
                 else:
                     img.save(dest)
                 print(f"Optimized: {os.path.basename(dest)}")

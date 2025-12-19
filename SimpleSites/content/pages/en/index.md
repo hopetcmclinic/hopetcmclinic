@@ -28,6 +28,7 @@ intro:
   mission: "\"Our mission is to restore harmony and vitality to your body, mind, and spirit. We guide you on your journey to optimal health, empowering you to achieve lasting wellness.\""
 services:
   title: "Services & Fees"
+  price_effective_date: "Price effective from Jan 1, 2026"
   entries:
     - title: "Acupuncture"
       subtitle: "Standard Treatment"
@@ -37,7 +38,7 @@ services:
       icon_color: "text-primary"
       rates:
         - label: "Initial Visit (90 min)"
-          price: "$120"
+          price: "$135"
         - label: "Follow-up (60 min)"
           price: "$100"
     - title: "Facial Rejuvenation Acupuncture"
@@ -48,9 +49,9 @@ services:
       icon_color: "text-accent"
       rates:
         - label: "Initial Visit (90 min)"
-          price: "$150"
+          price: "$160"
         - label: "Follow-up (60 min)"
-          price: "$125"
+          price: "$130"
   herbal:
     title: "Herbal Consultation"
     desc: "Book this for herb/pill refills if your last visit was within 2 years. Includes consultation and preparation. Herbs are not included (approx. $20–$40/week, varying by prescription)."

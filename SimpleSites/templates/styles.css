@@ -7,9 +7,6 @@
 @source "../templates/**/*.{html,js}";
 
 @theme {
-    --font-sans: 'Lato', sans-serif;
-    --font-serif: 'Playfair Display', serif;
-
     --color-primary: #064e3b;
     --color-secondary: #f5f5f4;
     --color-accent: #b45309;

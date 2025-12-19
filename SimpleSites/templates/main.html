@@ -45,13 +45,8 @@
     <meta name="twitter:description" content="{{ description }}">
     <meta name="twitter:image" content="{{ social_image }}">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="/{{ css_file }}" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="/{{ css_file }}" type="text/css">
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -59,8 +54,6 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel="icon" type="image/x-icon" href="/favicon.ico" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
 
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-VGSXBXHVTX"></script>
     <script>
@@ -77,15 +70,18 @@
     </script>
 </head>
 
-<body class="flex flex-col text-slate-800 bg-stone-50 leading-relaxed" style="font-family: 'Lato', sans-serif;">
+<body class="flex flex-col text-slate-800 bg-stone-50 leading-relaxed">
     <header id="site-header"
         class="flex flex-col border-b border-primary/20 bg-white/95 backdrop-blur-sm sticky top-0 z-50 shadow-sm transition-all duration-300">
         <nav id="site-nav"
             class="flex justify-between items-center w-[92%] mx-auto py-4 max-w-6xl transition-all duration-300">
-            <div class="flex items-center gap-4 md:gap-0 lg:gap-0 xl:gap-4">
+            <div class="flex items-center gap-4 xl:gap-4">
                 <a href="{{ link_prefix }}/" class="shrink-0 hover:opacity-90 transition-opacity">
-                    <img id="site-logo" class="w-16 lg:w-24 transition-all duration-300" src="/images/logo.png"
-                        alt="Hope Traditional Chinese Medicine Clinic" width="96" height="96">
+                    <picture>
+                        <source srcset="/images/logo.webp" type="image/webp">
+                        <img id="site-logo" class="w-16 lg:w-24 transition-all duration-300" src="/images/logo.png"
+                            alt="Hope Traditional Chinese Medicine Clinic" width="96" height="96">
+                    </picture>
                 </a>
                 <div
                     class="flex flex-col justify-center items-center text-center font-serif text-primary tracking-wide md:hidden lg:flex">
@@ -184,7 +180,7 @@
                 </ul>
                 <!-- Mobile Close Button (Optional) -->
                 <i onclick="closeMenu()"
-                    class="fas fa-times md:hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></i>
+                    class="fas fa-times md:!hidden absolute top-6 right-8 text-3xl cursor-pointer text-slate-500"></i>
             </div>
 
             <div class="flex items-center gap-6 md:hidden">

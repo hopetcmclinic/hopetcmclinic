@@ -27,6 +27,7 @@ intro:
   mission: "\"我們的使命是恢復您身、心、靈的和諧與活力。我們致力於指導您走上最佳健康之旅，賦予您實現持久健康的能力。\""
 services:
   title: "服務與費用"
+  price_effective_date: "價格自 2026 年 1 月 1 日起生效"
   entries:
     - title: "針灸治療"
       subtitle: "<a href=\"/cn/treatments/acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">標準治療</a>"
@@ -36,7 +37,7 @@ services:
       icon_color: "text-primary"
       rates:
         - label: "初診 (90 分鐘)"
-          price: "$120"
+          price: "$135"
         - label: "複診 (60 分鐘)"
           price: "$100"
     - title: "美容針灸"
@@ -47,9 +48,9 @@ services:
       icon_color: "text-accent"
       rates:
         - label: "初診 (90 分鐘)"
-          price: "$150"
+          price: "$160"
         - label: "複診 (60 分鐘)"
-          price: "$125"
+          price: "$130"
   herbal:
     title: "中藥諮詢"
     desc: "個性化中草藥處方和配藥，不包括草藥(約 $20-$40/週，根據處方而定)。"
