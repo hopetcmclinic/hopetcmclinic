@@ -10,7 +10,7 @@ hero:
   link: "/cn/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"
 intro:
-  main: "歡迎來到 <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>，由 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊中醫師，註冊針灸師）領導，位於新西敏的一家值得信賴的健康中心。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
+  main: "歡迎來到 <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>，由 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊高級中醫師，註冊針灸師）領導，位於新西敏的一家值得信賴的健康中心。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
   specialties:
     - name: "針灸"
       link: "/cn/treatments/acupuncture.html"

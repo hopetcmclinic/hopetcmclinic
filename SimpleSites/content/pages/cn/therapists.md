@@ -1,17 +1,17 @@
 ---
-title: Yuan Fang (Eva) - 註冊針灸師
+title: Yuan Fang (Eva) - 註冊高級中醫師和針灸師
 description: Yuan Fang (Eva)是BC省註冊中醫師，畢業於溫哥華慈濟中醫學院。專長疼痛緩解、消化系統問題、情緒困擾及女性健康。推崇自然療法，將道家理念融入治療實踐。
 template: pages/therapists.html
 therapist:
   name: "Eva Fang Yuan"
-  title: "註冊中醫師 | 註冊針灸師"
+  title: "註冊高級中醫師 | 註冊針灸師"
   image: "/images/Eva.jpg"
   book_text: "預約治療"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:
   heading: "擁抱整體健康療法"
   quote: "遵循道家‘天人合一’和諧原則的診治理念。"
-  intro: "Eva 醫生是 BC 省 <a href=\"https://cchpbc.ca/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CCHPBC</a> 註冊的執業針灸師和中醫師。她於 2019 年畢業於溫哥華著名的慈濟中醫學院。"
+  intro: "Eva 醫生是 BC 省 <a href=\"https://cchpbc.ca/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CCHPBC</a> 註冊的執業高級中醫師和針灸師。她於 2019 年畢業於溫哥華著名的慈濟中醫學院。"
 specs:
   title: "專長領域"
   intro: "Eva 醫生熱衷於整體健康，專注於從根本上治療以下問題："
