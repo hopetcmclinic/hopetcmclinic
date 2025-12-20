@@ -1,12 +1,12 @@
 ---
-title: Acupuncture & TCM New Westminster
-description: Seasoned registered acupuncturists offer a diverse array of TCM services including Acupuncture, Facial Rejuvenation Acupuncture, Cupping, Moxibustion, Gua Sha, and Herbal Medicine in New West.
+title: Acupuncture & Chinese Medicine New Westminster
+description: Experience holistic healing at Hope TCM Clinic in New Westminster. Expert Acupuncture, Chinese Herbs, and Cupping for pain and stress. Book your session online today!
 keywords: "Acupuncture New Westminster, TCM Clinic, Registered Acupuncturist, Cupping Therapy, Moxibustion, Herbal Medicine, Gua Sha, Facial Rejuvenation Acupuncture"
 template: pages/index.html
 hero:
-  title_line1: "Restore Vitality &"
-  title_highlight: "Harmony"
-  subtitle: "Embrace the ancient wisdom of Traditional Chinese Medicine in New Westminster."
+  title_line1: "Traditional Chinese Medicine &"
+  title_highlight: "Acupuncture Clinic in New Westminster"
+  subtitle: "Restoring Vitality and Harmony through Holistic Healing."
   cta: "Learn Philosophy"
   link: "/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"

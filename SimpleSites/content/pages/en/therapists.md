@@ -1,6 +1,6 @@
 ---
-title: Eva Fang Yuan - Acupuncturist in New Westminster
-description: Eva Fang Yuan, R.Ac & Dr. of TCM at Hope TCM Clinic New Westminster. Specializing in pain relief, digestion, women’s health, and holistic wellness.
+title: Eva Fang Yuan | Doctor of TCM & Acupuncturist in New Westminster
+description: Meet Dr. Eva Fang Yuan, a licensed Doctor of TCM & Acupuncturist in New Westminster. Specializing in natural treatments for infertility, anxiety, and chronic pain. Book your personalized consultation at Hope TCM Clinic.
 keywords: "Eva Fang Yuan, Registered Acupuncturist New Westminster, Doctor of TCM, R.AC, Female Acupuncturist"
 template: pages/therapists.html
 therapist:
@@ -12,7 +12,7 @@ therapist:
 bio:
   heading: "Embracing Holistic Healing"
   quote: "My practice reflects the Taoist principle of harmony between human and nature."
-  intro: "Dr. Eva is a licensed acupuncturist and Doctor of Traditional Chinese Medicine (TCM) registered with the <a href=\"https://cchpbc.ca/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CCHPBC</a>. She graduated in 2019 from the esteemed <a href=\"https://tcmcollege.com/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">Tzu Chi International College of Traditional Chinese Medicine in Vancouver</a>."
+  intro: "Dr. Eva is a licensed acupuncturist and Doctor of Traditional Chinese Medicine (TCM) registered with the <a href=\"https://cchpbc.ca/\" class=\"text-accent underline hover:text-primary transition-colors\" target=\"_blank\">CCHPBC</a>. She graduated in 2019 from the esteemed Tzu Chi International College of Traditional Chinese Medicine in Vancouver."
 specs:
   title: "Specializations"
   intro: "With a deep passion for holistic health, Dr. Eva focuses on treating the root causes of:"
@@ -21,12 +21,12 @@ specs:
       icon: "fas fa-leaf"
     - name: "Irritable Bowel Syndrome"
       icon: "fas fa-seedling"
-    - name: "Emotional Imbalances"
+    - name: "Emotional Imbalances<br>(such as anxiety and stress relief)"
       icon: "fas fa-heart"
     - name: "Insomnia"
       icon: "fas fa-moon"
       link: "/blogs/deep-relaxation-restorative-sleep.html"
-    - name: "Menstrual Disorders"
+    - name: "Menstrual Disorders<br>(including painful periods or irregular cycles)"
       icon: "fas fa-venus"
     - name: "Infertility"
       icon: "fas fa-baby"

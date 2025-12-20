@@ -1,6 +1,6 @@
 ---
 title: TCM Treatments New Westminster | Acupuncture, Cupping & Herbs
-description: We offer a wide range of Traditional Chinese Medicine treatments in New Westminster, including Acupuncture, Facial Acupuncture,Cupping, Moxibustion, Gua Sha, and Herbal Medicine.
+description: Discover holistic TCM treatments in New Westminster. We offer Acupuncture, Facial Rejuvenation, Cupping, Herbs, Moxibustion & Gua Sha. Book your healing session.
 keywords: "TCM Treatments New Westminster, Acupuncture Services, Cupping Therapy, Herbal Medicine, Pain Relief Treatments"
 template: pages/treatments.html
 intro:

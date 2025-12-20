@@ -10,7 +10,7 @@ hero:
   link: "/cn/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"
 intro:
-  main: "歡迎來到 <span class=\"text-primary font-bold\">Hope TCM Clinic</span>，這是新西敏一家值得信賴的健康中心，由著名中醫師 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊中醫師，註冊針灸師）領導。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
+  main: "歡迎來到 <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>，由 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊中醫師，註冊針灸師）領導，位於新西敏的一家值得信賴的健康中心。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
   specialties:
     - name: "針灸"
       link: "/cn/treatments/acupuncture.html"
@@ -53,7 +53,7 @@ services:
           price: "$130"
   herbal:
     title: "中藥諮詢"
-    desc: "個性化中草藥處方和配藥，不包括草藥(約 $20-$40/週，根據處方而定)。"
+    desc: "個性化中草藥處方和配藥，價格不含草藥(約 $20-$40/週，根據處方而定)。"
     link: "/cn/treatments/herbal-formulas.html"
     icon: "fas fa-mortar-pestle"
     icon_bg: "bg-primary/10"
