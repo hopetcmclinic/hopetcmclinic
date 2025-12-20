@@ -1,6 +1,6 @@
 ---
 title: Contact Us - Pain Relief & Health in New Westminster
-description: Book an appointment with Hope TCM Clinic and take care of your wellness. 235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2
+description: Visit Hope TCM Clinic in New Westminster for expert Acupuncture and TCM. Located near the Skytrain at 889 Carnarvon St. Book online or contact us at (778) 871-1439.
 keywords: "Contact TCM Clinic, Appointment New Westminster, TCM Clinic Location New West, Acupuncture Booking"
 template: pages/contact.html
 intro:
@@ -34,8 +34,8 @@ hours:
     - day: "Saturday"
       time: "9:30 AM - 4:30 PM"
 location:
-  title: "Getting Here"
-  desc: "We are located inside the integrated residential and commercial complex adjacent to the New Westminster Skytrain Station."
+  title: "How to Find Us"
+  desc: "Our clinic is located in downtown New Westminster, just a 5-minute walk from the New Westminster Skytrain Station. We are across from Columbia Square, making us easily accessible for patients from Burnaby, Coquitlam, and Surrey."
   skytrain: "Skytrain Access"
   parking: "Paid Parking"
 map:

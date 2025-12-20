@@ -258,6 +258,97 @@
 
 </div>
 
+<!-- Service Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments.html#acupuncture",
+      "name": "Traditional Acupuncture",
+      "description": "Uses ultra-thin, sterile needles to stimulate acupoints and balance Qi & Blood. Our skilled acupuncturists tailor each session to your needs, selecting techniques to optimize energy flow.",
+      "procedureType": "Acupuncture",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments.html",
+      "availableService": {
+        "@type": "MedicalProcedure",
+        "name": "Acupuncture Consultation and Treatment"
+      }
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments/facial-rejuvenation-acupuncture.html",
+      "name": "Facial Rejuvenation Acupuncture",
+      "description": "A holistic cosmetic treatment that naturally stimulates collagen production and improves skin elasticity for a radiant glow. Reduces fine lines and wrinkles, improves skin tone and texture, lifts and firms sagging skin.",
+      "procedureType": "Cosmetic Acupuncture",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments/facial-rejuvenation-acupuncture.html"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments/herbal-formulas.html",
+      "name": "Herbal Medicine Formulas",
+      "description": "Traditional Chinese herbal medicine formulas customized to address your specific health condition and restore balance to the body.",
+      "procedureType": "Herbal Medicine",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments/herbal-formulas.html"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments/cupping.html",
+      "name": "Cupping Therapy",
+      "description": "Traditional therapy using suction cups to increase blood circulation, reduce muscle tension, promote healing, and detoxification.",
+      "procedureType": "Cupping Therapy",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments/cupping.html"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments/moxibustion.html",
+      "name": "Moxibustion",
+      "description": "Heat therapy using dried mugwort (moxa) to warm regions and meridian points, promoting circulation and healing, especially effective for cold conditions.",
+      "procedureType": "Moxibustion",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments/moxibustion.html"
+    },
+    {
+      "@type": "MedicalProcedure",
+      "@id": "{{ root_url }}/treatments/gua-sha.html",
+      "name": "Gua Sha (Scraping Therapy)",
+      "description": "Traditional Chinese scraping technique to release muscle tension, improve circulation, and promote healing by stimulating the skin and underlying tissues.",
+      "procedureType": "Gua Sha",
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "@id": "{{ root_url }}/#organization"
+      },
+      "url": "{{ root_url }}/treatments/gua-sha.html"
+    }
+  ]
+}
+</script>
+
 <!-- Animation for details -->
 <style>
     details[open] summary~* {
