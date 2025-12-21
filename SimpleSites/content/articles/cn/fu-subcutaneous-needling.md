@@ -81,3 +81,7 @@ FSN 在治療各種急慢性健康狀況方面顯示出希望，包括但不限�
         <li><a href="https://en.wikipedia.org/wiki/Fu%27s_subcutaneous_needle">維基百科: 浮針 (Fu's subcutaneous needle)</a></li>
     </ul>
 </p>
+
+<p class="mb-6">
+<strong>想嘗試浮針或傳統針灸？</strong>探索我們的<a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸治療</a>或與 Hope TCM Clinic 的 Eva 醫生<a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" class="text-accent underline hover:text-primary transition-colors">預約咨詢</a>。
+</p>

@@ -124,3 +124,14 @@ Whether you are seeking relief from chronic pain, looking to support your fertil
 <p class="mb-6">
 Curious if Moxibustion is right for you? Book a consultation at Hope TCM Clinic today, and let us help you rediscover your natural warmth and vitality.
 </p>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Acupuncture</a> – Often combined with moxibustion for optimal results</li>
+    <li><a href="/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">Herbal Formulas</a> – Internal warming support</li>
+    <li><a href="/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">Cupping Therapy</a> – Release stagnation and improve circulation</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

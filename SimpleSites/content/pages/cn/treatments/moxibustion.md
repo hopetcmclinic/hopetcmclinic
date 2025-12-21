@@ -123,3 +123,15 @@ schema:
 <p class="mb-6">
 好奇艾灸是否適合您？立即預約向陽中醫診所的諮詢，讓我們幫助您重新發現您的自然溫暖和活力。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸</a> – 通常與艾灸結合以獲得最佳效果</li>
+    <li><a href="/cn/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">中藥配方</a> – 內部溫暖支持</li>
+    <li><a href="/cn/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">拔罐療法</a> – 釋放停滯並改善循環</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

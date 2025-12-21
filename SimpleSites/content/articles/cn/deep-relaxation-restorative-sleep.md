@@ -53,3 +53,7 @@ title: "針灸助您深度放鬆與恢復性睡眠"
 <p class="mb-6">
 如果您正在尋找一種自然的方式來放鬆、重置和改善睡眠，針灸對您來說可能是一個強大的選擇。
 </p>
+
+<p class="mb-6">
+<strong>準備體驗深度放鬆？</strong>了解更多關於我們的<a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸治療</a>或<a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" class="text-accent underline hover:text-primary transition-colors">立即預約</a>。
+</p>

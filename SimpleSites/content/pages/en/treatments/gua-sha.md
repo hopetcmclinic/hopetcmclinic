@@ -97,3 +97,14 @@ Because Gua Sha stimulates movement and opens the pores, your body is temporaril
 <p class="mb-6">
 The marks ("Sha") typically fade within 2 to 7 days, depending on your circulation. Seeing these marks is a positive sign that the treatment has successfully acted on the stagnation in your tissues.
 </p>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">Cupping Therapy</a> – Similar detoxification benefits through suction</li>
+    <li><a href="/treatments/facial-rejuvenation-acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Facial Rejuvenation Acupuncture</a> – Gua Sha is often combined with facial acupuncture</li>
+    <li><a href="/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Acupuncture</a> – Comprehensive energy balancing</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

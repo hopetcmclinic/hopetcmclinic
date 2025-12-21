@@ -42,3 +42,7 @@ TCM 的核心原則是人體是自然界的縮影，受稱為“氣”的生命�
 <p>
 近年來，隨著對其功效、安全性及整體健康方法的日益認可，全球對 TCM 的興趣激增。從繁忙城市中心的針灸診所到偏遠村莊的中藥房，TCM 繼續作為全球醫療保健的重要組成部分而蓬勃發展。當我們應對現代生活的複雜性時，TCM 的永恆智慧猶如一盞指路明燈，提醒我們內在的治癒和轉變能力。
 </p><br>
+
+<p class="mb-6">
+<strong>準備開始您的康復之旅？</strong><a href="https://hopetcmclinic.janeapp.com/#/staff_member/1" class="text-accent underline hover:text-primary transition-colors">立即預約</a>或探索我們的<a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">全部治療項目</a>。
+</p>

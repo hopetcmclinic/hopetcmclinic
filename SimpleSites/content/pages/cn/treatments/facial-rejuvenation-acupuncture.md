@@ -112,3 +112,15 @@ schema:
 <p class="mb-6">
 面部回春針灸是優雅自信地衰老的一份邀請。通過滋養您身體的內部平衡，您將解鎖屬於您獨特的、容光煥發的永恆之美。步入自然活力的世界，讓您內在的光芒閃耀。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">傳統針灸</a> – 在美化皮膚的同時解決內在健康問題</li>
+    <li><a href="/cn/treatments/gua-sha.html" class="text-accent underline hover:text-primary transition-colors">刮痧</a> – 增強淋巴引流和面部塑形</li>
+    <li><a href="/cn/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">中藥配方</a> – 用定制配方從內部滋養您的皮膚</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

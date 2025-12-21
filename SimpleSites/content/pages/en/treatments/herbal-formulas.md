@@ -127,3 +127,13 @@ Herbal medicine is potent medicine. To ensure your safety:
 <p class="mb-6">
 At Hope TCM Clinic, we bridge the gap between ancient wisdom and modern safety standards, offering you a natural path to healing that you can trust.
 </p>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Acupuncture</a> – External and internal healing work synergistically</li>
+    <li><a href="/treatments/moxibustion.html" class="text-accent underline hover:text-primary transition-colors">Moxibustion</a> – Warming therapy to support Yang energy</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

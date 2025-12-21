@@ -112,3 +112,14 @@ While safe for most, this treatment is not suitable for everyone. It is contra-i
 <p class="mb-6">
 Facial Rejuvenation Acupuncture is an invitation to age gracefully and confidently. By nurturing your body's internal balance, you unlock a radiant, timeless beauty that is uniquely yours. Step into a world of natural vitality and let your inner light shine through.
 </p>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Traditional Acupuncture</a> – Address internal health concerns while beautifying your skin</li>
+    <li><a href="/treatments/gua-sha.html" class="text-accent underline hover:text-primary transition-colors">Gua Sha</a> – Enhance lymphatic drainage and facial sculpting</li>
+    <li><a href="/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">Herbal Formulas</a> – Nourish your skin from within with custom formulas</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

@@ -137,3 +137,15 @@ Taking the first step towards better health can be the most important decision y
 <p class="mb-6">
 At Hope TCM Clinic, we are honoured to support you on your wellness journey. If you have any questions or are ready to experience the benefits of acupuncture, we invite you to book an appointment with us today. Let's work together to restore balance and bring vitality back into your life.
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/treatments/facial-rejuvenation-acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Facial Rejuvenation Acupuncture</a> – A specialized acupuncture technique for natural anti-aging and skin rejuvenation</li>
+    <li><a href="/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">Cupping Therapy</a> – Release deep muscle tension and improve circulation</li>
+    <li><a href="/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">Herbal Formulas</a> – Customized Chinese herbal medicine to support your healing</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

@@ -98,11 +98,11 @@ faq:
     - q: "When will I see results from acupuncture?"
       a: "Many patients notice improvements after 1-3 sessions for acute conditions. Chronic issues typically show meaningful progress within 6-8 treatments. Consistency is key for lasting results, and we'll monitor your progress closely."
     - q: "Is acupuncture safe?"
-      a: "Yes, acupuncture is extremely safe when performed by a licensed practitioner. We use single-use, sterile needles and follow strict safety protocols. Serious side effects are very rare. Minor bruising or temporary soreness may occur."
+      a: "Yes, acupuncture is extremely safe when performed by a licensed practitioner using single-use, sterile needles and strict safety protocols. Serious side effects are very rare, though minor bruising or temporary soreness may occasionally occur. Most people experience positive effects such as deep relaxation, increased energy, or mild euphoria—reactions that vary from person to person but often last throughout the day. We recommend resting for the remainder of the day to allow your body to fully process the treatment, and arranging safe transportation home if you experience significant effects."
     - q: "How should I prepare for my first visit?"
       a: "Wear loose, comfortable clothing. Have a light meal 1-2 hours before your session. Avoid caffeine or alcohol before treatment. Please complete our online intake forms beforehand (10 mins) or arrive early to fill them out."
     - q: "What should I expect after treatment?"
-      a: "Most people feel deeply relaxed or energized. Some experience mild soreness or slight fatigue. These are normal responses as your body adjusts. Stay hydrated, rest, and avoid strenuous activity for the remainder of the day to maximize benefits."
+      a: "Most people feel deeply relaxed or energized. Some experience mild soreness or slight fatigue. These are normal responses as your body adjusts. Stay hydrated, rest, keep warm, and avoid strenuous activity for the remainder of the day to maximize benefits."
 book:
   text: "Book Your Session"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"

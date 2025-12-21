@@ -75,3 +75,14 @@ Most patients describe the feeling after cupping as being "lighter and looser," 
 <p class="mb-6">
 Cupping therapy is a powerful way to "unblock and release" tension that has been held in your body for months or even years. If you are looking for a natural way to relieve deep-seated pain and revitalize your energy, book a session with us at Hope TCM Clinic today.
 </p>
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
+<p class="mb-4">
+You may also be interested in these complementary treatments:
+</p>
+<ul class="list-disc pl-6 space-y-2">
+    <li><a href="/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">Acupuncture</a> – Often combined with cupping for enhanced pain relief</li>
+    <li><a href="/treatments/gua-sha.html" class="text-accent underline hover:text-primary transition-colors">Gua Sha</a> – Another effective detoxification technique</li>
+    <li><a href="/treatments/moxibustion.html" class="text-accent underline hover:text-primary transition-colors">Moxibustion</a> – Warming therapy to complement cupping</li>
+    <li><a href="/treatments.html" class="text-accent underline hover:text-primary transition-colors">View All Treatments</a></li>
+</ul>
+

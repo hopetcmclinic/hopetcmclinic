@@ -74,3 +74,15 @@ schema:
 <p class="mb-6">
 拔罐療法是一種“疏通與釋放”體內數月甚至數年累積緊張的有效方法。如果您正在尋找一種自然的方法來緩解深層疼痛並恢復活力，請立即預約向陽中醫診所的治療。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 space-y-2">
+    <li><a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸</a> – 通常與拔罐結合以增強止痛效果</li>
+    <li><a href="/cn/treatments/gua-sha.html" class="text-accent underline hover:text-primary transition-colors">刮痧</a> – 另一種有效的排毒技術</li>
+    <li><a href="/cn/treatments/moxibustion.html" class="text-accent underline hover:text-primary transition-colors">艾灸</a> – 補充拔罐的溫熱療法</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

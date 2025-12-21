@@ -97,3 +97,15 @@ schema:
 <p class="mb-6">
 印記（“痧”）通常在 2 到 7 天內消退，具體取決於您的循環情況。看到這些印記是一個積極的信號，表明治療已成功作用於您組織中的停滯。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/cn/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">拔罐療法</a> – 通過吸力獲得類似的排毒益處</li>
+    <li><a href="/cn/treatments/facial-rejuvenation-acupuncture.html" class="text-accent underline hover:text-primary transition-colors">美容針灸</a> – 刮痧通常與面部針灸結合使用</li>
+    <li><a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸</a> – 全面的能量平衡</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

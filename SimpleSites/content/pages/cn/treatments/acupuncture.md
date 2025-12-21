@@ -137,3 +137,15 @@ schema:
 <p class="mb-6">
 在向陽中醫診所，我們很榮幸能支持您的健康之旅。如果您有任何疑問或準備體驗針灸的益處，請立即預約。讓我們共同努力，恢復平衡，讓您的生活重煥活力。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/cn/treatments/facial-rejuvenation-acupuncture.html" class="text-accent underline hover:text-primary transition-colors">美容針灸</a> – 自然抗衰老和皮膚再生的專門針灸技術</li>
+    <li><a href="/cn/treatments/cupping.html" class="text-accent underline hover:text-primary transition-colors">拔罐療法</a> – 釋放深層肌肉緊張並改善循環</li>
+    <li><a href="/cn/treatments/herbal-formulas.html" class="text-accent underline hover:text-primary transition-colors">中藥配方</a> – 定制的中草藥以支持您的康復</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

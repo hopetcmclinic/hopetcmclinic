@@ -1,5 +1,6 @@
 ---
-title: Holistic Health Blog New Westminster
+title: Holistic Health Blog
+page_title: Holistic Health Blog New Westminster
 keywords: "TCM Blog, Health Tips, Acupuncture News, Wellness Articles New Westminster"
 description: Read our latest articles on Traditional Chinese Medicine, acupuncture, and holistic health.
 template: pages/blog.html

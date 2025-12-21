@@ -126,3 +126,14 @@ schema:
 <p class="mb-6">
 在向陽中醫診所，我們將古老的智慧與現代安全標準相結合，為您提供值得信賴的自然康復之路。
 </p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">相關治療</h2>
+<p class="mb-4">
+您可能還對這些補充療法感興趣：
+</p>
+<ul class="list-disc pl-6 mb-6 space-y-2">
+    <li><a href="/cn/treatments/acupuncture.html" class="text-accent underline hover:text-primary transition-colors">針灸</a> – 外部和內部治療協同作用</li>
+    <li><a href="/cn/treatments/moxibustion.html" class="text-accent underline hover:text-primary transition-colors">艾灸</a> – 溫熱療法以支持陽氣</li>
+    <li><a href="/cn/treatments.html" class="text-accent underline hover:text-primary transition-colors">查看所有治療</a></li>
+</ul>
+

@@ -77,23 +77,28 @@ You may also be interested in:
 ## Implementation Checklist
 
 ### Homepage (`index.md`)
-- [ ] Add links in FAQ answers to treatment pages
-- [ ] Link treatment names in intro section
+- [x] Add links in FAQ answers to treatment pages
+- [x] Link treatment names in intro section
 
 ### Treatments Overview (`treatments.md`)
-- [ ] Link "Acupuncture" to detail page
-- [ ] Link "Facial Rejuvenation Acupuncture" to detail page
-- [ ] Link all complementary modalities
-- [ ] Link technique mentions (Fu's Needling) to blog
+- [x] Link "Acupuncture" to detail page
+- [x] Link "Facial Rejuvenation Acupuncture" to detail page
+- [x] Link all complementary modalities
+- [x] Link technique mentions (Fu's Needling) to blog
 
 ### Treatment Detail Pages
-- [ ] Add "Related Treatments" section to each page
-- [ ] Cross-link to complementary treatments
-- [ ] Link back to main treatments page
+- [x] Add "Related Treatments" section to each page (EN & CN)
+- [x] Cross-link to complementary treatments
+- [x] Link back to main treatments page
 
 ### Blog Posts
-- [ ] Ensure each links to 1-2 service pages
-- [ ] Add CTAs to book appointments
+- [x] Ensure each links to 1-2 service pages (EN & CN)
+- [x] Add CTAs to book appointments
+
+### Contact Pages (NEW)
+- [x] Add links to primary treatments (Acupuncture, Facial Rejuvenation, Herbal Medicine)
+- [x] Link to treatments overview page
+- [x] Implement for both EN and CN versions
 
 ---
 
