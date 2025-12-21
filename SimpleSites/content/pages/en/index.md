@@ -76,7 +76,7 @@ faq:
     - q: "Does acupuncture hurt?"
       a: "Most people feel little to no pain. You may notice mild soreness, heaviness, fullness, or a warm or radiating sensation, which is normal. Occasionally, a brief sharp or electrical feeling may occur if there is significant stagnation in the meridian or a small blood vessel or nerve is irritated. If this happens, let your practitioner know—they can quickly adjust the needle to relieve the discomfort."
     - q: "How long does an acupuncture session last?"
-      a: "Your initial visit lasts 90 minutes, including consultation and treatment. Follow-up sessions are 60 minutes. Needles typically remain in place for 20-30 minutes while you relax."
+      a: "Your initial visit lasts 90 minutes, including consultation and treatment. Follow-up sessions are 60 minutes."
     - q: "How many treatments will I need?"
       a: "It varies by condition. Acute issues may resolve quickly, while chronic conditions often require ongoing care for reliable results. Consistent acupuncture treatments typically lead to reliable results."
     - q: "Is acupuncture covered by insurance?"
