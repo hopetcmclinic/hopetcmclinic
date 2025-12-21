@@ -232,13 +232,13 @@
 
     <div class="space-y-4">
         {% for item in page.faq.entries %}
-        <details open
-            class="group bg-white rounded-xl border border-stone-200 overflow-hidden [&_summary::-webkit-details-marker]:hidden">
+        <details {% if loop.index==1 %}open{% endif %}
+            class="group bg-white rounded-xl border border-stone-200 overflow-hidden [&_summary::-webkit-details-marker]:hidden hover:border-primary/30 transition-colors">
             <summary
                 class="flex items-center justify-between gap-4 p-5 cursor-pointer bg-white group-hover:bg-stone-50 transition-colors list-none select-none">
                 <h3 class="font-serif font-bold text-slate-700">{{ item.q }}</h3>
                 <div
-                    class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 group-open:bg-primary group-open:text-white transition-all duration-300 group-open:rotate-180">
+                    class="w-8 h-8 rounded-full bg-stone-100 flex items-center justify-center text-stone-400 group-open:bg-primary group-open:text-white transition-all duration-300 group-open:rotate-180 flex-shrink-0">
                     <i class="fas fa-chevron-down text-sm"></i>
                 </div>
             </summary>
@@ -345,6 +345,26 @@
       },
       "url": "{{ root_url }}/treatments/gua-sha.html"
     }
+  ]
+}
+</script>
+
+<!-- FAQ Schema Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {% for item in page.faq.entries %}
+    {
+      "@type": "Question",
+      "name": {{ item.q | tojson }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | tojson }}
+      }
+    }{% if not loop.last %},{% endif %}
+    {% endfor %}
   ]
 }
 </script>

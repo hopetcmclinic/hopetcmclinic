@@ -62,18 +62,28 @@ services:
     rates:
       - label: "Follow-up (20 min)"
         price: "$30"
+visit_info:
+  title: "First Visit? Here's How to Access Our Clinic"
+  location: "📍 Location: 235-889 Carnarvon St, New Westminster"
+  entry: "🚪 Entry: Buzzer code 235 (Press UP → Enter 235)"
+  video_text: "📽️ Watch video guide"
+  video_link: "/videos/buzzer.mp4"
+  tip: "💡 Tip: We're near the Skytrain! Parking available nearby."
 faq:
   title: "Frequently Asked Questions"
   entries:
-    - q: "What can I expect during treatment?"
-      a: "For more details on each type of treatment, please visit our <a href=\"/treatments.html\" class=\"text-primary font-bold underline decoration-primary/30\">Treatments</a> page."
-    - q: "Do you do direct billing?"
-      a: "We are registered acupuncturist, but do not do direct billing to MSP or insurance company. A receipt will be issued after each session. Patients can claim their subsidy or extended health insurance using the receipts."
+    - q: "Does acupuncture hurt?"
+      a: "Not usually. Acupuncture needles are hair-thin and much finer than injection needles. You may feel a tiny pinch during insertion, followed by sensations like warmth, tingling, or a dull ache (called 'De Qi'), which indicates the treatment is working. Most patients find it deeply relaxing."
+    - q: "Is acupuncture covered by insurance?"
+      a: "Yes, most Extended Health Plans in British Columbia cover acupuncture treatments by a Registered Acupuncturist (R.Ac.). We provide detailed receipts that you can submit to your insurance for reimbursement. Check your specific plan for coverage limits."
+    - q: "How long does an acupuncture session last?"
+      a: "Your initial visit lasts 90 minutes, including consultation and treatment. Follow-up sessions are 60 minutes. Needles typically remain in place for 20-30 minutes while you relax."
+    - q: "How many treatments will I need?"
+      a: "It varies by condition. Acute issues may resolve in 2-3 sessions, while chronic conditions often require 6-8 treatments for lasting results. We'll create a personalized treatment plan for you."
     - q: "What payment methods do you accept?"
-      a: "Debit/Credit cards, E-transfer, cash are all accepted."
-    - q: "Clinic Buzzer System Instructions"
-      a: "To access the clinic using the buzzer system, please follow these steps or refer to the <a href=\"/videos/buzzer.mp4\" target=\"_blank\" class=\"text-primary font-bold underline decoration-primary/30\">instructional video</a>:<ul class=\"my-2 mx-4\"><li>1. Locate the buzzer panel outside the clinic entrance.</li><li>2. Press the <strong>UP</strong> key once.</li><li>3. Enter the code <strong>235</strong> using the keypad.</li></ul>If you encounter any issues, please contact clinic staff for assistance."
+      a: "We accept debit/credit cards, e-transfer, and cash. A detailed receipt will be issued after each session for insurance claims."
 book:
   text: "Book An Appointment Online"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 ---
+```

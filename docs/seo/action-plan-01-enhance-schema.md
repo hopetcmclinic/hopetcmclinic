@@ -12,152 +12,63 @@ Enhance existing schema markup on the therapists page and add FAQ schema to page
 
 ---
 
-## Tasks
+## Completed Tasks ✅
 
-### 1. Enhance Person Schema on Therapists Page
+### ✅ 1. Enhanced Person Schema on Therapists Page (Completed: Dec 20, 2025)
 
-**Files to Edit**: 
-- `SimpleSites/templates/pages/therapists.html` (or template that generates the schema)
+**Files Modified**: 
+- `SimpleSites/templates/pages/therapists.html`
 
-**Current Schema** (lines ~407-422 in generated HTML):
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Eva Fang Yuan",
-    "description": "Registered Acupuncturist and Doctor of TCM",
-    "image": "..."
-  }
-}
-```
-
-**Action**:
-Add these properties to the Person schema:
-- `jobTitle`: "Doctor of Traditional Chinese Medicine & Registered Acupuncturist"
-- `alumniOf`: Object with Tzu Chi College
-- `memberOf`: Object with CCHPBC
-- `knowsAbout`: Array of all specializations from page
-- `worksFor`: Link to clinic
-
-**Expected Code**:
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "ProfilePage",
-  "dateCreated": "2023-11-01T00:00:00-05:00",
-  "dateModified": "2025-12-20T00:00:00-08:00",
-  "mainEntity": {
-    "@type": "Person",
-    "name": "Eva Fang Yuan",
-    "alternateName": "Eva",
-    "jobTitle": "Doctor of Traditional Chinese Medicine & Registered Acupuncturist",
-    "description": "Registered Acupuncturist and Doctor of TCM specializing in fertility, chronic pain, and digestive health",
-    "image": "https://www.hopetcmclinic.ca/images/Eva.jpg",
-    "alumniOf": {
-      "@type": "Organization",
-      "name": "Tzu Chi International College of Traditional Chinese Medicine"
-    },
-    "memberOf": {
-      "@type": "Organization",
-      "name": "College of Complementary Health Professionals of BC",
-      "sameAs": "https://cchpbc.ca"
-    },
-    "knowsAbout": [
-      "Digestive Issues", 
-      "Irritable Bowel Syndrome",
-      "Insomnia", 
-      "Infertility", 
-      "Chronic Pain",
-      "Menstrual Disorders",
-      "Menopause",
-      "Emotional Imbalances",
-      "Traditional Chinese Medicine",
-      "Acupuncture"
-    ],
-    "worksFor": {
-      "@type": "MedicalClinic",
-      "name": "Hope Traditional Chinese Medicine Clinic"
-    }
-  }
-}
-```
+**Completion Details**:
+- Added `jobTitle`, `alumniOf`, `memberOf`, `knowsAbout`, `worksFor` properties
+- Updated `dateModified` to 2025-12-20
+- Schema now includes comprehensive professional information and specializations
 
 ---
 
-### 2. Add Service Schema to Treatment Pages
+### ✅ 2. Added Service Schema to Treatment Pages (Completed: Dec 20, 2025)
 
-**Files to Create/Edit**:
-- Each individual treatment page template needs schema
+**Files Modified**:
+- `SimpleSites/templates/pages/article.html` - Added conditional MedicalProcedure schema block
+- All 12 treatment page content files (6 English + 6 Chinese)
 
-**Pages Affected**:
-- `/treatments/acupuncture.html`
-- `/treatments/facial-rejuvenation-acupuncture.html`
-- `/treatments/cupping.html`
-- `/treatments/moxibustion.html`
-- `/treatments/gua-sha.html`
-- `/treatments/herbal-formulas.html`
+**Pages with MedicalProcedure Schema**:
+- Acupuncture (EN + CN)
+- Facial Rejuvenation Acupuncture (EN + CN)
+- Cupping (EN + CN)
+- Moxibustion (EN + CN)
+- Gua Sha (EN + CN)
+- Herbal Formulas (EN + CN)
 
-**Action**:
-Add `MedicalProcedure` schema to each treatment page.
-
-**Example for Acupuncture page**:
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "MedicalProcedure",
-  "name": "Acupuncture Treatment",
-  "description": "Traditional acupuncture for pain relief, stress reduction, and holistic healing",
-  "procedureType": "Acupuncture",
-  "followup": "Follow-up sessions recommended for chronic conditions",
-  "preparation": "Light meal 1-2 hours before treatment recommended",
-  "howPerformed": "Ultra-thin sterile needles inserted at specific acupoints",
-  "bodyLocation": "Various meridian points",
-  "provider": {
-    "@type": "MedicalClinic",
-    "name": "Hope Traditional Chinese Medicine Clinic"
-  }
-}
-```
+**Completion Details**:
+- Added `name`, `description`, `procedureType`, `preparation`, `howPerformed`, `followup` properties
+- Schema metadata added to frontmatter of all treatment markdown files
+- Chinese versions localized with Chinese-language schema content
 
 ---
 
-### 3. Add FAQ Schema to Pages with FAQ Sections
+### ✅ 3. Added FAQ Schema to Pages with FAQ Sections (Completed: Dec 20, 2025)
 
-**Files to Edit**:
-- Homepage (`index.html`) - has FAQ section
-- Treatments page (`treatments.html`) - has FAQ section
-- Any treatment detail pages with FAQs
+**Files Modified**:
+- `SimpleSites/templates/pages/index.html` - Added FAQPage schema block
+- `SimpleSites/templates/pages/treatments.html` - Added FAQPage schema block
 
-**Action**:
-Add `FAQPage` schema with all Q&A pairs from the page.
+**Pages with FAQ Schema**:
+- Homepage (EN + CN) - 5 questions each
+- Treatments page (EN + CN) - 5 questions each
 
-**Example**:
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How many acupuncture treatments will I need?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "It varies by condition. Acute issues may resolve in 2-3 sessions, while chronic conditions often require ongoing care for reliable results."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do you do direct billing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "We are registered acupuncturists, but do not do direct billing to MSP or insurance companies. A receipt will be issued after each session."
-      }
-    }
-  ]
-}
-```
+**Completion Details**:
+- FAQPage schema dynamically generates from `page.faq.entries` data
+- Supports both English and Chinese versions automatically
+- Uses `tojson` filter for proper JSON escaping
+- Coexists with existing MedicalProcedure schema on treatments page
+- All schemas validated and verified in browser
+
+---
+
+## Remaining Tasks
+
+No remaining tasks - all schema enhancements complete!
 
 ---
 

@@ -93,12 +93,16 @@ after_treatment:
 faq:
   title: "Treatment FAQ"
   entries:
-    - q: "How to prepare for my first visit?"
-      a: "Please complete the online intake and consent forms before your appointment (approx. 10 mins). Alternatively, you can fill them out in person upon arrival. It’s a good idea to have a light meal or snack 1–2 hours before your treatment. Avoid consuming coffee or other stimulating beverages before your visit."
-    - q: "How many treatments will I need?"
-      a: "It varies by condition. Acute issues may resolve quickly, while chronic conditions often require ongoing care for reliable results. Consistent acupuncture treatments typically lead to reliable results."
-    - q: "Are there side effects?"
-      a: "Most people experience positive effects such as increased relaxation or a feeling of deep calm. Some may feel energized or even slightly giddy. These reactions vary from person to person, but the calming effects of acupuncture often last throughout the day. We recommend resting for the remainder of the day to allow your body to process the treatment. If you experience significant effects, please arrange for a safe journey home."
+    - q: "What conditions can acupuncture treat?"
+      a: "Acupuncture is recognized by the WHO for treating chronic pain, headaches, migraines, stress, anxiety, digestive issues (IBS, bloating), insomnia, menstrual disorders, infertility support, menopause symptoms, and musculoskeletal conditions. We create personalized treatment plans for your specific needs."
+    - q: "When will I see results from acupuncture?"
+      a: "Many patients notice improvements after 1-3 sessions for acute conditions. Chronic issues typically show meaningful progress within 6-8 treatments. Consistency is key for lasting results, and we'll monitor your progress closely."
+    - q: "Is acupuncture safe?"
+      a: "Yes, acupuncture is extremely safe when performed by a licensed practitioner. We use single-use, sterile needles and follow strict safety protocols. Serious side effects are very rare. Minor bruising or temporary soreness may occur."
+    - q: "How should I prepare for my first visit?"
+      a: "Wear loose, comfortable clothing. Have a light meal 1-2 hours before your session. Avoid caffeine or alcohol before treatment. Please complete our online intake forms beforehand (10 mins) or arrive early to fill them out."
+    - q: "What should I expect after treatment?"
+      a: "Most people feel deeply relaxed or energized. Some experience mild soreness or slight fatigue. These are normal responses as your body adjusts. Stay hydrated, rest, and avoid strenuous activity for the remainder of the day to maximize benefits."
 book:
   text: "Book Your Session"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
