@@ -14,7 +14,7 @@ schema:
   followup: "建議進行 10 次療程，之後可安排維護療程"
 ---
 
-<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Hope TCM 中醫診所的美容針灸和自然拉皮療法">
 
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">擁抱永恆之美</h2>
 <p class="mb-6">

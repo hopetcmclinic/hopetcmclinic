@@ -6,6 +6,7 @@ therapist:
   name: "Eva Fang Yuan"
   title: "註冊高級中醫師 | 註冊針灸師"
   image: "/images/Eva.jpg"
+  image_alt: "Hope 中醫診所 Eva Fang Yuan 註冊針灸師兼中醫師"
   book_text: "預約治療"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:

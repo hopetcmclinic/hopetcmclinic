@@ -14,7 +14,7 @@ schema:
   followup: "Formulas adjusted as condition improves; regular monitoring by TCM practitioner"
 ---
 
-<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Traditional Chinese herbal formulas and remedies at Hope TCM Clinic New Westminster">
 
 <h2 class="title text-3xl font-serif text-primary mb-6">Nature’s Pharmacy: Custom Herbal Medicine Prescriptions</h2>
 

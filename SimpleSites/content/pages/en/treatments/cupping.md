@@ -14,7 +14,7 @@ schema:
   followup: "Keep treated area warm for 4 hours post-treatment; marks typically fade within 2-7 days"
 ---
 
-<img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Cupping Therapy at Hope TCM Clinic">
+<img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Cupping therapy treatment for muscle pain at Hope TCM Clinic in New Westminster">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Introduction</h3>
 <p class="mb-6">

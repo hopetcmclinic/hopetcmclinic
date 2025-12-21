@@ -9,6 +9,7 @@ hero:
   cta: "瞭解理念"
   link: "/cn/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"
+  image_alt: "位於新西敏 Hope TCM 中醫診所的傳統中醫針灸室內景"
 intro:
   main: "歡迎來到 <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>，由 <a href=\"/cn/therapists.html\">Eva Fang Yuan</a>（註冊高級中醫師，註冊針灸師）領導，位於新西敏的一家值得信賴的健康中心。我們專注於整體治療實踐並為您提供量身定制的治療方案，以實現您獨特的健康目標。"
   specialties:

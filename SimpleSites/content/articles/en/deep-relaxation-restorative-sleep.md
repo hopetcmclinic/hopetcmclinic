@@ -8,7 +8,7 @@ template: article
 title: "Acupuncture for Deep Relaxation and Restorative Sleep"
 ---
 
-<img src="/images/blogs/deep_relaxation_sleep.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Peaceful acupuncture treatment room">
+<img src="/images/blogs/deep_relaxation_sleep.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Peaceful acupuncture treatment room for deep relaxation at Hope TCM Clinic New Westminster">
 
 <p class="mb-6">
 In today’s fast-paced world, many people struggle with chronic stress, anxiety, mental fatigue, and difficulty falling or staying asleep. Acupuncture offers a natural and effective way to help the body return to a state of balance.

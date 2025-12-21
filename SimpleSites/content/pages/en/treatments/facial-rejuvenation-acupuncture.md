@@ -14,7 +14,7 @@ schema:
   followup: "Course of 10 sessions recommended for lasting results; maintenance sessions to sustain benefits"
 ---
 
-<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Facial Rejuvenation Acupuncture and natural facelift at Hope TCM Clinic New Westminster">
 
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">Embrace Timeless Beauty</h2>
 <p class="mb-6">

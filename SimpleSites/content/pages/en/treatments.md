@@ -40,6 +40,7 @@ core_treatments:
       title: "Facial Rejuvenation Acupuncture"
       desc: "A holistic cosmetic treatment that naturally stimulates collagen production and improves skin elasticity for a radiant glow."
       image: "/images/facial-rejuvenation.png"
+      image_alt: "Facial Rejuvenation Acupuncture and holistic cosmetic treatment at Hope TCM in New Westminster"
       benefits:
         - "Reduces fine lines and wrinkles"
         - "Improves skin tone and texture"
@@ -96,7 +97,7 @@ faq:
     - q: "What conditions can acupuncture treat?"
       a: "Acupuncture is recognized by the WHO for treating chronic pain, headaches, migraines, stress, anxiety, digestive issues (IBS, bloating), insomnia, menstrual disorders, infertility support, menopause symptoms, and musculoskeletal conditions. We create personalized treatment plans for your specific needs."
     - q: "When will I see results from acupuncture?"
-      a: "Many patients notice improvements after 1-3 sessions for acute conditions. Chronic issues typically show meaningful progress within 6-8 treatments. Consistency is key for lasting results, and we'll monitor your progress closely."
+      a: "Many patients notice improvements after 1-3 sessions for acute conditions. Chronic issues typically show meaningful progress within 4-6 treatments. Consistency is key for lasting results, and we'll monitor your progress closely."
     - q: "Is acupuncture safe?"
       a: "Yes, acupuncture is extremely safe when performed by a licensed practitioner using single-use, sterile needles and strict safety protocols. Serious side effects are very rare, though minor bruising or temporary soreness may occasionally occur. Most people experience positive effects such as deep relaxation, increased energy, or mild euphoria—reactions that vary from person to person but often last throughout the day. We recommend resting for the remainder of the day to allow your body to fully process the treatment, and arranging safe transportation home if you experience significant effects."
     - q: "How should I prepare for my first visit?"

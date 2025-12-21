@@ -10,6 +10,7 @@ hero:
   cta: "Learn Philosophy"
   link: "/blogs/traditional-chinese-medicine.html"
   image: "/images/Inner-Chinese.jpg"
+  image_alt: "Traditional Chinese Medicine acupuncture clinic interior at Hope TCM in New Westminster BC"
 intro:
   main: "Welcome to <span class=\"text-primary font-bold\">Hope Traditional Chinese Medicine Clinic</span>, a trusted wellness clinic in New Westminster. Led by <a href=\"/therapists.html\">Eva Fang Yuan</a> (Dr. of TCM, R.Ac.), we specialize in a holistic approach to healing that honors your body's unique needs."
   specialties:

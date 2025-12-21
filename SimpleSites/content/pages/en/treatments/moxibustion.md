@@ -14,7 +14,7 @@ schema:
   followup: "Keep treated area warm and avoid cold exposure for 4 hours post-treatment"
 ---
 
-<img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Moxibustion Therapy at Hope TCM">
+<img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Moxibustion heat therapy for warming meridians at Hope TCM Clinic New Westminster">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Introduction: What is Moxibustion?</h3>
 <p class="mb-6">

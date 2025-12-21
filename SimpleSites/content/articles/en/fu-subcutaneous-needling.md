@@ -10,7 +10,7 @@ title: "Fu's Subcutaneous Needling (FSN): The 'Magic Needle' for Instant Pain Re
 
 
 
-<img src="/images/blogs/fsn.jpeg" style="width:100%; height:auto;" >
+<img src="/images/blogs/fsn.jpeg" style="width:100%; height:auto;" alt="Fu's subcutaneous needling FSN or magic needle for pain relief at Hope TCM Clinic New Westminster">
 <br>
 
 <p>

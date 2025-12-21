@@ -7,6 +7,7 @@ therapist:
   name: "Eva Fang Yuan"
   title: "Dr. of TCM | R.Ac."
   image: "/images/Eva.jpg"
+  image_alt: "Dr Eva Fang Yuan registered acupuncturist and TCM doctor at Hope Clinic in New Westminster"
   book_text: "Book Appointment"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
 bio:

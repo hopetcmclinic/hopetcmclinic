@@ -13,7 +13,7 @@ schema:
   followup: "保持治療區域溫暖 4 小時後；瘀青通常在 2-7 天內消退"
 ---
 
-<img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所拔罐療法">
+<img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Hope TCM 中醫診所的拔罐療法可緩解肌肉疼痛">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">簡介</h3>
 <p class="mb-6">

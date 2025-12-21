@@ -13,7 +13,7 @@ schema:
   followup: "保持治療區域溫暖 4 小時後；瘀青通常在 2-7 天內消退"
 ---
 
-<img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所艾灸療法">
+<img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Hope TCM 中醫診所的艾灸熱療法可溫暖經絡">
 
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">簡介：什麼是艾灸？</h3>
 <p class="mb-6">

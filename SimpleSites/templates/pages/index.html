@@ -7,7 +7,7 @@
                 <source srcset="{{ page.hero.image.rsplit('.', 1)[0] + '.webp' }}" type="image/webp">
                 <img src="{{ page.hero.image }}"
                     class="w-full h-full object-cover brightness-90 group-hover:scale-105 transition-transform duration-1000"
-                    alt="{{ page.hero.subtitle }}" fetchpriority="high">
+                    alt="{{ page.hero.image_alt | default(page.hero.subtitle) }}" fetchpriority="high">
             </picture>
             <div class="absolute inset-0 flex flex-col justify-center px-8 md:px-16">
                 {% if page.hero.title_line1 %}

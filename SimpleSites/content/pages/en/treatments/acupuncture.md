@@ -14,7 +14,7 @@ schema:
   followup: "Follow-up sessions recommended for chronic conditions"
 ---
 
-<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Acupuncture Treatment at Hope TCM">
+<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Acupuncture needles for pain relief and stress management at Hope TCM Clinic New Westminster">
 
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">Introduction</h2>
 <p class="mb-6">

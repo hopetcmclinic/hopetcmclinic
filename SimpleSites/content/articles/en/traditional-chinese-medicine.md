@@ -8,7 +8,7 @@ template: article
 title: "Restoring Vitality & Harmony: The Wisdom of Traditional Chinese Medicine"
 ---
 
-<img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Traditional Chinese Medicine herbs and tools">
+<img src="/images/blogs/traditional_chinese_medicine.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Traditional Chinese Medicine herbs and tools for holistic health at Hope TCM Clinic New Westminster">
 
 <p class="mb-6">
 In a world that often races towards the next quick fix, Traditional Chinese Medicine (TCM) asks us to pause, listen, and reconnect. It is not merely a collection of medical techniques but a profound, 3,000-year-old philosophy of living in accordance with the rhythms of nature. At its heart, TCM does not see the human being as a machine with broken parts, but as a dynamic ecosystem—a microcosm of the universe itself.

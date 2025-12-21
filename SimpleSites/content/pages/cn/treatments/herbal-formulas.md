@@ -13,7 +13,7 @@ schema:
   followup: "隨著病情改善，配方會進行調整；由中醫師定期監督"
 ---
 
-<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">
+<img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Hope TCM 中醫診所的傳統中藥配方和療法">
 
 <h2 class="title text-3xl font-serif text-primary mb-6">大自然的藥房：定制草藥處方</h2>
 

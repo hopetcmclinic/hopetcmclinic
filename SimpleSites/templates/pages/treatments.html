@@ -124,7 +124,7 @@
                         {% if page.core_treatments.specialized.facial.image %}
                         <div class="h-48 overflow-hidden relative">
                             <img src="{{ page.core_treatments.specialized.facial.image }}"
-                                alt="{{ page.core_treatments.specialized.facial.title }}"
+                                alt="{{ page.core_treatments.specialized.facial.image_alt | default(page.core_treatments.specialized.facial.title) }}"
                                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="p-8">

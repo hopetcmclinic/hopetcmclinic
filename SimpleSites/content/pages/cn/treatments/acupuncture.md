@@ -14,7 +14,7 @@ schema:
   followup: "建議慢性病患者定期回診"
 ---
 
-<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="針灸治療">
+<img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Hope TCM 中醫診所的針灸治療可緩解疼痛和壓力">
 
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">簡介</h2>
 <p class="mb-6">
