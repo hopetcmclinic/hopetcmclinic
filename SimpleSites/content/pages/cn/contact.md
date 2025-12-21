@@ -3,7 +3,7 @@ title: 聯繫我們 - 疼痛緩解與健康
 description: 預約 Hope TCM Clinic 享受中醫養生服務。位置：235-889 Carnarvon St, Buzz 235, New Westminster, BC V3M1G2
 template: pages/contact.html
 intro:
-  title: "訪問我們"
+  title: "聯絡向陽中醫診所"
   desc: "在寧靜的環境中體驗療癒。我們位於新西敏 (New Westminster)，緊鄰天車站，交通便利。"
 contact:
   title: "聯繫詳情"

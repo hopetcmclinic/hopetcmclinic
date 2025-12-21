@@ -5,7 +5,7 @@ keywords: "Eva Fang Yuan, Registered Acupuncturist New Westminster, Doctor of TC
 template: pages/therapists.html
 therapist:
   name: "Eva Fang Yuan"
-  title: "Doctor of TCM | R.Ac."
+  title: "Dr. of TCM | R.Ac."
   image: "/images/Eva.jpg"
   book_text: "Book Appointment"
   book_link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"

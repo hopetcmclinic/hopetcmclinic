@@ -4,7 +4,7 @@ description: Visit Hope TCM Clinic in New Westminster for expert Acupuncture and
 keywords: "Contact TCM Clinic, Appointment New Westminster, TCM Clinic Location New West, Acupuncture Booking"
 template: pages/contact.html
 intro:
-  title: "Visit Us"
+  title: "Visit Hope TCM Clinic"
   desc: "Experience healing in a serene environment. We are conveniently located in New Westminster, adjacent to the Skytrain station."
 contact:
   title: "Contact Details"
