@@ -5,6 +5,13 @@ description: An in-depth guide to Gua Sha (Scraping) therapy, its mechanism for 
 template: pages/article.html
 image: gua-sha.png
 page_title: "Gua Sha Therapy New Westminster | Muscle Tension Relief"
+schema:
+  name: "Gua Sha Therapy"
+  description: "Ancient scraping therapy using smooth-edged tools to release muscle tension and improve circulation"
+  procedureType: "Gua Sha"
+  preparation: "No special preparation required"
+  howPerformed: "Smooth-edged tools (jade, buffalo horn, or stone) used to press-stroke lubricated skin, releasing stagnation"
+  followup: "Keep treated area warm and avoid cold drafts for 4 hours; marks typically fade within 2-7 days"
 ---
 
 <img src="/images/gua-sha.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Gua Sha Treatment at Hope TCM">

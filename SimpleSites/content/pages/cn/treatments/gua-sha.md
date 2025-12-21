@@ -5,6 +5,13 @@ description: 刮痧療法的深度指南，其緩解疼痛和免疫支持的機�
 template: pages/article.html
 image: gua-sha.png
 page_title: "刮痧療法"
+schema:
+  name: "刮痧療法"
+  description: "古老的刮痧療法，使用光滑的工具在潤滑的皮膚上進行受控的單向按壓，以釋放肌肉緊張和改善血液循環"
+  procedureType: "刮痧療法"
+  preparation: "治療前 1–2 小時進食清淡的食物或少量點心，就診前請避免飲用咖啡或其他刺激性飲品"
+  howPerformed: "使用光滑的工具在潤滑的皮膚上進行受控的單向按壓，以釋放肌肉緊張和改善血液循環"
+  followup: "保持治療區域溫暖 4 小時後；瘀青通常在 2-7 天內消退"
 ---
 
 <img src="/images/gua-sha.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所刮痧治療">

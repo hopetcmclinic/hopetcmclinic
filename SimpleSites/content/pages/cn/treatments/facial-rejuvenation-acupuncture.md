@@ -5,6 +5,13 @@ description: "探索面部回春針灸——通往光彩肌膚的自然、非手
 template: pages/article.html
 image: facial-rejuvenation.png
 page_title: '面部回春針灸'
+schema:
+  name: "面部回春針灸"
+  description: "通往光彩肌膚的自然、非手術途徑。一種追求永恆之美的整體療法。"
+  procedureType: "面部回春針灸"
+  preparation: "治療前 1–2 小時進食清淡的食物或少量點心，就診前請避免飲用咖啡或其他刺激性飲品"
+  howPerformed: "超細針在面部穴位插入，刺激膠原蛋白生成和血液循環"
+  followup: "建議進行 10 次療程，之後可安排維護療程"
 ---
 
 <img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">

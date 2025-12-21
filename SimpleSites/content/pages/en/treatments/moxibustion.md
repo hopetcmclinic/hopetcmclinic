@@ -5,6 +5,13 @@ description: Discover the warming, healing power of Moxibustion at Hope TCM Clin
 template: pages/article.html
 image: moxibustion.jpg
 page_title: "Moxibustion Therapy New Westminster | Heat Healing"
+schema:
+  name: "Moxibustion Therapy"
+  description: "Heat therapy using burning mugwort to warm meridians, dispel cold, and boost vitality"
+  procedureType: "Moxibustion"
+  preparation: "No special preparation required"
+  howPerformed: "Dried mugwort burned on or near acupuncture points to deliver penetrating warmth"
+  followup: "Keep treated area warm and avoid cold exposure for 4 hours post-treatment"
 ---
 
 <img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Moxibustion Therapy at Hope TCM">

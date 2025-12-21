@@ -1,13 +1,33 @@
 <div class="flex-grow p-5 w-full">
-    <h1 class="text-2xl font-semibold border-b border-slate-200 pb-8 mb-6">{{ article.title }}</h1>
+  <h1 class="text-2xl font-semibold border-b border-slate-200 pb-8 mb-6">{{ article.title }}</h1>
 
-    <div
-        class="prose prose-lg prose-slate max-w-4xl mx-auto prose-headings:font-serif prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:shadow-lg">
-        {{ article.content | safe }}
-    </div>
+  <div
+    class="prose prose-lg prose-slate max-w-4xl mx-auto prose-headings:font-serif prose-headings:text-primary prose-a:text-accent prose-a:no-underline hover:prose-a:underline prose-img:rounded-xl prose-img:shadow-lg">
+    {{ article.content | safe }}
+  </div>
 </div>
 
 <div class="text-center my-10">
-    <a class="inline-block bg-accent hover:bg-accent-light hover:text-emerald-900 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
-        href="https://hopetcmclinic.janeapp.com/#/staff_member/1">{{ i18n.others.book_online }}</a>
+  <a class="inline-block bg-accent hover:bg-accent-light hover:text-emerald-900 text-white px-6 py-2.5 rounded-full font-bold shadow-md hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5 no-underline"
+    href="https://hopetcmclinic.janeapp.com/#/staff_member/1">{{ i18n.others.book_online }}</a>
 </div>
+
+{% if article.schema %}
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalProcedure",
+      "name": "{{ article.schema.name }}",
+      "description": "{{ article.schema.description }}",
+      "procedureType": "{{ article.schema.procedureType }}"{% if article.schema.preparation %},
+      "preparation": "{{ article.schema.preparation }}"{% endif %}{% if article.schema.howPerformed %},
+      "howPerformed": "{{ article.schema.howPerformed }}"{% endif %}{% if article.schema.followup %},
+      "followup": "{{ article.schema.followup }}"{% endif %},
+      "provider": {
+        "@type": "MedicalClinic",
+        "name": "Hope Traditional Chinese Medicine Clinic",
+        "url": "https://www.hopetcmclinic.ca"
+      }
+    }
+</script>
+{% endif %}

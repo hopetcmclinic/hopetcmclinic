@@ -5,6 +5,13 @@ description: Discover how acupuncture at Hope TCM Clinic can help restore balanc
 template: pages/article.html
 image: acupuncture.jpeg
 page_title: 'Acupuncture in New Westminster | Restoration & Balance'
+schema:
+  name: "Acupuncture Treatment"
+  description: "Traditional acupuncture for pain relief, stress reduction, and holistic healing"
+  procedureType: "Acupuncture"
+  preparation: "Light meal 1-2 hours before treatment recommended"
+  howPerformed: "Ultra-thin sterile needles inserted at specific acupoints along meridian pathways"
+  followup: "Follow-up sessions recommended for chronic conditions"
 ---
 
 <img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Acupuncture Treatment at Hope TCM">

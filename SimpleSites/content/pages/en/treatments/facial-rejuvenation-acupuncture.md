@@ -5,6 +5,13 @@ description: "Discover the natural, non-surgical path to radiant skin with Facia
 template: pages/article.html
 image: facial-rejuvenation-acupuncture.jpg
 page_title: "Facial Rejuvenation Acupuncture New Westminster | Natural Facelift"
+schema:
+  name: "Facial Rejuvenation Acupuncture"
+  description: "Natural, non-surgical cosmetic treatment to reduce wrinkles, lift skin, and promote radiant complexion"
+  procedureType: "Facial Acupuncture"
+  preparation: "Avoid Botox or fillers for at least 3 weeks prior to treatment"
+  howPerformed: "Ultra-thin needles inserted at facial acupoints to stimulate collagen production and improve circulation"
+  followup: "Course of 10 sessions recommended for lasting results; maintenance sessions to sustain benefits"
 ---
 
 <img src="/images/facial-rejuvenation.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">

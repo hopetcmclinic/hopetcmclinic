@@ -5,6 +5,13 @@ description: Traditional Chinese Herbal Medicine uses custom, GMP-certified natu
 template: pages/article.html
 image: herbal-formulas.png
 page_title: "Traditional Chinese Herbal Medicine New Westminster | Custom Formulas"
+schema:
+  name: "Traditional Chinese Herbal Medicine"
+  description: "Custom herbal formulas using GMP-certified natural ingredients to treat chronic conditions from the root cause"
+  procedureType: "Herbal Medicine"
+  preparation: "Comprehensive TCM diagnosis including tongue and pulse analysis"
+  howPerformed: "Customized herbal formulas prescribed based on individual constitution, typically as concentrated granule extracts"
+  followup: "Formulas adjusted as condition improves; regular monitoring by TCM practitioner"
 ---
 
 <img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">

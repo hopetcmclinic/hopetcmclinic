@@ -1,10 +1,17 @@
 ---
-title: "恢復平衡：針灸治療全指南"
+title: "恢復平衡: 針灸治療全指南"
 keywords: "新西敏, 針灸, 疼痛緩解, 壓力緩解, 整體療法, 中醫診所, 註冊針灸師"
 description: 瞭解針灸治療如何幫助您恢復平衡、緩解疼痛並改善整體健康。新患者的綜合指南。
 template: pages/article.html
 image: acupuncture.jpeg
 page_title: '針灸：恢復平衡與健康'
+schema:
+  name: "針灸治療"
+  description: "針灸治療幫助您恢復平衡、緩解疼痛並改善整體健康"
+  procedureType: "針灸治療"
+  preparation: "治療前 1–2 小時進食清淡的食物或少量點心，就診前請避免飲用咖啡或其他刺激性飲品"
+  howPerformed: "使用超細無菌針刺激穴位，平衡氣血"
+  followup: "建議慢性病患者定期回診"
 ---
 
 <img src="/images/blogs/acupuncture.jpeg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="針灸治療">

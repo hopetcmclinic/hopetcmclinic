@@ -110,14 +110,39 @@
       "@context": "https://schema.org",
       "@type": "ProfilePage",
       "dateCreated": "2023-11-01T00:00:00-05:00",
-      "dateModified": "2025-12-18T23:21:12-08:00",
+      "dateModified": "2025-12-20T00:00:00-08:00",
       "mainEntity": {
         "@type": "Person",
         "name": "{{ page.therapist.name }}",
         "alternateName": "Eva",
-        "identifier": "Eva",        
-        "description": "Registered Acupuncturist and Doctor of TCM",
-        "image": "https://www.hopetcmclinic.ca{{ page.therapist.image }}"
+        "jobTitle": "Doctor of Traditional Chinese Medicine & Registered Acupuncturist",
+        "description": "Registered Acupuncturist and Doctor of TCM specializing in fertility, chronic pain, and digestive health",
+        "image": "https://www.hopetcmclinic.ca{{ page.therapist.image }}",
+        "alumniOf": {
+          "@type": "Organization",
+          "name": "Tzu Chi International College of Traditional Chinese Medicine"
+        },
+        "memberOf": {
+          "@type": "Organization",
+          "name": "College of Complementary Health Professionals of BC",
+          "sameAs": "https://cchpbc.ca"
+        },
+        "knowsAbout": [
+          "Digestive Issues",
+          "Irritable Bowel Syndrome",
+          "Emotional Imbalances",
+          "Insomnia",
+          "Menstrual Disorders",
+          "Infertility",
+          "Menopause Symptoms",
+          "Acute & Chronic Pain",
+          "Traditional Chinese Medicine",
+          "Acupuncture"
+        ],
+        "worksFor": {
+          "@type": "MedicalClinic",
+          "name": "Hope Traditional Chinese Medicine Clinic"
+        }
       }
     }
 </script>

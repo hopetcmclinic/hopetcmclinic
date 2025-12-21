@@ -4,6 +4,13 @@ description: 傳統中醫草藥使用定制的、GMP認證的天然植物和礦�
 template: pages/article.html
 image: herbal-formulas.png
 page_title: '草藥配方與醫藥'
+schema:
+  name: "草藥配方與醫藥"
+  description: "草藥配方使用 GMP認證的天然植物和礦物物質，安全有效地治療慢性疾病的根本原因"
+  procedureType: "草藥配方"
+  preparation: "中醫診斷包括舌象和脈象分析"
+  howPerformed: "根據個人體質定制草藥配方，通常以濃縮顆粒提取物形式"
+  followup: "隨著病情改善，配方會進行調整；由中醫師定期監督"
 ---
 
 <img src="/images/herbal-formulas.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8">

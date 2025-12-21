@@ -4,6 +4,13 @@ description: 瞭解向陽中醫診所艾灸的溫暖治癒力量。瞭解這種�
 template: pages/article.html
 image: moxibustion.jpg
 page_title: '艾灸療法'
+schema:
+  name: "艾灸療法"
+  description: "使用燃燒艾葉來溫暖經絡，驅散寒冷和濕氣，增強活力"
+  procedureType: "艾灸療法"
+  preparation: "治療前 1–2 小時進食清淡的食物或少量點心，就診前請避免飲用咖啡或其他刺激性飲品"
+  howPerformed: "乾燥艾葉燃燒在或附近穴位上，以提供穿透性熱量"
+  followup: "保持治療區域溫暖 4 小時後；瘀青通常在 2-7 天內消退"
 ---
 
 <img src="/images/blogs/moxibustion.jpg" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所艾灸療法">

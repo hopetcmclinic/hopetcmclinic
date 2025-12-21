@@ -4,6 +4,13 @@ description: 瞭解向陽中醫診所拔罐療法的益處。瞭解這種古老�
 template: pages/article.html
 image: cupping.png
 page_title: '拔罐療法'
+schema:
+  name: "拔罐療法"
+  description: "古老的反向按摩療法，使用吸力緩解疼痛、排毒並促進深度癒合"
+  procedureType: "拔罐療法"
+  preparation: "治療前 1–2 小時進食清淡的食物或少量點心，就診前請避免飲用咖啡或其他刺激性飲品"
+  howPerformed: "玻璃或塑料罐在皮膚上產生負壓，以釋放肌肉緊張和停滯"
+  followup: "保持治療區域溫暖 4 小時後；瘀青通常在 2-7 天內消退"
 ---
 
 <img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="向陽中醫診所拔罐療法">

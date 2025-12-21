@@ -5,6 +5,13 @@ description: Discover the benefits of Cupping Therapy at Hope TCM Clinic. Learn 
 template: pages/article.html
 image: cupping.png
 page_title: "Cupping Therapy New Westminster | Pain Relief & Detox"
+schema:
+  name: "Cupping Therapy"
+  description: "Ancient reverse massage technique using suction to relieve pain, detoxify, and promote healing"
+  procedureType: "Cupping Therapy"
+  preparation: "No special preparation required"
+  howPerformed: "Glass or plastic cups create suction on the skin to release muscle tension and stagnation"
+  followup: "Keep treated area warm for 4 hours post-treatment; marks typically fade within 2-7 days"
 ---
 
 <img src="/images/cupping.png" style="width:100%; height:auto;" class="rounded-lg shadow-md mb-8" alt="Cupping Therapy at Hope TCM Clinic">
