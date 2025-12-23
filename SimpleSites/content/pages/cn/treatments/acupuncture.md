@@ -118,15 +118,15 @@ schema:
 <div class="space-y-4 mb-8">
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">針灸痛嗎？</h3>
-        <p class="text-gray-700">通常不痛。針頭細如髮絲。進針時您可能會感到輕微的刺痛，但隨後的感覺（得氣）更多是一種酸脹或壓迫感，這是治療性的，而不是痛苦的。</p>
+        <p class="text-gray-700">大多數人感覺很少或沒有疼痛。您可能會注意到輕微的酸痛、沉重感、脹滿感，或溫暖或輻射的感覺，這些都是正常的。偶爾，如果經絡中有明顯的淤滯，或小血管或神經受到刺激，可能會出現短暫的尖銳或觸電感。如果發生這種情況,請告知您的醫師——他們可以快速調整針頭以緩解不適。</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">我需要多少次治療？</h3>
-        <p class="text-gray-700">這取決於您的病情。急性問題（如落枕）可能在 2-3 次治療後緩解。慢性疾病（如長期背痛）通常需要 6-10 次治療才能看到持久的效果。我們將為您制定個性化的治療計劃。</p>
+        <p class="text-gray-700">這視乎具體病情而定。急性問題可能很快見效，而慢性病症往往需要持續護理才能獲得穩定的療效。堅持接受針灸治療通常能帶來可靠的效果。</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">保險涵蓋針灸嗎？</h3>
-        <p class="text-gray-700">是的，BC 省的大多數補充健康保險計劃都涵蓋由註冊針灸師（R.Ac.）提供的針灸治療。我們通常可以直接為您向保險公司報銷。</p>
+        <p class="text-gray-700">是的，BC省大多數補充醫療保險計劃都涵蓋註冊針灸師（R.Ac.）的針灸治療。我們提供詳細的收據，您可以提交給保險公司報銷。請查看您的具體計劃的覆蓋範圍限制。</p>
     </div>
 </div>
 

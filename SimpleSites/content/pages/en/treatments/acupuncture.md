@@ -118,15 +118,15 @@ Acupuncture is an extremely safe therapy when performed by a registered practiti
 <div class="space-y-4 mb-8">
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">Does acupuncture hurt?</h3>
-        <p class="text-gray-700">Not usually. The needles are hair-thin. You may feel a small prick upon insertion, but the sensation (De Qi) that follows is more of a dull ache or pressure, which is therapeutic, not painful.</p>
+        <p class="text-gray-700">Most people feel little to no pain. You may notice mild soreness, heaviness, fullness, or a warm or radiating sensation, which is normal. Occasionally, a brief sharp or electrical feeling may occur if there is significant stagnation in the meridian or a small blood vessel or nerve is irritated. If this happens, let your practitioner know—they can quickly adjust the needle to relieve the discomfort.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">How many sessions will I need?</h3>
-        <p class="text-gray-700">This depends on your condition. Acute issues (like a stiff neck) might resolve in 2-3 sessions. Chronic conditions (like long-term back pain) often require a course of 6-10 treatments to see lasting results. We will create a personalized plan for you.</p>
+        <p class="text-gray-700">It varies by condition. Acute issues may resolve quickly, while chronic conditions often require ongoing care for reliable results. Consistent acupuncture treatments typically lead to reliable results.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">Is acupuncture covered by insurance?</h3>
-        <p class="text-gray-700">Yes, most Extended Health Plans in British Columbia cover acupuncture treatments provided by a Registered Acupuncturist (R.Ac.). We can often direct bill your insurance provider for you.</p>
+        <p class="text-gray-700">Yes, most Extended Health Plans in British Columbia cover acupuncture treatments by a Registered Acupuncturist (R.Ac.). We provide detailed receipts that you can submit to your insurance for reimbursement. Check your specific plan for coverage limits.</p>
     </div>
 </div>
 
