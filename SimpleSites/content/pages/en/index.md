@@ -29,7 +29,7 @@ intro:
   mission: "\"Our mission is to restore harmony and vitality to your body, mind, and spirit. We guide you on your journey to optimal health, empowering you to achieve lasting wellness.\""
 services:
   title: "Services & Fees"
-  price_effective_date: "Price effective from Jan 1, 2026"
+  price_effective_date: "To continue providing high-quality care, the fee for Subsequent Acupuncture Treatment (60 min) will be adjusted from $100 to $110 effective August 1, 2026."
   entries:
     - title: "Acupuncture"
       subtitle: "Standard Treatment"

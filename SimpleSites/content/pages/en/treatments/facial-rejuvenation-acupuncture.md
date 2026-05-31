@@ -94,12 +94,28 @@ While safe for most, this treatment is not suitable for everyone. It is contra-i
 
 <div class="space-y-4 mb-8">
     <div class="border-l-4 border-primary pl-4">
-        <h3 class="text-lg font-bold text-gray-800">How long do the results last?</h3>
-        <p class="text-gray-700">With a full course of treatment and proper maintenance (monthly visits), results can last for years. Your skin will continue to age, but from a "younger" baseline.</p>
+        <h3 class="text-lg font-bold text-gray-800">How is cosmetic acupuncture different from Botox?</h3>
+        <p class="text-gray-700">Botox works by paralyzing muscles to smooth wrinkles, whereas acupuncture works by nourishing the skin and improving muscle tone. Cosmetic acupuncture is a natural, holistic approach that addresses the whole body's health, resulting in a vibrant, natural look rather than a frozen one.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">How many sessions do I need for visible results?</h3>
+        <p class="text-gray-700">While you may see a glow after just one session, lasting structural changes (collagen production) take time. We typically recommend a course of 10-12 treatments, performed once or twice a week, followed by monthly maintenance sessions.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Is it painful to have needles in the face?</h3>
+        <p class="text-gray-700">Not at all. Facial needles are even thinner than body needles—about the width of a hair. You might feel a tiny mosquito-bite sensation upon insertion, but most patients find the experience so relaxing that they fall asleep.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">Is there any downtime or bruising?</h3>
-        <p class="text-gray-700">There is zero social downtime—you can return to your day immediately! While rare, slight bruising can occur at needle sites, but this heals quickly and can be covered with makeup.</p>
+        <p class="text-gray-700">There is zero social downtime—you can return to your day immediately! While rare (about 5% chance), slight bruising can occur at needle sites due to the rich vascularity of the face. These heal quickly and can be covered with makeup, but we recommend scheduling at least a week prior to major events.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Can I combine this with other facials?</h3>
+        <p class="text-gray-700">Yes, but timing is important. We recommend waiting 2 weeks after chemical peels, laser treatments, or injectables before having acupuncture. You can, however, receive a regular facial massage or hydrating facial in the same week.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">How long do the results last?</h3>
+        <p class="text-gray-700">With a full course of treatment and proper maintenance (monthly visits), results can last for years. Your skin will continue to age, but from a "younger" baseline.</p>
     </div>
     <div class="border-l-4 border-primary pl-4">
         <h3 class="text-lg font-bold text-gray-800">Can I wear makeup after the session?</h3>

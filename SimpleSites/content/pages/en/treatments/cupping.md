@@ -71,6 +71,33 @@ Most patients describe the feeling after cupping as being "lighter and looser," 
     <li><strong>Rest:</strong> Allow your body time to recuperate and integrate the changes.</li>
 </ul>
 
+</p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h2>
+
+<div class="space-y-4 mb-8">
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Does cupping therapy hurt?</h3>
+        <p class="text-gray-700">It is generally not painful, but the sensation is unique. You will feel a tight, suction sensation like a focused deep-tissue massage. Most patients find it satisfyingly intense and deeply relieving rather than painful. We can always adjust the pressure to your comfort level.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Why does cupping leave marks and are they bruises?</h3>
+        <p class="text-gray-700">The circular marks ("Sha") are not true bruises caused by blunt trauma. They are a therapeutic result of drawing old, stagnant blood and metabolic waste to the surface so your lymphatic system can flush them away. Darker marks often indicate areas of deeper tension or stagnation.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">How long do the cup marks last?</h3>
+        <p class="text-gray-700">The marks typically fade within 3 to 7 days, depending on your body's circulation. If you have an event (like a wedding) where your back will be exposed, please let us know beforehand so we can use a lighter technique.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Can I shower after cupping?</h3>
+        <p class="text-gray-700">We recommend waiting at least 4-6 hours before showering. Your pores are wide open after treatment, and exposing them to hot water or cold drafts immediately can cause muscles to seize up or "wind" to enter the body.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">What is the difference between cupping and massage?</h3>
+        <p class="text-gray-700">Think of massage as "pushing" tissue to release tension, while cupping is "pulling." Cupping lifts the skin and muscles, creating space for blood flow and separating stuck tissue (fascia) layers in a way that regular massage cannot achieve. It is often more effective for deep, stubborn knots.</p>
+    </div>
+</div>
+
 <h3 class="subtitle text-2xl font-serif text-primary mb-4">Conclusion</h3>
 <p class="mb-6">
 Cupping therapy is a powerful way to "unblock and release" tension that has been held in your body for months or even years. If you are looking for a natural way to relieve deep-seated pain and revitalize your energy, book a session with us at Hope TCM Clinic today.

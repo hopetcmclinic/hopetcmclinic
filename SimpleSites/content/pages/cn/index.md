@@ -28,7 +28,7 @@ intro:
   mission: "\"我們的使命是恢復您身、心、靈的和諧與活力。我們致力於指導您走上最佳健康之旅，賦予您實現持久健康的能力。\""
 services:
   title: "服務與費用"
-  price_effective_date: "價格自 2026 年 1 月 1 日起生效"
+  price_effective_date: "為持續提供優質的診療服務，自2026年8月1日起，針灸複診（60分鐘）的費用將由每次 $100 調整為 $110。"
   entries:
     - title: "針灸治療"
       subtitle: "<a href=\"/cn/treatments/acupuncture.html\" class=\"hover:text-accent underline decoration-accent/30\">標準治療</a>"

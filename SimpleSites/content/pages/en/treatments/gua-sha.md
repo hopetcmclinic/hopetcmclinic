@@ -97,6 +97,29 @@ Because Gua Sha stimulates movement and opens the pores, your body is temporaril
 <p class="mb-6">
 The marks ("Sha") typically fade within 2 to 7 days, depending on your circulation. Seeing these marks is a positive sign that the treatment has successfully acted on the stagnation in your tissues.
 </p>
+</p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h2>
+
+<div class="space-y-4 mb-8">
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Is Gua Sha painful?</h3>
+        <p class="text-gray-700">It can feel intense, like a deep "good pain" that you might feel when massaging a sore knot. As we scrape over an adhesion, you might feel a bumpy or gritty texture. We always check in with you to stay within your comfort zone.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Will the scraping leave permanent scars?</h3>
+        <p class="text-gray-700">No. The red marks (stagnation) are temporary and sit under the skin, not on top of it like a scratch. The skin surface remains unbroken. The redness typically fades completely within 2-7 days.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Can Gua Sha help with face puffiness?</h3>
+        <p class="text-gray-700">Yes! Facial Gua Sha is a much lighter, gentler technique than body Gua Sha. It promotes lymphatic drainage, which effectively reduces morning puffiness, defines the jawline, and brightens the complexion without leaving any red marks.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">How often can I get safe Gua Sha treatment?</h3>
+        <p class="text-gray-700">For acute back or neck pain, we can perform Gua Sha once a week. However, we must ensure the "Sha" marks from the previous session have fully faded before treating the same area again to allow the skin to heal.</p>
+    </div>
+</div>
+
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
 <p class="mb-4">
 You may also be interested in these complementary treatments:

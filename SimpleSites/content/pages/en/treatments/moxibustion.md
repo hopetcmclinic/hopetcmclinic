@@ -124,6 +124,33 @@ Whether you are seeking relief from chronic pain, looking to support your fertil
 <p class="mb-6">
 Curious if Moxibustion is right for you? Book a consultation at Hope TCM Clinic today, and let us help you rediscover your natural warmth and vitality.
 </p>
+</p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h2>
+
+<div class="space-y-4 mb-8">
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Does moxibustion burn the skin?</h3>
+        <p class="text-gray-700">We primarily use "indirect moxibustion," where the burning herb never touches your skin. You should feel a pleasant, deep warmth. If it ever becomes too hot, simply tell your practitioner, and we will immediately adjust the distance. We are very careful to ensure your safety and comfort.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">What does moxa smell like?</h3>
+        <p class="text-gray-700">Moxa is made from dried mugwort, so when it burns, it smells like a blend of sage and herbal incense. Many patients find the scent grounding and relaxing. If you are sensitive to smoke, we also have smokeless charcoal moxa options available.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Is moxibustion good for turning a breech baby?</h3>
+        <p class="text-gray-700">Yes, it is a well-researched technique with a high success rate (often cited around 70-80%). We stimulate a specific point on the toe (Bladder 67) to encourage fetal movement. It is best performed between weeks 33 and 36 of pregnancy.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Can I do moxibustion at home?</h3>
+        <p class="text-gray-700">For certain chronic conditions or breech baby protocols, we may teach you how to safely use a moxa stick at home to continue your treatment daily. We will provide you with the tools and specific instructions on how to do this safely.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Why is smoke used in the treatment?</h3>
+        <p class="text-gray-700">In traditional theory, the smoke itself contains volatile oils that have therapeutic properties—expelling dampness and pathogens. However, the heat is the primary healing agent, which is why smokeless moxa is equally effective for warming the channels.</p>
+    </div>
+</div>
+
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
 <p class="mb-4">
 You may also be interested in these complementary treatments:

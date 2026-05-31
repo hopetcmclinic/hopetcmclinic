@@ -127,6 +127,33 @@ Herbal medicine is potent medicine. To ensure your safety:
 <p class="mb-6">
 At Hope TCM Clinic, we bridge the gap between ancient wisdom and modern safety standards, offering you a natural path to healing that you can trust.
 </p>
+</p>
+
+<h2 class="subtitle text-2xl font-serif text-primary mb-4">Frequently Asked Questions</h2>
+
+<div class="space-y-4 mb-8">
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Do Chinese herbal formulas taste bad?</h3>
+        <p class="text-gray-700">Earthy and distinct, yes. We won't lie—most formulas taste essentially like strong soil or roots because that is exactly what they are! However, the taste is often a clue to the therapeutic function. If it is too difficult to drink, we recommend taking it as a quick "shot".</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Are your herbs safe and free of heavy metals?</h3>
+        <p class="text-gray-700">Absolutely. We only dispense GMP-certified granules that undergo rigorous third-party testing for heavy metals, pesticides, and bacteria. This is a non-negotiable standard at Hope TCM Clinic to ensure your safety.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">Can I take Chinese herbs with my Western medications?</h3>
+        <p class="text-gray-700">Often, yes, but they must be taken at different times (usually 2 hours apart) to avoid interfering with absorption. We are trained to check for drug-herb interactions, so please bring a full list of your current medications to your appointment.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">How long do I need to take the herbs?</h3>
+        <p class="text-gray-700">For acute colds, you may only need herbs for 3-5 days. For chronic issues like cycle regulation or digestive repair, it typically takes 3-6 months of consistent use to rebuild the body's foundation.</p>
+    </div>
+    <div class="border-l-4 border-primary pl-4">
+        <h3 class="text-lg font-bold text-gray-800">What is the difference between raw herbs and granules?</h3>
+        <p class="text-gray-700">Granules are simply raw herbs that have been pre-cooked and dried into a powder. They offer the same potency as raw herbs but are much more convenient for modern life—just add hot water. We primarily prescribe granules for this reason.</p>
+    </div>
+</div>
+
 <h2 class="subtitle text-2xl font-serif text-primary mb-4">Related Treatments</h2>
 <p class="mb-4">
 You may also be interested in these complementary treatments:
