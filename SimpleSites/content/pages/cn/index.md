@@ -54,14 +54,14 @@ services:
           price: "$130"
   herbal:
     title: "中藥諮詢"
-    desc: "個性化中草藥處方和配藥，價格不含草藥(約 $20-$40/週，根據處方而定)。"
+    desc: "個性化中草藥處方和配藥，價格不含草藥(約 $30-$50/週，根據處方而定)。"
     link: "/cn/treatments/herbal-formulas.html"
     icon: "fas fa-mortar-pestle"
     icon_bg: "bg-primary/10"
     icon_color: "text-primary"
     rates:
       - label: "複診 (20 分鐘)"
-        price: "$30"
+        price: "$50"
 visit_info:
   title: "初次就診？以下是進入診所的方法"
   location: "📍 地址：235-889 Carnarvon St, New Westminster"

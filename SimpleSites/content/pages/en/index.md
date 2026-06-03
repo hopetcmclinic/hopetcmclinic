@@ -55,14 +55,14 @@ services:
           price: "$130"
   herbal:
     title: "Herbal Consultation"
-    desc: "Book this for herb/pill refills if your last visit was within 2 years. Includes consultation and preparation. Herbs are not included (approx. $20–$40/week, varying by prescription)."
+    desc: "Book this for herb/pill refills if your last visit was within 2 years. Includes consultation and preparation. Herbs are not included (approx. $30–$50/week, varying by prescription)."
     link: "/treatments/herbal-formulas.html"
     icon: "fas fa-mortar-pestle"
     icon_bg: "bg-primary/10"
     icon_color: "text-primary"
     rates:
       - label: "Follow-up (20 min)"
-        price: "$30"
+        price: "$50"
 visit_info:
   title: "First Visit? Here's How to Access Our Clinic"
   location: "📍 Location: 235-889 Carnarvon St, New Westminster"
