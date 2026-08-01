@@ -29,7 +29,7 @@ intro:
   mission: "\"Our mission is to restore harmony and vitality to your body, mind, and spirit. We guide you on your journey to optimal health, empowering you to achieve lasting wellness.\""
 services:
   title: "Services & Fees"
-  price_effective_date: "To continue providing high-quality care, the fee for Subsequent Acupuncture Treatment (60 min) will be adjusted from $100 to $110 effective August 1, 2026."
+  price_effective_date: ""
   entries:
     - title: "Acupuncture"
       subtitle: "Standard Treatment"
@@ -41,7 +41,7 @@ services:
         - label: "Initial Visit (90 min)"
           price: "$135"
         - label: "Follow-up (60 min)"
-          price: "$100"
+          price: "$110"
     - title: "Facial Rejuvenation Acupuncture"
       subtitle: ""
       link: "/treatments/facial-rejuvenation-acupuncture.html"
