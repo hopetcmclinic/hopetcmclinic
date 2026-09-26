@@ -82,6 +82,11 @@ class AssetManager:
     def needs_update(self, src: str, dest: str) -> bool:
         if not os.path.exists(dest):
             return True
+        ext = os.path.splitext(dest)[1].lower()
+        if ext in ['.jpg', '.jpeg', '.png']:
+            webp_dest = os.path.splitext(dest)[0] + '.webp'
+            if not os.path.exists(webp_dest):
+                return True
         return os.path.getmtime(src) > os.path.getmtime(dest)
 
     def optimize_image(self, src: str, dest: str) -> None:

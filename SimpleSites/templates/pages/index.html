@@ -174,8 +174,10 @@
                         <i class="fas fa-chevron-down text-sm"></i>
                     </div>
                 </summary>
-                <div class="px-5 pb-6 text-slate-600 leading-relaxed border-t border-stone-100 pt-4 animate-fadeIn">
-                    <p>{{ item.a }}</p>
+                <div class="px-5 pb-6 text-slate-600 leading-relaxed border-t border-stone-100 pt-4 animate-fadeIn space-y-3">
+                    {% for paragraph in item.a.strip().split('\n\n') %}
+                    <p>{{ paragraph.strip() }}</p>
+                    {% endfor %}
                 </div>
             </details>
             {% endfor %}

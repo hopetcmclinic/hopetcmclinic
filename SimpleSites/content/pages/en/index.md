@@ -81,10 +81,11 @@ faq:
       a: "It varies by condition. Acute issues may resolve quickly, while chronic conditions often require ongoing care for reliable results. Consistent acupuncture treatments typically lead to reliable results."
     - q: "Is acupuncture covered by insurance?"
       a: "Yes, most Extended Health Plans in British Columbia cover acupuncture treatments by a Registered Acupuncturist (R.Ac.). We provide detailed receipts that you can submit to your insurance for reimbursement. Check your specific plan for coverage limits."      
-    - q: "Do you do direct billing?"
-      a: "No, we do not do direct billing. We provide detailed receipts that you can submit to your insurance for reimbursement."
-    - q: "What payment methods do you accept?"
-      a: "We accept debit/credit cards, e-transfer, and cash. A detailed receipt will be issued after each session for insurance claims."
+    - q: "What payment methods do you accept, and do you offer direct billing?"
+      a: |-
+        We accept debit/credit cards, e-transfer, and cash.
+
+        While we do not offer direct billing, we make claiming easy: an official receipt with full R.Ac & Dr. of TCM registration details will be provided right after your session for quick reimbursement with your extended health provider.
 book:
   text: "Book An Appointment Online"
   link: "https://hopetcmclinic.janeapp.com/#/staff_member/1"
