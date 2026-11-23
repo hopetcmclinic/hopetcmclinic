@@ -33,6 +33,16 @@
         <p class="text-xl md:text-2xl font-serif text-slate-700 leading-relaxed mb-8">
             {{ page.intro.main }}
         </p>
+
+        <!-- Mobile Book Appointment Button (Small screens only, below Welcome Intro) -->
+        {% if page.book %}
+        <div class="md:hidden mb-8">
+            <a href="{{ page.book.link }}"
+                class="inline-block bg-accent hover:bg-accent-light hover:text-emerald-900 text-white px-8 py-3.5 rounded-full font-bold uppercase tracking-wider text-sm shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-0.5 w-full max-w-sm mx-auto no-underline">
+                {{ page.book.text }}
+            </a>
+        </div>
+        {% endif %}
         {% if page.intro.specialties %}
         <div class="flex flex-wrap justify-center gap-3 text-sm font-semibold uppercase tracking-wide text-slate-500">
             {% for item in page.intro.specialties %}
