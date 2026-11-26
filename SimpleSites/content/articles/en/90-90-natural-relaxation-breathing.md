@@ -40,17 +40,17 @@ This practice combines the "Static Back" position from physical therapy with the
 The core purpose of this position is to use gravity and physical support to bring the pelvis and ribcage back into neutral alignment, release tight lower back muscles (erector spinae) and hip flexors, and restore natural diaphragmatic function:
 </p>
 
-<h4 class="text-xl font-semibold text-primary mb-2">1. Giving the Body Time for a "Structural Reset" (Why 20–30 Minutes Matters)</h4>
+<h4 class="text-xl font-semibold text-primary mb-2">3.1. Giving the Body Time for a "Structural Reset" (Why 20–30 Minutes Matters)</h4>
 <ul class="list-disc pl-6 mb-6 space-y-2">
     <li><strong>Gradual Release of Deep Fascia & Muscles:</strong> During daily standing, prolonged sitting, or exercise, the deep psoas muscles and lower back erector spinae remain in chronic tension fighting gravity. A few minutes of rest only relaxes superficial muscles; holding the 90/90 position for 20–30 minutes gives deep fascia and the psoas enough time to thoroughly relax and realign in a zero-gravity state, returning the pelvis and spine to their most effortless neutral structure.</li>
 </ul>
 
-<h4 class="text-xl font-semibold text-primary mb-2">2. The Value of "Releasing Conscious Control" for the Autonomic Nervous System</h4>
+<h4 class="text-xl font-semibold text-primary mb-2">3.2. The Value of "Releasing Conscious Control" for the Autonomic Nervous System</h4>
 <ul class="list-disc pl-6 mb-6 space-y-2">
     <li><strong>Shifting to the Parasympathetic Mode:</strong> Deliberately counting seconds or controlling breath depth keeps the brain in a state of active monitoring (subtle sympathetic alertness). Once physical alignment is established and you let go of control, the brain's monitoring mechanism shuts down, allowing the body to rapidly shift into the restorative parasympathetic mode ("rest and digest").</li>
 </ul>
 
-<h4 class="text-xl font-semibold text-primary mb-2">3. Structure Dictates Function (Natural Breath Restoration)</h4>
+<h4 class="text-xl font-semibold text-primary mb-2">3.3. Structure Dictates Function (Natural Breath Restoration)</h4>
 <ul class="list-disc pl-6 mb-6 space-y-2">
     <li><strong>Automatic Diaphragmatic Efficiency:</strong> When the pelvis and ribcage are properly stacked (ribcage aligned directly over the pelvic floor), the diaphragm requires no conscious direction—it naturally deepens and slows down as the body relaxes.</li>
     <li><strong>Effortless Breath Guidance (<em>Wu Wei</em>):</strong> The lightweight object on your lower abdomen (such as a phone) serves to guide the breath effortlessly. Without forcing your belly or counting beats, the gentle weight and physical presence of the object naturally draw the breath downward into the lower abdomen (<em>Dantian</em>), encouraging deep diaphragmatic breathing without interference.</li>
